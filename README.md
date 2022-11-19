@@ -10,13 +10,13 @@ A01272954
 EunjeongHur
 
 ## Member #2 name:
-
+Shuyi Liu
 
 ## Member #2 student number:
-
+A01178380
 
 ## Member #2 GitHub account ID:
-
+maz1995
 
 ## Any important comments you'd like to make about your work:
 Replace this line with any comments you want to share
