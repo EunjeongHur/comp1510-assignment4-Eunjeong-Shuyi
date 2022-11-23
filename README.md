@@ -1,4 +1,5 @@
-# comp1510-assignment4-Eunjeong-Shuyi
+# COMP 1510 202230
+# A4
 
 ## Member #1 name:
 Eunjeong(Alice) Hur
