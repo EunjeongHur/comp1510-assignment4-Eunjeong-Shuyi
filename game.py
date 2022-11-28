@@ -112,7 +112,12 @@ def move_character(character, direction):
 
 
 def check_for_challenges(board, character):
-    pass
+    current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
+    room = board[current_character_coordinate]
+    if room == "Empty Room":
+        return False
+    else:
+        return True
 
 
 def execute_challenge_protocol(board, character):
@@ -147,8 +152,8 @@ def game():
         print(valid_move)
         if valid_move:
             move_character(character, direction)
-        #     describe_current_location(board, character)
-        #     there_is_a_challenge = check_for_challenges(board, character)
+            describe_current_location(board, character)
+            there_is_a_challenge = check_for_challenges(board, character)
         #     if there_is_a_challenge:
         #         execute_challenge_protocol(board, character)
         #         if character_has_leveled(character):
