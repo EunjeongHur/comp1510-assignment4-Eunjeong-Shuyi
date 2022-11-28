@@ -93,6 +93,8 @@ def validate_move(character, direction):
         return False
     elif current_character_coordinate[1] == 9 and direction == 'Right':
         return False
+    elif direction == 'False':
+        return False
     else:
         return True
 
