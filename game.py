@@ -59,10 +59,27 @@ def describe_current_location(board, character):
         print()
     for _ in range(20):
         print("-", end=" ")
+    print()
 
 
 def get_user_choice():
-    pass
+    directions = ['Up', 'Down', 'Left', 'Right']
+    numbers = ['1', '2', '3', '4']
+    print("To quit a game, type 'q' or 'quit'")
+
+    while True:
+        for value, direction in enumerate(directions, 1):
+            print(f'{value}.{direction}', end=" ")
+
+        user_choice = input("\nPlease enter a Number corresponding to the direction you wish to travel:\n")
+        if user_choice.lower() == "q" or user_choice.lower() == "quit":
+            break
+        elif user_choice in numbers:
+            return directions[int(user_choice)-1]
+        else:
+            continue
+
+    return False
 
 
 def validate_move(board, character, direction):
@@ -122,6 +139,8 @@ def main():
     character = make_character()
     board = make_board(10, 10)
     describe_current_location(board, character)
+    direction = get_user_choice()
+    print(direction)
 
 
 if __name__ == "__main__":
