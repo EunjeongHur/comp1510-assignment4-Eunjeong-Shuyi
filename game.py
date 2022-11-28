@@ -93,8 +93,6 @@ def validate_move(character, direction):
         return False
     elif current_character_coordinate[1] == 9 and direction == 'Right':
         return False
-    elif direction == 'False':
-        return False
     else:
         return True
 
@@ -143,6 +141,8 @@ def game():
         # Tell the user where they are
         describe_current_location(board, character)
         direction = get_user_choice()
+        if direction is False:
+            achieved_goal = True
         valid_move = validate_move(character, direction)
         print(valid_move)
         if valid_move:
