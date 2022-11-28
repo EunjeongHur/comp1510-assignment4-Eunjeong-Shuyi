@@ -98,7 +98,17 @@ def validate_move(character, direction):
 
 
 def move_character(character, direction):
-    pass
+    current_x_location = character['X-coordinate']
+    current_y_location = character['Y-coordinate']
+
+    if direction == 'Up':
+        character['X-coordinate'] = current_x_location - 1
+    elif direction == 'Down':
+        character['X-coordinate'] = current_x_location + 1
+    elif direction == 'Left':
+        character['Y-coordinate'] = current_y_location - 1
+    else:
+        character['Y-coordinate'] = current_y_location + 1
 
 
 def check_for_challenges(board, character):
@@ -132,8 +142,9 @@ def game():
         describe_current_location(board, character)
         direction = get_user_choice()
         valid_move = validate_move(character, direction)
-        # if valid_move:
-        #     move_character(character, direction)
+        print(valid_move)
+        if valid_move:
+            move_character(character, direction)
         #     describe_current_location(board, character)
         #     there_is_a_challenge = check_for_challenges(board, character)
         #     if there_is_a_challenge:
@@ -141,8 +152,8 @@ def game():
         #         if character_has_leveled(character):
         #             execute_glow_up_protocol()
         #     achieved_goal = check_if_goal_attained(board, character)
-        # else:
-        #     achieved_goal = True
+        else:
+            achieved_goal = True
 
 
 def main():
