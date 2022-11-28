@@ -40,7 +40,25 @@ def make_character() -> dict:
 
 
 def describe_current_location(board, character):
-    pass
+    current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
+    current_location = board[current_character_coordinate]
+
+    for _ in range(20):
+        print("-", end=" ")
+    print()
+    for row in range(10):
+        for col in range(10):
+            if (row, col) == current_character_coordinate:
+                print("|\033[92mX\033[00m|", end=" ")
+            elif board[(row, col)] == "Respawn Room":
+                print("|\033[95mO\033[00m|", end=" ")
+            elif board[(row, col)] == "Event Room":
+                print("|\033[93m!\033[00m|", end=" ")
+            else:
+                print("|-|", end=" ")
+        print()
+    for _ in range(20):
+        print("-", end=" ")
 
 
 def get_user_choice():
@@ -101,9 +119,9 @@ def game():
 
 def main():
     # game()
-    # character = make_character()
-    # print(character)
-    print(make_board(10, 10))
+    character = make_character()
+    board = make_board(10, 10)
+    describe_current_location(board, character)
 
 
 if __name__ == "__main__":
