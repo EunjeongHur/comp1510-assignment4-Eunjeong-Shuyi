@@ -65,7 +65,7 @@ def describe_current_location(board, character):
 def get_user_choice():
     directions = ['Up', 'Down', 'Left', 'Right']
     numbers = ['1', '2', '3', '4']
-    print("To quit a game, type 'q' or 'quit'")
+    print("To quit a game, type 'q' or 'quit'\n")
 
     while True:
         for value, direction in enumerate(directions, 1):
@@ -82,8 +82,19 @@ def get_user_choice():
     return False
 
 
-def validate_move(board, character, direction):
-    pass
+def validate_move(character, direction):
+    current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
+
+    if current_character_coordinate[0] == 0 and direction == 'Up':
+        return False
+    elif current_character_coordinate[0] == 9 and direction == 'Down':
+        return False
+    elif current_character_coordinate[1] == 0 and direction == 'Left':
+        return False
+    elif current_character_coordinate[1] == 9 and direction == 'Right':
+        return False
+    else:
+        return True
 
 
 def move_character(character, direction):
@@ -120,27 +131,27 @@ def game():
         # Tell the user where they are
         describe_current_location(board, character)
         direction = get_user_choice()
-        valid_move = validate_move(board, character, direction)
-        if valid_move:
-            move_character(character, direction)
-            describe_current_location(board, character)
-            there_is_a_challenge = check_for_challenges(board, character)
-            if there_is_a_challenge:
-                execute_challenge_protocol(board, character)
-                if character_has_leveled(character):
-                    execute_glow_up_protocol()
-            achieved_goal = check_if_goal_attained(board, character)
-        else:
-            achieved_goal = True
+        valid_move = validate_move(character, direction)
+        # if valid_move:
+        #     move_character(character, direction)
+        #     describe_current_location(board, character)
+        #     there_is_a_challenge = check_for_challenges(board, character)
+        #     if there_is_a_challenge:
+        #         execute_challenge_protocol(board, character)
+        #         if character_has_leveled(character):
+        #             execute_glow_up_protocol()
+        #     achieved_goal = check_if_goal_attained(board, character)
+        # else:
+        #     achieved_goal = True
 
 
 def main():
-    # game()
-    character = make_character()
-    board = make_board(10, 10)
-    describe_current_location(board, character)
-    direction = get_user_choice()
-    print(direction)
+    game()
+    # character = make_character()
+    # board = make_board(10, 10)
+    # describe_current_location(board, character)
+    # direction = get_user_choice()
+    # print(direction)
 
 
 if __name__ == "__main__":
