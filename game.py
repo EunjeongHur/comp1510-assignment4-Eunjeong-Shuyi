@@ -11,8 +11,18 @@ def make_board(rows, columns):
     pass
 
 
-def make_character():
-    pass
+def make_character() -> dict:
+    character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Current HP': 10, 'Max HP': 10, 'Age': 5,
+                 'Name': input("Enter a character name: ")}
+    while True:
+        character_gender = input("Choose the gender of your character (M / F): ").upper()
+        if character_gender not in ('M', 'F'):
+            print("Please enter 'M' for Male, or 'F' for Female.")
+        else:
+            character['Gender'] = character_gender
+            break
+
+    return character
 
 
 def describe_current_location(board, character):
@@ -76,7 +86,9 @@ def game():
 
 
 def main():
-    game()
+    # game()
+    character = make_character()
+    print(character)
 
 
 if __name__ == "__main__":
