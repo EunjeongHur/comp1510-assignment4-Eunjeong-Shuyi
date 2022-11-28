@@ -6,9 +6,23 @@ Member #2 Student Name: Shuyi Liu
 Member #2 Student Number: A01178380
 """
 
+from random import choice
+
 
 def make_board(rows, columns):
-    pass
+    rooms_coordinates = {}
+    rooms_names = ['Empty Room', 'Empty Room', 'Event Room']
+
+    for row in range(rows):
+        for col in range(columns):
+            coordinate = (row, col)
+            if coordinate == (9, 4):
+                rooms_coordinates[coordinate] = "Respawn Room"
+            else:
+                random_room = choice(rooms_names)
+                rooms_coordinates[coordinate] = random_room
+
+    return rooms_coordinates
 
 
 def make_character() -> dict:
@@ -87,8 +101,9 @@ def game():
 
 def main():
     # game()
-    character = make_character()
-    print(character)
+    # character = make_character()
+    # print(character)
+    print(make_board(10, 10))
 
 
 if __name__ == "__main__":
