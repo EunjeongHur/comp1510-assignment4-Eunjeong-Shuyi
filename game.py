@@ -6,8 +6,9 @@ Member #2 Student Name: Shuyi Liu
 Member #2 Student Number: A01178380
 """
 
-from random import choice
+from random import choice, shuffle
 import json
+from time import sleep
 
 
 def make_board(rows, columns):
@@ -149,6 +150,47 @@ def get_event(event, character, other_character_name):
     character_points = character[other_character_name][1]
 
     pass
+
+
+def display_script(event):
+    options = []
+    numbers = []
+    user_answer = ""
+
+    script = event["script"]
+    gain_points_option_script = event["gain_points_option_script"]
+    no_gain_points_options_script = event["no_gain_points_options_script"]
+    gain_points_option = event["gain_points_option"]
+    no_gain_points_options = event["no_gain_points_options"]
+
+    options.append(gain_points_option)
+    for option in no_gain_points_options:
+        options.append(option)
+    shuffle(options)
+
+    for line in script:
+        print(f'{line}\n')
+        sleep(1.5)
+
+    for number, option in enumerate(options, 1):
+        print(f'{number}. {option}')
+        numbers.append(str(number))
+
+    while user_answer not in numbers:
+        user_answer = input("Choose a number: ")
+    print(". . .")
+    sleep(1.5)
+
+    if int(user_answer) == options.index(gain_points_option) + 1:
+        for script in gain_points_option_script:
+            print(f'{script}\n')
+            sleep(1.5)
+        return True
+    else:
+        for script in no_gain_points_options_script:
+            print(script)
+            sleep(1.5)
+        return False
 
 
 def character_has_leveled(character):
