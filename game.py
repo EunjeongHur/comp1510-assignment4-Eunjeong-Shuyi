@@ -151,7 +151,7 @@ def get_event(event, character, other_character_name):
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
 
-    gain_or_not = display_script(event)
+    gain_or_not = display_script(event, character)
 
     if gain_or_not:
         character[other_character_name][1] = character_points + event["gain_points"]
@@ -160,17 +160,23 @@ def get_event(event, character, other_character_name):
 
     character[other_character_name][0] = episode + 1
     print(f'{other_character_name} score: {character[other_character_name][1]}')
-    pass
 
 
-def display_script(event):
+def replace_mc_name(name: str, lines: list) -> list:
+    replaced_lines = [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
+
+    return replaced_lines
+
+
+def display_script(event, character):
+    name = character['Name']
     options = []
     numbers = []
     user_answer = ""
 
-    script = event["script"]
-    gain_points_option_script = event["gain_points_option_script"]
-    no_gain_points_options_script = event["no_gain_points_options_script"]
+    script = replace_mc_name(name, event["script"])
+    gain_points_option_script = replace_mc_name(name, event["gain_points_option_script"])
+    no_gain_points_options_script = replace_mc_name(name, event["no_gain_points_options_script"])
     gain_points_option = event["gain_points_option"]
     no_gain_points_options = event["no_gain_points_options"]
 
