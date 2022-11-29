@@ -1,0 +1,91 @@
+{
+  "Nero": [
+    {
+      "episode": 1,
+      "gain_points": 2,
+      "script": [
+        "You decided to look for foods and you found blackberries!",
+        "After you collected five berries, you encountered a young black cat and hig leg looks like broken and hasn't eaten food for a few days.",
+        "What are you going to do?"
+      ],
+      "gain_points_option": "give him berries you collected",
+      "no_gain_points_options": [
+        "pass by him",
+        "ignore him"
+      ],
+      "gain_points_option_script": [
+        "You decided to share your berries with him",
+        "Are you Okay? What happened to you?",
+        "A black cat is hissing and his tail is twitching",
+        "I don't mean to hurt you. Do you wanna eat some berries?",
+        "It's very fresh and you'll definitely like it!",
+        "A black cat is still hissing but looks like it grabs his attention",
+        "You gave him some berries",
+        ". . . Eating Together . . .",
+        "A black cat: Thanks for sharing your food with me",
+        "A black cat: I haven't got food for a few days and I couldn't hunt and walk around because my leg hurts",
+        "A black cat: . . . You saved my life",
+        "A black cat: What is your name? My name is Nero",
+        ". . .",
+        "You told your name and Nero limped along somewhere",
+        "You feel like you got closer a little bit to Nero"
+      ],
+      "no_gain_points_options_script": [
+        "You tried to pass by him, however, a black cat spoke to you first",
+        "A black cat: Hey, why are you ignoring me?",
+        ". . . You are embarrassed . . .",
+        "A black cat: I haven't got food for a few days..",
+        "A black cat: Can you give me some of your berries? It really looks great",
+        "A black cat is looking at you with a sad but sly eyes",
+        "You couldn't ignore him, so you decided to give him two berries",
+        ". . . Eating Together . . .",
+        "A black cat: I thought you were going to give me more berries, but it's okay",
+        "A black cat: Thanks for saving my life",
+        "A black cat: What's your name? My name is Nero",
+        ". . .",
+        "You told your name and Nero limped along somewhere"
+      ]
+    },
+    {
+      "episode": 2,
+      "gain_points": 2,
+      "script": [
+        "When you just walk along gazing around somewhere, Nero finds you and Nero asks you to get some berries for him.",
+        "Nero: Hey, can you get me some berries again for me?",
+        "Nero: The last time, the berries were really fresh and I can’t forget that taste."
+      ],
+      "gain_points_option": "Yes",
+      "no_gain_points_options": [
+        "No (ignore him)"
+      ],
+      "gain_points_option_script": [
+        "You decided to get him some berries while you find your food.",
+        ". . . Collecting Berries . . .",
+        ". . . While you were picking berries, your hands got scratched  . . .",
+        "You picked 10 berries and some other foods and went back to where Nero is",
+        ". . . Giving Nero 10 berries . . .",
+        "Nero: Wow! That's a lot! Thank you",
+        ". . . Eating Together . . .",
+        "Nero: What do you usually do in your free time?",
+        "I usually find the perfect spot where it's sunny and warm and lays out in the sun and take a nap",
+        "Nero: It sounds really nice. . .",
+        "How about you?",
+        "Nero: Well, I used to steal fishes and some other kinds of foods from market . . .",
+        "Nero: And one time, I was sneaking inside the market and trying to steal some food as usual. . .",
+        "Nero: But a market manager found me and I hurt my leg while trying to run away quickly from the market",
+        "Nero: Haha",
+        "Nero: That's why I was starving so much when we met each other first time",
+        ". . . Awkward Silence . . .",
+        "Nero: Haha, why did i say this?",
+        "Nero: Forget about it.",
+        "Nero: Anyway, thank you again!"
+      ],
+      "no_gain_points_options_script": [
+        "Nero: Hmm... seriously?",
+        ". . . Ignore him . . .",
+        "Nero: Okay ... see you later then",
+        "You looked back and Nero is still staying at the same spot, but he looks very sad and not in good condition"
+      ]
+    }
+  ]
+}
