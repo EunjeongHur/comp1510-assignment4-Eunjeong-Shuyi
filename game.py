@@ -144,6 +144,13 @@ def execute_challenge_protocol(board, character):
     return event
 
 
+def get_event(event, character, other_character_name):
+    episode = character[other_character_name][0]
+    character_points = character[other_character_name][1]
+
+    pass
+
+
 def character_has_leveled(character):
     pass
 
