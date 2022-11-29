@@ -142,13 +142,24 @@ def execute_challenge_protocol(board, character):
         if line['episode'] == character[event_option][0]:
             event = line
 
-    return event
+    get_event(event, character, event_option)
+    current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
+    board[current_character_coordinate] = "Empty room"
 
 
 def get_event(event, character, other_character_name):
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
 
+    gain_or_not = display_script(event)
+
+    if gain_or_not:
+        character[other_character_name][1] = character_points + event["gain_points"]
+    else:
+        character[other_character_name][1] = character_points - event["gain_points"]
+
+    character[other_character_name][0] = episode + 1
+    print(f'{other_character_name} score: {character[other_character_name][1]}')
     pass
 
 
@@ -184,12 +195,12 @@ def display_script(event):
     if int(user_answer) == options.index(gain_points_option) + 1:
         for script in gain_points_option_script:
             print(f'{script}\n')
-            sleep(1.5)
+            sleep(2)
         return True
     else:
         for script in no_gain_points_options_script:
             print(script)
-            sleep(1.5)
+            sleep(2)
         return False
 
 
@@ -218,16 +229,16 @@ def game():
         if direction is False:
             achieved_goal = True
         valid_move = validate_move(character, direction)
-        print(valid_move)
         if valid_move:
             move_character(character, direction)
             describe_current_location(board, character)
             there_is_a_challenge = check_for_challenges(board, character)
+            print(there_is_a_challenge)
             if there_is_a_challenge:
                 execute_challenge_protocol(board, character)
-        #         if character_has_leveled(character):
-        #             execute_glow_up_protocol()
-        #     achieved_goal = check_if_goal_attained(board, character)
+                if character_has_leveled(character):
+                    execute_glow_up_protocol()
+            # achieved_goal = check_if_goal_attained(board, character)
         else:
             achieved_goal = True
 
