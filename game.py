@@ -7,6 +7,7 @@ Member #2 Student Number: A01178380
 """
 
 from random import choice
+import json
 
 
 def make_board(rows, columns):
@@ -27,6 +28,7 @@ def make_board(rows, columns):
 
 def make_character() -> dict:
     character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Current HP': 10, 'Max HP': 10, 'Age': 5,
+                 'Nero': [1, 10], 'Lulu': [1, 10], 'Naomi': [1, 10], 'Penelope': [1, 10],
                  'Name': input("Enter a character name: ")}
     while True:
         character_gender = input("Choose the gender of your character (M / F): ").upper()
@@ -130,7 +132,16 @@ def pick_random_character():
 
 
 def execute_challenge_protocol(board, character):
-    pass
+    file = open("./character.json")
+    data = json.load(file)
+    event_option = pick_random_character()
+    event = ""
+
+    for line in data[event_option]:
+        if line['episode'] == character[event_option][0]:
+            event = line
+
+    return event
 
 
 def character_has_leveled(character):
