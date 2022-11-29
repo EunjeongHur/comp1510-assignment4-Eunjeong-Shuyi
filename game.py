@@ -120,6 +120,15 @@ def check_for_challenges(board, character):
         return True
 
 
+def pick_random_character():
+    # check if any character relationship score is over 16
+    # Otherwise, pick random event character
+    # We need to add other characters here
+    event_options = ['Nero']
+
+    return choice(event_options)
+
+
 def execute_challenge_protocol(board, character):
     pass
 
@@ -154,8 +163,8 @@ def game():
             move_character(character, direction)
             describe_current_location(board, character)
             there_is_a_challenge = check_for_challenges(board, character)
-        #     if there_is_a_challenge:
-        #         execute_challenge_protocol(board, character)
+            if there_is_a_challenge:
+                execute_challenge_protocol(board, character)
         #         if character_has_leveled(character):
         #             execute_glow_up_protocol()
         #     achieved_goal = check_if_goal_attained(board, character)
