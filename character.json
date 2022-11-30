@@ -394,5 +394,165 @@
          "You apologized about that happening and you ran away"
       ]
     }
+  ],
+  "Noah": [
+    {
+      "episode": 1,
+      "gain_points": 1,
+      "script": [
+        "You haven't found any food all day and you are now very hungry.",
+        "You walked around a corner and saw a male human standing in your front.",
+        "The male human asked: 'Hey, do you want some food?'"
+      ],
+      "gain_points_option": "eat food offered by the human",
+      "no_gain_points_options": [
+        "ignore the human and walk away"
+      ],
+      "gain_points_option_script": [
+        "You decided walk a bit closer.",
+        "Male human: Hi kitty! Don't be afraid, I just want to give you something to eat.",
+        "You stopped not far from the food, you are still a little wary of this human.",
+        "This human did not speak again, just smiled and moved a little further away from you.",
+        ". . . You gobbled up the food . . .",
+        "Male human: Poor little thing, you must be starving...",
+        "This human moved a little closer, wanting to pet you.",
+        "You turned around and ran into the bushes."
+      ],
+      "no_gain_points_options_script": [
+        "You think this is still too risky.",
+        "You turned around and was about to leave.",
+        "Male human: Hi Kitty! It is okay, I don’t mean to hurt you...",
+        "You ignored him and ran into the bushes.",
+        "You looked back and saw the human still standing at the same position with food in his hand. You left."
+      ]
+    },
+    {
+      "episode": 2,
+      "gain_points": 2,
+      "script": [
+        "You were wandering around, and you saw the same male human from a few days ago.",
+        "He smiled at you, said: 'What a coincidence! I happened to bring some cat snacks with me. Would you like some?'"
+      ],
+      "gain_points_option": "eat snacks offered by the human ",
+      "no_gain_points_options": [
+        "stare at the human"
+      ],
+      "gain_points_option_script": [
+        "You walked towards the human and ate the snack he was holding.",
+        "Male human: I remember you, the kitty with big appetite! Do you like this? I can bring some more to you...",
+        "This human moved a little closer, wanting to pet you.",
+        "You turned around and ran into the bushes."
+      ],
+      "no_gain_points_options_script": [
+        "You did not move and just stare at the human.",
+        "Male human: I guess you are still afraid of me...",
+        "This human looked a bit depressed.",
+        "You ignored him and ran into the bushes."
+      ]
+    },
+    {
+      "episode": 3,
+      "gain_points": 3,
+      "script": [
+        "You were searching food around the park and sported a familiar male human on the swing.",
+        "He was sitting quietly on the swing and looked frustrated.",
+        "You've seen this human a few times and it doesn't look like he wants to hurt you.",
+        "You decided to walk next to him and sit down on the ground.",
+        "'Oh hi! It’s you again.' The male human lifted his head and said, 'It was good to see you again.... Unfortunately, I didn't bring any food or snacks this time.'",
+        "You replied with a little meow.",
+        "Male human: 'We've met several times, but I haven't introduced myself. My name is Noah, what about you little kitty?'",
+        "You meowed your name to him, but not sure if he understood catglish.",
+        "Noah: 'That sounds like /mc_name in human language... I guess I will call you /mc_name from now on.'",
+        "He called your name and reached out his hand trying to pet your head.",
+        "You..."
+    ],
+      "gain_points_option": "allow Noah to pet your head",
+      "no_gain_points_options": [
+        "avoid Noah’s hand"
+      ],
+      "gain_points_option_script": [
+        "You allowed Noah to pet your head.",
+        "Noah looked pleasantly surprised.",
+        "Noah: 'Thank you... I thought you were still a bit nervous around me...'",
+        "Noah: 'It was very nice of you to allow me to do that. I had a rough day and it made me feel much better.'",
+        "You do not understand why touching other create’s head would bring happiness, but seems like Noah is in a better mood now.",
+        "You sit with Noah for about an hour, and you went back into the bushes."
+      ],
+      "no_gain_points_options_script": [
+        "You avoided Noah’s hand.",
+        "Noah looked a bit surprised.",
+        "Noah: 'I guess you are still a nervous kitty.'",
+        "Noah:'Sometimes I wish I were a kitty as well, then I won't need to worry about my life or career.'",
+        "Depression again appeared on Noah's face.",
+        "You did not understand this emotion, and you went back into the bushes."
+      ]
+    },
+    {
+      "episode": 4,
+      "gain_points": 4,
+      "script": [
+        "You passed by a building and heard a familiar voice.",
+        "Stern man: 'Don't increase the rent? That's impossible, all expenses are so high, I need to live too!'",
+        "Noah: 'Is it possible to not increase that much? I'm under a lot of financial pressure right now...'",
+        "Stern man: 'Then work a little harder!'",
+        "Noah lowered his head and stayed silent.",
+        "The stern man walked back into the building.",
+        "You..."
+      ],
+      "gain_points_option": "walk towards Noah and sit next to him",
+      "no_gain_points_options": [
+         "ignore Noah and walk away"
+      ],
+      "gain_points_option_script": [
+        "You walked towards Noah and sat next to him.",
+        "Noah: 'Hi /mc_name , I do need your company right now.'",
+        "Noah gently pet you.",
+        "You licked his fingers as response.",
+        "Noah looked much happier.",
+        "You stayed with Noah for a while.",
+        "Noah talked a lot about his life, pressure and hesitation, but you did not really understand those human words."
+      ],
+      "no_gain_points_options_script": [
+        "You ignored Noah and walked away."
+      ]
+    },
+    {
+      "episode": 5,
+      "gain_points": 4,
+      "script": [
+        "You are walking along the road when a familiar voice called your name.",
+        "You turned around and saw Noah waving to you.",
+        "Noah: 'Hi, /mc_name, I just felt I had to come back and say hello to you one more time.'",
+        "Noah: “I had been thinking for a long time but couldn't make decision.",
+        "Noah: “I may move out of this city and go back to my hometown...",
+        "You ..."
+      ],
+      "gain_points_option": "rub Noah’s leg with your head",
+      "no_gain_points_options": [
+         "stay at a distance and stare at Noah"
+      ],
+      "gain_points_option_script": [
+        "You rubbed Noah’s leg with your head.",
+        "Noah: '/mc_name, are you trying to tell me that you don’t want me to leave...?'",
+        "You replied with some little meows and more rubbing.",
+        "Noah: 'I am so glad that you are always here with me when I feel lonely and helpless...'",
+        "Noah: 'Do you feel lonely too?'",
+        "You looked at Noah, and put your paw on his hand.",
+        "Noah lifted you up and held you in his arms.",
+        "Noah: 'I guess I still have one more reason to stay here, my cat friend.'",
+        "------End------"
+      ],
+      "no_gain_points_options_script": [
+        "You stayed at a distance and stared at Noah.",
+        "You saw sadness slowly appearing in Noah's eyes.",
+        "Noah: 'Maybe I already made that decision, but I just did not want to admit it...'",
+        "He didn't sound as jubilant as he did when you first met her.",
+        "Noah silently waved to you and turned around.",
+        "You watched Noah’s walking away till he disappeared in your sight.",
+        "You have never seen Noah again since that day.",
+        "You became the solo adventurer in the city again. Free and lonely.",
+        "------End------"
+      ]
+    }
   ]
 }
