@@ -86,6 +86,121 @@
         "Nero: Okay ... see you later then",
         "You looked back and Nero is still staying at the same spot, but he looks very sad and not in good condition"
       ]
+    },
+    {
+      "episode": 3,
+      "gain_points": 3,
+      "script": [
+        "While you are walking around, you saw Nero and other cats gathering",
+        "You walked there a bit closer and you saw they're fighting each other",
+        "What are you going to do?"
+      ],
+      "gain_points_option": "go help Nero and fight against other cats",
+      "no_gain_points_options": [
+        "run away from there"
+      ],
+      "gain_points_option_script": [
+        "You decided to help Nero and fight against other cats",
+        "You carried a small pebble in your mouth",
+        "You ran a few steps forward and aimed the pebble at one of the other cats",
+        "But the other cat dodged it and it got all the cats' attention on you",
+        "You started to feel nervous, one of the cats approacehd you",
+        "It was Nero",
+        "He stared at you and gave you a nod",
+        "He led you to the front of the circle",
+        "Nero: Come on!",
+        "The circle started to break and the cats ran towards you and Nero",
+        ". . . A few minutes later . . .",
+        "A few minutes later, they started to run away one by one . . .",
+        "Finally, you and Nero were left in there",
+        "No other cats . . .",
+        "You and Nero got so tired and couldn't move",
+        "You and Nero laid down on the grass and took a rest",
+        ". . .",
+        "Nero: Thanks for helping me...",
+        "Nero: You were so brave.. but I don't want you to hurt",
+        "Nero: I didn't want you to help me and fight against those cats ...",
+        "/mc_name: ...",
+        "/mc_name: What happened?",
+        "/mc_name: Why were you fighting with other cats?",
+        "Nero: . . . I want to take a rest now",
+        "He got scratched a lot and got hurt so badly",
+        "/mc_name: Ok...",
+        "Nero: Thank you... I won't forget today forever"
+      ],
+      "no_gain_points_options_script": [
+        "You decided to run away from there",
+        "You ran around the corner and stopped behind some shrubs.",
+        "You were too scared to do anything so you watched the fighting",
+        "You felt guilty ..."
+      ]
+    },
+    {
+      "episode": 4,
+      "gain_points": 4,
+      "script": [
+        "You are in a dark alleyway",
+        "Suddenly, you hear rustling noises",
+        "???: Hello, kitty. I missed you",
+        "a voice purrs",
+        "You turn around slowly, ready to strike",
+        "You see a black cat, with a hood over his face",
+        "???: It's a trap. You better run away, kitty",
+        "The black cat hisses",
+        "You hear a loud noise behind you",
+        "The alleway is filled with cats holding their own weapons in their paws",
+        "You are about to strike at the black cat, but at the same time, you hear another voice calling you",
+        "Nero: /mc_name !!!!",
+        "Nero: Leave /mc_name alone!",
+        "You turn around to see Nero",
+        "He is beating up the other cats who were attacking you",
+        "You strike at the black cat with your claws",
+        "Some of the cats run away, as you focus on the black cat who ruled the other cats",
+        "Nero: /mc_name! Come here! Hurry!!",
+        "You are running all the way to him",
+        "The alleyway is very dark",
+        "The only light is from the street lamps",
+        "Nero is running very fast and you keep following him",
+        "Nero turns a few corners, then stops",
+        "Nero seems like he has something to tell you",
+        "Nero walks straight towards you . . .",
+        "Nero: I have something to tell you",
+        "Nero: I've been thinking for this these days . . .",
+        "Nero: I think I like you",
+        "Nero: When I saw you fighting with other cats, I couldn't stop myself from fighting",
+        "Nero: I'm sure we have a lot in common",
+        "Nero: We can look for foods together and travel somewhere",
+        "Nero: It would be a wonderful life if I get along with you",
+        "Nero: How do you think about this ..?"
+      ],
+      "gain_points_option": "Can you give me some time to think about this?",
+      "no_gain_points_options": [
+         "I think we can be great friends, but ..."
+      ],
+      "gain_points_option_script": [
+        "After you think about this for a few minutes,",
+        "You decided to get along with him forever",
+        "/mc_name: ... HaHa, I don't know what to say",
+        "/mc_name: But, I think it would be really wonderful life if I get along with you",
+        "Nero: ... !!",
+        "Nero: Are you sure..?",
+        "Nero: I can't believe that you actually like me...",
+        "Nero: I'm so happy now (meow)",
+        "Nero: Let's live happily and I'll protect you forever"
+      ],
+      "no_gain_points_options_script": [
+        "/mc_name: But...but...",
+        "You hesitated to refuse",
+        "Nero: ...",
+        "Nero: Okay.. I know what you meant",
+        "Nero: It's okay.. Don't worry about me .. ",
+        ". . . Awkward silence . . .",
+        "Nero: I really hope you're feeling okay and . . .",
+        "/mc_name: . . .",
+        "Nero: I'll never forget you",
+        "Nero turns around and walks down to somewhere",
+        "Since this day, you have never seen Nero again"
+      ]
     }
   ]
 }
