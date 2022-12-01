@@ -664,5 +664,167 @@
         "------End------"
       ]
     }
+  ],
+  "Penelope": [
+    {
+      "episode": 1,
+      "gain_points": 1,
+      "script": [
+        "You did not have any luck finding food today, and you are starving.",
+        "A female human walked past you.",
+        "You smell the scent of a cat and delicious food from her.",
+        "You decide to..."
+      ],
+      "gain_points_option": "follow this human back home",
+      "no_gain_points_options": [
+        "does not follow this human"
+      ],
+      "gain_points_option_script": [
+        "You decided to follow this human.",
+        "The faint cat scent makes you feel comfortable, you think maybe she is a good person.",
+        "The smell of delicious food on her clothes drew you towards her.",
+        "You quietly followed her until she stopped in front of a house.",
+        "The female human went into the house, and saw you when she was about to close the door.",
+        "Female Human: 'Oh! Who are you? I had no idea you were following me.'",
+        "You meowed to her as your stomach growled.",
+        "She laughed and lead you into her house."
+      ],
+      "no_gain_points_options_script": [
+        "You decided to not follow this human.",
+        "Even though you smell some cat scent and delicious food smell from her, following a stranger is still too risky.",
+        "You decided to try searching food by yourself again."
+      ]
+    },
+    {
+      "episode": 2,
+      "gain_points": 15,
+      "script": [
+        "Female human lead you into her house, and poured some cat food for you.",
+        "You recognized this food.",
+        "Sometimes there are kind humans who pour some cat food on the floor.",
+        "Whenever you find these cat food, you are always super happy.",
+        "You call this kind of day 'lucky day; because then you can take a nap without worrying about starving for the rest of the day.",
+        "You gobbled up the cat food.",
+        "A MaineCoon cat walked out of a room.",
+        "He was surprised to see you.",
+        "MaineCoon cat: 'Who are you?! Why are you eating my food?!'",
+        "You sensed a hint of hostility from him.",
+        "You..."
+      ],
+      "gain_points_option": "jump to him and start fighting him",
+      "no_gain_points_options": [
+        "stop eating and try to talk to him"
+      ],
+      "gain_points_option_script": [
+        "You stopped eating and tried to talk to the MaineCoon cat.",
+        ",/mc_name: 'Hi... my name is /mc_name. I was very hungry and this female human poured food for me.'",
+        "MaineCoon cat: 'Penelope always does something like this!'",
+        "MaineCoon cat: 'Fine.. You can eat, but you need to remember: I am the big brother of this house!'",
+        "You did not understand what big brother of the house means, but you guess 'Penelope' is the female human’s name.",
+        "You also did not understand why this MaineCoon cat is so aggressive.",
+        "/mc_name: 'Uh.. Sure.. Big brother, what’s your name?;",
+        "MaineCoon cat: 'Remember it well, my name is Mika. And you, /mc_name, is my minion from now on.'",
+        "You think this cat’s words are quite funny, but you did not care since your stomach is full.",
+        "Penelope: 'Looks like you are getting along! I honestly do not mind having one more cat living in the house.'",
+        "You happily rubbed Penelope’s legs with your body."
+      ],
+      "no_gain_points_options_script": [
+        "You jumped to him and started fighting him.",
+        "MaineCoon cat started screaming: 'Hey! What’s your problem?! You came to my house, ate my food, now you are beating me?!'",
+        "You yelled back: 'She gave me the food! It is not yours!'",
+        "Ripped off cat hair was flying in the air.",
+        "Female human: 'Oh my...'",
+        "Female human grabbed each of you with one hand and seperated you two.",
+        "Female human: 'I do want to keep you, but it seems you do not get along with Mika...'",
+        "Female human gave you a bit more food, and took you back to the place she found you."
+      ]
+    },
+    {
+      "episode": 3,
+      "gain_points": 1,
+      "script": [
+        "Penelope seems to be very busy.",
+        "You always see her leaving early and coming back late.",
+        "During the times Penelope stays at home, penelope is always napping.",
+        "Mika, on the other hand, is very bored every day.",
+        "He seems to be obsessed with this ‘big brother’ and ‘minion’ role-play, and always try to order you to do things for him.",
+        "But slowly you realize Mika is very nice, even though he never admits.",
+        "...",
+        "Today was a weekend day, and Penelope did not have to go to work.",
+        "Penelope was taking a nap as usual.",
+        "You sat on the bed, watching her sleeping.",
+        "Suddenly, you noticed something strange.",
+        "You looked at the direction of the window and saw a man peeking into the window.",
+        "You tried to wake Penelope up by meowing next to her ears.",
+        "Penelope is still sleeping deeply, you decide too..."
+    ],
+      "gain_points_option": "paw her face until she wakes up",
+      "no_gain_points_options": [
+        "keep meowing next to her ears"
+      ],
+      "gain_points_option_script": [
+        "You decided to keep pawing her face.",
+        "Penelope woke up.",
+        "Penelope: “What are you doing... I am trying to sleep...",
+        "You looked at the direction of that window, and Penelope followed your eyes looking at that direction as well.",
+        "Penelope: “Something wrong with the window? I don’t see anything there.",
+        "The strange man already left.",
+        "Penelope: 'I guess you just saw a bird? Please do not wake me up for such things... I am just so tired every day.'",
+        "You tried to explain, but unfortunately Penelope does not understand catglish."
+      ],
+      "no_gain_points_options_script": [
+        "You decided to keep meowing next to her ears.",
+        "Penelope still did not wake up.",
+        "You looked at the direction of that window, the strange man were still there. It seemed like he was checking if anyone else lives in this house.",
+        "After a while, the strange man left.",
+        "You were a little bit worried, your cat's sixth sense told you something bad may happen."
+      ]
+    },
+    {
+      "episode": 4,
+      "gain_points": 4,
+      "script": [
+        "A few days later, midnight.",
+        "Penelope was sleeping in her bedroom, and you were sitting in the living room, staring at the cars driven by.",
+        "Suddenly you heard the sound of a fight coming from Penelope’s room.",
+        "You ran back to the room.",
+        "You saw a man holding a knife, fighting with Penelope.",
+        "It was the same man who where peeking through the window!",
+        "Mika was hiding in his cat house, and he looked very scared.",
+        "Penelope was in a stalemate with the man, but she seemed to be losing her strength.",
+        "You decide to ..."
+      ],
+      "gain_points_option": "sneak attack on the man",
+      "no_gain_points_options": [
+         "find a place to hide and observe"
+      ],
+      "gain_points_option_script": [
+        "You decide to sneak attack on the man!",
+        "The man's attention was focused on penelope, he did not seem to notice you approaching.",
+        "You sneaked to a good position, jumped towards the man and scratched his eyes with your claws.",
+        "Strange man: 'AHHHHHHHHHH!!!!!! MY EYES!!!!!'",
+        "He screamed and dropped the knife.",
+        "Penelope ran next to her phone and called 911.",
+        "......",
+        "A group of policemen came and took the strange man away.",
+        "Penelope held you and Mika in her arm, but she was still shivering.",
+        "You licked her face, telling her don’t worry, you would always protect her.",
+        "------End------"
+      ],
+      "no_gain_points_options_script": [
+        "You decide to find a place to hind and observe.",
+        "You ran into the shadow under Penelope’s desk.",
+        "Penelope finally lost her strength.",
+        "The strange man pushed her onto the ground and stabbed her heart.",
+        "You saw blood flowing out of Penelope’s body, and her eyes lost focus.",
+        "The strange man stood up, started searching for valuable items in the house..",
+        "He approached the desk.",
+        "He saw you.",
+        "He raised his knife.",
+        "......",
+        "That was the last scene you saw in your life.",
+        "------End------"
+      ]
+    }
   ]
 }
