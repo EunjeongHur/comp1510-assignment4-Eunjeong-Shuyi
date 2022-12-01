@@ -393,6 +393,116 @@
          "Seems like she doesn't really care that stray cat was you",
          "You apologized about that happening and you ran away"
       ]
+    },
+    {
+      "episode": 4,
+      "gain_points": 2,
+      "script": [
+        "You saw Lulu napping again in the sunny spot where you and Lulu first met",
+        "You remembered what thing happened when you and Lulu first met and the stray cat story",
+        "You decided to . . ."
+      ],
+      "gain_points_option": "go find a lot of food and put it next to Lulu",
+      "no_gain_points_options": [
+         "take a nap next to Lulu"
+      ],
+      "gain_points_option_script": [
+         "You decided to go find a lot of food",
+         ". . . Collecting berries . . .",
+         "You came back to where Lulu is",
+         "Lulu is still napping. . .",
+         "You put the food next to Lulu",
+         "Rustling sound . . .",
+         "Lulu woke up and saw you and food next to her",
+         "Lulu: Hmm? Why are you here?",
+         "Lulu: Where did you get this food? It looks so great! Is it for me ...?",
+         "You nodded",
+         "Lulu: Aww.. Thanks /mc_name!",
+         "Lulu is hugging you",
+         "Lulu: Why did you do that by the way?",
+         "/mc_name: I still feel bad about what happened when we met first . . .",
+         "/mc_name: So, I wanted to make up for that",
+         "Lulu: Oh.. I'm really fine!! I'm not mad",
+         "Lulu: and also...",
+         "Lulu: I'm really sorry I scratched you...",
+         ". . . hugging . . ."
+      ],
+      "no_gain_points_options_script": [
+        "You decided to take a nap next to Lulu",
+        "You got extremely sleepy . . .",
+        ". . . Sleeping . . .",
+        "Lulu woke up and saw you taking a nap next to her",
+        "Lulu: Hmm? Why she's sleeping here",
+        "Lulu is stretching. . .",
+        "Lulu: (Meow) I'm so hungry..",
+        "Lulu left to find some food herself",
+        ". . .",
+        "You woke up and Lulu is disappeared",
+        "/mc_name: . . .?",
+        "/mc_name: where did she go?",
+        "You left that place too"
+      ]
+    },
+    {
+      "episode": 5,
+      "gain_points": 4,
+      "script": [
+        "You went to the grove to meet Lulu",
+        "You saw Lulu and she seems like she is sick",
+        "She coughs and you think she has a fever too",
+        "You decided to . . ."
+      ],
+      "gain_points_option": "take care of her",
+      "no_gain_points_options": [
+         "go find food and leave them next to her"
+      ],
+      "gain_points_option_script": [
+         "You decided to take care of her",
+         "You are trying to find food",
+         ". . .finding food . . .",
+         "You think you also need to bring water",
+         "You finds a small bowl of water",
+         "You are spending a lot of effort dragging the bowl to Lulu",
+         ". . . dragging a bowl . . .",
+         ". . . Still dragging a bowl . . .",
+         ". . . Almost there ...",
+         "You finally brought food and a small bowl of water",
+         "You gently wake her up",
+         "/mc_name: Are you okay, Lulu?",
+         "/mc_name: you look bad..",
+         "Lulu is yowling",
+         "/mc_name: I brought you some food and a bowl of water",
+         "/mc_name: Eat some",
+         "After a few hours . . .",
+         "Lulu is getting better and you think she will get well soon",
+         "After a few hours . . .",
+         "Lulu: ... (meow)",
+         "Lulu woke up and you heard that sound",
+         "/mc_name: ..!! Are you okay? Do you feel better now?",
+         "Lulu has no fever now and she looks much more better",
+         "Lulu: Yeah... I think I'm okay now..",
+         "Lulu: I was so scared.. I thought I was gonna die",
+         "Lulu: But, you saved my life",
+         "Lulu: You always help me a lot and I feel happy when I'm with you",
+         "/mc_name: . . .",
+         "Lulu: You are so kind and nice cat",
+         "Lulu: I think we can be the best friend forever",
+         "Lulu smiles at you and you smile at Lulu",
+         "After this day, you and Lulu became a best friend and lived happily forever"
+      ],
+      "no_gain_points_options_script": [
+        "You decided to fo find food and leave them next to her",
+        "You are trying to find food",
+        ". . . finding food . . .",
+        "After you find the food, you left them next to her",
+        "And you left",
+        ". . .Next day. . .",
+        "You went to the grove to check if she is still sick",
+        "Well...",
+        "You might lost your chance to save her . . .",
+        "You saw Lulu died with eyes open",
+        "Since that day, you have never seen Lulu again"
+      ]
     }
   ],
   "Noah": [
