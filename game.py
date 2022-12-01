@@ -29,7 +29,7 @@ def make_board(rows, columns):
 
 def make_character() -> dict:
     character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Current HP': 10, 'Max HP': 10, 'Age': 5,
-                 'Nero': [1, 10], 'Lulu': [1, 10], 'Naomi': [1, 10], 'Penelope': [1, 10],
+                 'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
                  'Name': input("Enter a character name: ")}
     while True:
         character_gender = input("Choose the gender of your character (M / F): ").upper()
