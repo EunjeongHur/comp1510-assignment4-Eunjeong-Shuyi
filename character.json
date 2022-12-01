@@ -542,7 +542,7 @@
     },
     {
       "episode": 2,
-      "gain_points": 2,
+      "gain_points": 1,
       "script": [
         "You were wandering around, and you saw the same male human from a few days ago.",
         "He smiled at you, said: 'What a coincidence! I happened to bring some cat snacks with me. Would you like some?'"
@@ -566,7 +566,7 @@
     },
     {
       "episode": 3,
-      "gain_points": 3,
+      "gain_points": 2,
       "script": [
         "You were searching food around the park and sported a familiar male human on the swing.",
         "He was sitting quietly on the swing and looked frustrated.",
@@ -603,7 +603,7 @@
     },
     {
       "episode": 4,
-      "gain_points": 4,
+      "gain_points": 2,
       "script": [
         "You passed by a building and heard a familiar voice.",
         "Stern man: 'Don't increase the rent? That's impossible, all expenses are so high, I need to live too!'",
@@ -672,7 +672,7 @@
   "Penelope": [
     {
       "episode": 1,
-      "gain_points": 1,
+      "gain_points": 5,
       "script": [
         "You did not have any luck finding food today, and you are starving.",
         "A female human walked past you.",
@@ -701,7 +701,7 @@
     },
     {
       "episode": 2,
-      "gain_points": 15,
+      "gain_points": 2,
       "script": [
         "Female human lead you into her house, and poured some cat food for you.",
         "You recognized this food.",
