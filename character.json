@@ -186,7 +186,8 @@
         "Nero: Are you sure..?",
         "Nero: I can't believe that you actually like me...",
         "Nero: I'm so happy now (meow)",
-        "Nero: Let's live happily and I'll protect you forever"
+        "Nero: Let's live happily and I'll protect you forever",
+        "------End------"
       ],
       "no_gain_points_options_script": [
         "/mc_name: But...but...",
@@ -199,7 +200,8 @@
         "/mc_name: . . .",
         "Nero: I'll never forget you",
         "Nero turns around and walks down to somewhere",
-        "Since this day, you have never seen Nero again"
+        "Since this day, you have never seen Nero again",
+        "------End------"
       ]
     }
   ],
@@ -488,7 +490,8 @@
          "Lulu: You are so kind and nice cat",
          "Lulu: I think we can be the best friend forever",
          "Lulu smiles at you and you smile at Lulu",
-         "After this day, you and Lulu became a best friend and lived happily forever"
+         "After this day, you and Lulu became best friends and lived happily forever",
+        "------End------"
       ],
       "no_gain_points_options_script": [
         "You decided to fo find food and leave them next to her",
@@ -501,7 +504,8 @@
         "Well...",
         "You might lost your chance to save her . . .",
         "You saw Lulu died with eyes open",
-        "Since that day, you have never seen Lulu again"
+        "Since that day, you have never seen Lulu again",
+        "------End------"
       ]
     }
   ],
