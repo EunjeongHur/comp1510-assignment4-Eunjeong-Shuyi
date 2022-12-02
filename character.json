@@ -211,623 +211,623 @@
       "gain_points": 0,
       "script": [
         "You walked into the grove to find food and heard some growling sound",
-        "You went to there and saw a female white cat sleeping in the sun",
-        "Next to the white cat, there are some food that seem to have been leftover by the white cat.",
-        "Because you're starving so much, you started to think how to get those food. . .",
+        "You went there and saw a female white cat sleeping in the sun",
+        "Next to the white cat, there is some food that seems to have been leftover by the white cat.",
+        "Because you're starving so much, you started to think how to get that food. . .",
         "What are you going to do?"
-      ],
-      "gain_points_option": "Make her to wake up and ask for some food",
-      "no_gain_points_options": [
-        "Eat food sneaky and run away"
-      ],
-      "gain_points_option_script": [
-        "You decided to wake her up and gently ask about if it's possible to receive some food",
-        ". . . Waking her up . . .",
-        "/mc_name: Hey...",
-        ". . . No reaction from her . . .",
-        "/mc_name: Hey!",
-        ". . . Still no reaction from her . . .",
-        "You slowly progressed into aggressively shaking her . . .",
-        "/mc_name: Please wake up!",
-        "A white cat: hmm. . .hm  . .!!!!",
-        "A white cat: who are you?!",
-        "A white cat: Who woke me up!! I was going to eat all the berries and fruits in my dream!!",
-        "A white cat: It was right before eating so many food . . .",
-        "A white cat: Did you just wake me up?",
-        "You feel like you have to say 'no' but there's no other animals near us.",
-        "/mc_name: Um... Yes.. Sorry for interrupting you",
-        "/mc_name: But, may I ask you for some food here? I'm starving so much",
-        "A white cat: Hmm...",
-        "A white cat: No! Absolutely not! you ruined my happy dream and it will ruin my whole day as well!",
-        "Looks like this white cat really got angry . . . (Meow)",
-        "She just looked at you and she scratched your face with her nails",
-        "You got embarrassed and slowly turned into anger",
-        "You decided to just steal her food and run away",
-        ". . .",
-        "You successfully stole her food and ran away!"
-      ],
-      "no_gain_points_options_script": [
-        "You decided to steal her food secretly and run away",
-        ". . . Sneaky Sneaky . . .",
-        "You went closer to her and started to eat really carefully",
-        ". . . some rustling sound . . .",
-        "You accidentally dropped the food from your mouth",
-        "A white cat: hmm... hm.. !!!! What wa..s that.. sound .. ?? ",
-        "A white cat found you stealing her food and she's freaked out",
-        "A white cat: Who are you? Why are you stealing my food?",
-        "A white cat: And why you made me wake up from the sweet dream!!",
-        "A white cat: I was going to eat all the berries and fruits in my dream!",
-        "A white cat: It was right before eating so much food ...",
-        "/mc_name: Sorry... I was starving so much so I didn't have any patience..",
-        "Looks like this white cat really got angry . . . (Meow)",
-        "She looked at you and she scratched your face with her nails",
-        "You got embarrassed and slowly turned into anger",
-        "She turned around and walked down to somewhere"
-      ]
-    },
-    {
-      "episode": 2,
-      "gain_points": 3,
-      "script": [
-        "You are walking around to find a perfect place where you can take a nap in sunny spot",
-        "You found the perfect place but the white cat is lounging in there",
-        "You decided to escape from there but you made an eye contact with the white cat accidentally",
-        "But the white cat seems like she doesn't remember what happened last time",
-        "She offered you to come here and hang out with her"
-      ],
-      "gain_points_option": "Go to the perfect spot where the white cat is",
-      "no_gain_points_options": [
-         "Escape from that situation and go find another spot"
-      ],
-      "gain_points_option_script": [
-         "You decided to stay here and have a talk with her",
-         ". . . Awkward moment . . .",
-         "A white cat: Ok, so.. what's your name?",
-         "/mc_name: I'm /mc_name",
-         "A white cat: That's a cool name! My name's Lulu",
-         "The white cat started to talk about her funny story to break the ice",
-         "Lulu: Do you want to know the funny story that I've experienced a few days ago?",
-         "Lulu: Oh, you wanna hear it? I knew it!",
-         "Lulu: Okay, so, one day. . .",
-         "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quite place.",
-         "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
-         "Lulu: I was dreaming about eating all the kinds of food like fish and fruits and those looked like very fresh and delicious",
-         "Lulu: So, I was really excited to try those food in the dream.",
-         "Lulu: However, a stray cat woke me up because of my leftover berries!!",
-         " . . . Lulu keep talking about the stray cat story . . .",
-         "/mc_name: Oh...really? That's so bad . . (Feels like she's talking about me . . .)",
-         "/mc_name: (I think she doesn't know that stray cat is me)",
-         "Lulu: Anyway, I was so angry because that cat disrupted my happy dream and ruined my day!",
-         "You decided to not to tell that was you and escape from here",
-         ". . .",
-         "You successfully escaped from where she is"
-      ],
-      "no_gain_points_options_script": [
-         "You decided to escape from here and go find another spot",
-         "A white cat: Hey, where are you going?",
-         "/mc_name: Oh.. Hi! I'm just looking for the place to take a nap. HaHa..",
-         "A white cat: Hmm.. Okay. What's your name by the way?",
-         "/mc_name: call me /mc_name",
-         "A white cat: Hi /mc_name, I'm Lulu",
-         "/mc_name: HaHa . . . See you later then",
-         "You turned around and walked down to somewhere",
-         "Feel like someone's following you",
-         "You looked back and Lulu was following you",
-         "/mc_name: Why are you following me?",
-         "Lulu: Well.. I'm just finding a perfect spot where I can take a nap!",
-         "You sighed with resignation",
-         "Then, she started to talk about what happened to her when she was taking a nap. . .",
-         "Lulu: Do you want to know the funny story that I've experienced a few days ago?",
-         "Lulu: Oh, you wanna hear it? I knew it!",
-         "Lulu: Okay, so, one day. . .",
-         "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quite place.",
-         "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
-         "Lulu: I was dreaming about eating all the kinds of food like fishes and fruits and those looked like very fresh and delicious",
-         "Lulu: So, I was really excited to try those food in the dream.",
-         "Lulu: However, a stray cat woke me up because of my leftover berries!!",
-         " . . . Lulu keep talking about the stray cat story . . .",
-         "You feel like she's talking about you",
-         "/mc_name: (I think she doesn't know that stray cat is me)",
-         "Lulu: Anyway, I was so angry because that cat disrupted my happy dream and ruined my day!",
-         "/mc_name: Oh.. sorry about that ..",
-         "You decided to not to tell that was you and escape from here",
-         ". . .",
-         "You ran away while she was still talking about the stray cat story"
-      ]
-    },
-    {
-      "episode": 3,
-      "gain_points": 3,
-      "script": [
-        "You get hungry and you decided to look for some food again",
-        "While you are wandering, you meets Lulu",
-        "Lulu asks you what are you doing and you answers that you are just finding some food",
-        "Lulu says she has lots of food in her little home and offers you to follow her",
-        "What are you going to do?"
-      ],
-      "gain_points_option": "It's chance to get free food! Follow her",
-      "no_gain_points_options": [
-         "It's still awkward. Don't follow her"
-      ],
-      "gain_points_option_script": [
-         "You decided to follow her",
-         "While you are following her, you decided to tell that stray cat was you",
-         "/mc_name: Hey Lulu, I have something to tell you",
-         "Lulu: What's that? I'm really excited to hear!",
-         "/mc_name: Actually, this is third time that we met ..",
-         "Lulu: Hmm? What do you mean? I don't get it",
-         "/mc_name: So.. I mean . . .",
-         "Lulu: Yeah?",
-         "You hesitated . . .",
-         "/mc_name: Do you remember that you told me about the stray cat story that happened to you?",
-         "Lulu: Yes, of course",
-         "/mc_name: that stray cat is me ..",
-         "She's surprised",
-         "Lulu: Oh.. wow.. really??",
-         "Lulu: What a coincidence!",
-         "Seems like she doesn't really care that stray cat was you",
-         "/mc_name: Lulu, but I thought you got angry because of me . . .",
-         "Lulu: I was, but not now! All fine",
-         "Lulu: HaHa",
-         "You apologized about that happening and Lulu forgave you",
-         "Lulu smiles at you",
-         "Lulu: Anyway, you can come to my little house whenever you're hungry. Because we are friends!",
-         "You feel like you are getting closer to Lulu"
-      ],
-      "no_gain_points_options_script": [
-         "You thought it's still awkward being with her because you still feel sorry about that stray cat happening",
-         "You decided to not to follow her",
-         "/mc_name: No... it's okay..",
-         "Lulu: Why? There are very delicious food! You'll like it",
-         "/mc_name: Um..",
-         "You decided to tell about the truth and apologize",
-         "/mc_name: Well.. I have something to tell you",
-         "You hesitated",
-         "Lulu: What's that?",
-         "/mc_name: Actually, this is third time that we met ..",
-         "Lulu: Hmm? What do you mean? I don't get it",
-         "/mc_name: So.. I mean . . .",
-         "/mc_name: Do you remember that you told me about the stray cat story that happened to you?",
-         "Lulu: Yes, of course",
-         "/mc_name: that stray cat is me ..",
-         "She's quite surprised",
-         "Lulu: Oh.. wow.. really??",
-         "Seems like she doesn't really care that stray cat was you",
-         "You apologized about that happening and you ran away"
-      ]
-    },
-    {
-      "episode": 4,
-      "gain_points": 2,
-      "script": [
-        "You saw Lulu napping again in the sunny spot where you and Lulu first met",
-        "You remembered what thing happened when you and Lulu first met and the stray cat story",
-        "You decided to . . ."
-      ],
-      "gain_points_option": "go find a lot of food and put it next to Lulu",
-      "no_gain_points_options": [
-         "take a nap next to Lulu"
-      ],
-      "gain_points_option_script": [
-         "You decided to go find a lot of food",
-         ". . . Collecting berries . . .",
-         "You came back to where Lulu is",
-         "Lulu is still napping. . .",
-         "You put the food next to Lulu",
-         "Rustling sound . . .",
-         "Lulu woke up and saw you and food next to her",
-         "Lulu: Hmm? Why are you here?",
-         "Lulu: Where did you get this food? It looks so great! Is it for me ...?",
-         "You nodded",
-         "Lulu: Aww.. Thanks /mc_name!",
-         "Lulu is hugging you",
-         "Lulu: Why did you do that by the way?",
-         "/mc_name: I still feel bad about what happened when we met first . . .",
-         "/mc_name: So, I wanted to make up for that",
-         "Lulu: Oh.. I'm really fine!! I'm not mad",
-         "Lulu: and also...",
-         "Lulu: I'm really sorry I scratched you...",
-         ". . . hugging . . ."
-      ],
-      "no_gain_points_options_script": [
-        "You decided to take a nap next to Lulu",
-        "You got extremely sleepy . . .",
-        ". . . Sleeping . . .",
-        "Lulu woke up and saw you taking a nap next to her",
-        "Lulu: Hmm? Why she's sleeping here",
-        "Lulu is stretching. . .",
-        "Lulu: (Meow) I'm so hungry..",
-        "Lulu left to find some food herself",
-        ". . .",
-        "You woke up and Lulu is disappeared",
-        "/mc_name: . . .?",
-        "/mc_name: where did she go?",
-        "You left that place too"
-      ]
-    },
-    {
-      "episode": 5,
-      "gain_points": 4,
-      "script": [
-        "You went to the grove to meet Lulu",
-        "You saw Lulu and she seems like she is sick",
-        "She coughs and you think she has a fever too",
-        "You decided to . . ."
-      ],
-      "gain_points_option": "take care of her",
-      "no_gain_points_options": [
-         "go find food and leave them next to her"
-      ],
-      "gain_points_option_script": [
-         "You decided to take care of her",
-         "You are trying to find food",
-         ". . .finding food . . .",
-         "You think you also need to bring water",
-         "You finds a small bowl of water",
-         "You are spending a lot of effort dragging the bowl to Lulu",
-         ". . . dragging a bowl . . .",
-         ". . . Still dragging a bowl . . .",
-         ". . . Almost there ...",
-         "You finally brought food and a small bowl of water",
-         "You gently wake her up",
-         "/mc_name: Are you okay, Lulu?",
-         "/mc_name: you look bad..",
-         "Lulu is yowling",
-         "/mc_name: I brought you some food and a bowl of water",
-         "/mc_name: Eat some",
-         "After a few hours . . .",
-         "Lulu is getting better and you think she will get well soon",
-         "After a few hours . . .",
-         "Lulu: ... (meow)",
-         "Lulu woke up and you heard that sound",
-         "/mc_name: ..!! Are you okay? Do you feel better now?",
-         "Lulu has no fever now and she looks much more better",
-         "Lulu: Yeah... I think I'm okay now..",
-         "Lulu: I was so scared.. I thought I was gonna die",
-         "Lulu: But, you saved my life",
-         "Lulu: You always help me a lot and I feel happy when I'm with you",
-         "/mc_name: . . .",
-         "Lulu: You are so kind and nice cat",
-         "Lulu: I think we can be the best friend forever",
-         "Lulu smiles at you and you smile at Lulu",
-         "After this day, you and Lulu became best friends and lived happily forever",
-        "------End------"
-      ],
-      "no_gain_points_options_script": [
-        "You decided to fo find food and leave them next to her",
-        "You are trying to find food",
-        ". . . finding food . . .",
-        "After you find the food, you left them next to her",
-        "And you left",
-        ". . .Next day. . .",
-        "You went to the grove to check if she is still sick",
-        "Well...",
-        "You might lost your chance to save her . . .",
-        "You saw Lulu died with eyes open",
-        "Since that day, you have never seen Lulu again",
-        "------End------"
+  ],
+  "gain_points_option": "Wake her up and ask for some food",
+  "no_gain_points_options": [
+    "Eat food sneaky and run away"
+  ],
+  "gain_points_option_script": [
+    "You decided to wake her up and gently ask if it's possible to receive some food",
+    ". . . Waking her up . . .",
+    "/mc_name: Hey...",
+    ". . . No reaction from her . . .",
+    "/mc_name: Hey!",
+    ". . . Still no reaction from her . . .",
+    "You slowly progressed into aggressively shaking her . . .",
+    "/mc_name: Please wake up!",
+    "A white cat: hmm. . .hm  . .!!!!",
+    "A white cat: who are you?!",
+    "A white cat: Who woke me up!! I was going to eat all the berries and fruits in my dream!!",
+    "A white cat: It was right before eating so much food . . .",
+    "A white cat: Did you just wake me up?",
+    "You feel like you have to say 'no' but there are no other animals near us.",
+    "/mc_name: Um... Yes... Sorry for interrupting you",
+    "/mc_name: But, may I ask you for some food here? I'm starving so much",
+    "A white cat: Hmm...",
+    "A white cat: No! Absolutely not! you ruined my happy dream and it will ruin my whole day as well!",
+    "Looks like this white cat really got angry . . . (Meow)",
+    "She just looked at you and she scratched your face with her nails",
+    "You got embarrassed and slowly turned into anger",
+    "You decided to just steal her food and run away",
+    ". . .",
+    "You successfully stole her food and ran away!"
+  ],
+  "no_gain_points_options_script": [
+    "You decided to steal her food secretly and run away",
+    ". . . Sneaky Sneaky . . .",
+    "You went closer to her and started to eat really carefully",
+    ". . . some rustling sound . . .",
+    "You accidentally dropped the food from your mouth",
+    "A white cat: hmm... hm.. !!!! What wa..s that.. sound .. ?? ",
+    "A white cat found you stealing her food and she's freaked out",
+    "A white cat: Who are you? Why are you stealing my food?",
+    "A white cat: And why you made me wake up from the sweet dream!!",
+    "A white cat: I was going to eat all the berries and fruits in my dream!",
+    "A white cat: It was right before eating so much food ...",
+    "/mc_name: Sorry... I was starving so much so I didn't have any patience..",
+    "Looks like this white cat really got angry . . . (Meow)",
+    "She looked at you and she scratched your face with her nails",
+    "You got embarrassed and slowly turned into anger",
+    "She turned around and walked down somewhere"
+  ]
+},
+{
+  "episode": 2,
+  "gain_points": 3,
+  "script": [
+    "You are walking around to find a perfect place where you can take a nap in a sunny spot",
+    "You found the perfect place but the white cat is lounging in there",
+    "You decided to escape from there but you made eye contact with the white cat accidentally",
+    "But the white cat seems like she doesn't remember what happened last time",
+    "She offered you to come here and hang out with her"
+  ],
+  "gain_points_option": "Go to the perfect spot where the white cat is",
+  "no_gain_points_options": [
+     "Escape from that situation and go find another spot"
+  ],
+  "gain_points_option_script": [
+     "You decided to stay here and have a talk with her",
+     ". . . Awkward moment . . .",
+     "A white cat: Ok, so.. what's your name?",
+     "/mc_name: I'm /mc_name",
+     "A white cat: That's a cool name! My name's Lulu",
+     "The white cat started to talk about her funny story to break the ice",
+     "Lulu: Do you want to know the funny story that I've experienced a few days ago?",
+     "Lulu: Oh, you wanna hear it? I knew it!",
+     "Lulu: Okay, so, one day. . .",
+     "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quiet place.",
+     "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
+     "Lulu: I was dreaming about eating all the kinds of food like fish and fruits and those looked very fresh and delicious",
+     "Lulu: So, I was really excited to try that food in the dream.",
+     "Lulu: However, a stray cat woke me up because of my leftover berries!!",
+     " . . . Lulu kept talking about the stray cat story . . .",
+     "/mc_name: Oh...really? That's so bad . . (Feels like she's talking about me . . .)",
+     "/mc_name: (I think she doesn't know that stray cat is me)",
+     "Lulu: Anyway, I was so angry because that cat disrupted my happy dream and ruined my day!",
+     "You decided not to tell that was you and escape from here",
+     ". . .",
+     "You successfully escaped from where she is"
+  ],
+  "no_gain_points_options_script": [
+     "You decided to escape from here and go find another spot",
+     "A white cat: Hey, where are you going?",
+     "/mc_name: Oh.. Hi! I'm just looking for a place to take a nap. HaHa..",
+     "A white cat: Hmm.. Okay. What's your name by the way?",
+     "/mc_name: call me /mc_name",
+     "A white cat: Hi /mc_name, I'm Lulu",
+     "/mc_name: HaHa . . . See you later then",
+     "You turned around and walked down to somewhere",
+     "Feel like someone's following you",
+     "You looked back and Lulu was following you",
+     "/mc_name: Why are you following me?",
+     "Lulu: Well.. I'm just finding a perfect spot where I can take a nap!",
+     "You sighed with resignation",
+     "Then, she started to talk about what happened to her when she was taking a nap. . .",
+     "Lulu: Do you want to know the funny story that I've experienced a few days ago?",
+     "Lulu: Oh, you wanna hear it? I knew it!",
+     "Lulu: Okay, so, one day. . .",
+     "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quiet place.",
+     "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
+     "Lulu: I was dreaming about eating all the kinds of food like fish and fruits and those looked very fresh and delicious",
+     "Lulu: So, I was really excited to try that food in the dream.",
+     "Lulu: However, a stray cat woke me up because of my leftover berries!!",
+     " . . . Lulu kept talking about the stray cat story . . .",
+     "You feel like she's talking about you",
+     "/mc_name: (I think she doesn't know that stray cat is me)",
+     "Lulu: Anyway, I was so angry because that cat disrupted my happy dream and ruined my day!",
+     "/mc_name: Oh.. sorry about that ..",
+     "You decided not to tell that was you and escape from here",
+     ". . .",
+     "You ran away while she was still talking about the stray cat story"
+  ]
+},
+{
+  "episode": 3,
+  "gain_points": 3,
+  "script": [
+    "You get hungry and you decided to look for some food again",
+    "While you are wandering, you meet Lulu",
+    "Lulu asks you what are you doing and your answer is that you are just finding some food",
+    "Lulu says she has lots of food in her little home and offers you to follow her",
+    "What are you going to do?"
+  ],
+  "gain_points_option": "It's a chance to get free food! Follow her",
+  "no_gain_points_options": [
+     "It's still awkward. Don't follow her"
+  ],
+  "gain_points_option_script": [
+     "You decided to follow her",
+     "While you are following her, you decided to tell that stray cat was you",
+     "/mc_name: Hey Lulu, I have something to tell you",
+     "Lulu: What's that? I'm really excited to hear!",
+     "/mc_name: Actually, this is the third time that we met ..",
+     "Lulu: Hmm? What do you mean? I don't get it",
+     "/mc_name: So.. I mean . . .",
+     "Lulu: Yeah?",
+     "You hesitated . . .",
+     "/mc_name: Do you remember that you told me about the stray cat story that happened to you?",
+     "Lulu: Yes, of course",
+     "/mc_name: that stray cat is me ..",
+     "She's surprised",
+     "Lulu: Oh.. wow.. really??",
+     "Lulu: What a coincidence!",
+     "Seems like she doesn't really care that stray cat was you",
+     "/mc_name: Lulu, but I thought you got angry because of me . . .",
+     "Lulu: I was, but not now! All fine",
+     "Lulu: HaHa",
+     "You apologized about that happening and Lulu forgave you",
+     "Lulu smiles at you",
+     "Lulu: Anyway, you can come to my little house whenever you're hungry. Because we are friends!",
+     "You feel like you are getting closer to Lulu"
+  ],
+  "no_gain_points_options_script": [
+     "You thought it's still awkward being with her because you still feel sorry about that stray cat happening",
+     "You decided not to follow her",
+     "/mc_name: No... it's okay..",
+     "Lulu: Why? There is very delicious food! You'll like it",
+     "/mc_name: Um..",
+     "You decided to tell the truth and apologize",
+     "/mc_name: Well.. I have something to tell you",
+     "You hesitated",
+     "Lulu: What's that?",
+     "/mc_name: Actually, this is the third time that we met ..",
+     "Lulu: Hmm? What do you mean? I don't get it",
+     "/mc_name: So.. I mean . . .",
+     "/mc_name: Do you remember that you told me about the stray cat story that happened to you?",
+     "Lulu: Yes, of course",
+     "/mc_name: that stray cat is me ..",
+     "She's quite surprised",
+     "Lulu: Oh.. wow.. really??",
+     "Seems like she doesn't really care that stray cat was you",
+     "You apologized about that happening and you ran away"
+  ]
+},
+{
+  "episode": 4,
+  "gain_points": 2,
+  "script": [
+    "You saw Lulu napping again in the sunny spot where you and Lulu first met",
+    "You remembered what thing happened when you and Lulu first met and the stray cat story",
+    "You decided to . . ."
+  ],
+  "gain_points_option": "go find a lot of food and put it next to Lulu",
+  "no_gain_points_options": [
+     "take a nap next to Lulu"
+  ],
+  "gain_points_option_script": [
+     "You decided to go find a lot of food",
+     ". . . Collecting berries . . .",
+     "You came back to where Lulu is",
+     "Lulu is still napping. . .",
+     "You put the food next to Lulu",
+     "Rustling sound . . .",
+     "Lulu woke up and saw you and food next to her",
+     "Lulu: Hmm? Why are you here?",
+     "Lulu: Where did you get this food? It looks so great! Is it for me ...?",
+     "You nodded",
+     "Lulu: Aww.. Thanks /mc_name!",
+     "Lulu is hugging you",
+     "Lulu: Why did you do that by the way?",
+     "/mc_name: I still feel bad about what happened when we met first . . .",
+     "/mc_name: So, I wanted to make up for that",
+     "Lulu: Oh.. I'm really fine!! I'm not mad",
+     "Lulu: and also...",
+     "Lulu: I'm really sorry I scratched you...",
+     ". . . hugging . . ."
+  ],
+  "no_gain_points_options_script": [
+    "You decided to take a nap next to Lulu",
+    "You got extremely sleepy . . .",
+    ". . . Sleeping . . .",
+    "Lulu woke up and saw you taking a nap next to her",
+    "Lulu: Hmm? Why she's sleeping here",
+    "Lulu is stretching. . .",
+    "Lulu: (Meow) I'm so hungry..",
+    "Lulu left to find some food herself",
+    ". . .",
+    "You woke up and Lulu is disappeared",
+    "/mc_name: . . .?",
+    "/mc_name: where did she go?",
+    "You left that place too"
+  ]
+},
+{
+  "episode": 5,
+  "gain_points": 4,
+  "script": [
+    "You went to the grove to meet Lulu",
+    "You saw Lulu and she seems like she is sick",
+    "She coughs and you think she has a fever too",
+    "You decided to . . ."
+  ],
+  "gain_points_option": "take care of her",
+  "no_gain_points_options": [
+     "go find food and leave them next to her"
+  ],
+  "gain_points_option_script": [
+     "You decided to take care of her",
+     "You are trying to find food",
+     ". . .finding food . . .",
+     "You think you also need to bring water",
+     "You find a small bowl of water",
+     "You are spending a lot of effort dragging the bowl to Lulu",
+     ". . . dragging a bowl . . .",
+     ". . . Still dragging a bowl . . .",
+     ". . . Almost there ...",
+     "You finally brought food and a small bowl of water",
+     "You gently wake her up",
+     "/mc_name: Are you okay, Lulu?",
+     "/mc_name: you look bad..",
+     "Lulu is yowling",
+     "/mc_name: I brought you some food and a bowl of water",
+     "/mc_name: Eat some",
+     "After a few hours . . .",
+     "Lulu is getting better and you think she will get well soon",
+     "After a few hours . . .",
+     "Lulu: ... (meow)",
+     "Lulu woke up and you heard that sound",
+     "/mc_name: ..!! Are you okay? Do you feel better now?",
+     "Lulu has no fever now and she looks much better",
+     "Lulu: Yeah... I think I'm okay now..",
+     "Lulu: I was so scared.. I thought I was gonna die",
+     "Lulu: But, you saved my life",
+     "Lulu: You always help me a lot and I feel happy when I'm with you",
+     "/mc_name: . . .",
+     "Lulu: You are such a kind and nice cat",
+     "Lulu: I think we can be the best friend forever",
+     "Lulu smiled at you and you smiled at Lulu",
+     "After this day, you and Lulu became best friends and lived happily forever",
+    "------End------"
+  ],
+  "no_gain_points_options_script": [
+    "You decided to go find food and leave them next to her",
+    "You are trying to find food",
+    ". . . finding food . . .",
+    "After you find the food, you left them next to her",
+    "And you left",
+    ". . .Next day. . .",
+    "You went to the grove to check if she is still sick",
+    "Well...",
+    "You might lose your chance to save her . . .",
+    "You saw Lulu die with eyes open",
+    "You taste the bitterness of regret, but it's too late",
+    "------End------"
       ]
     }
   ],
   "Noah": [
     {
       "episode": 1,
-      "gain_points": 1,
-      "script": [
-        "You haven't found any food all day and you are now very hungry.",
-        "You walked around a corner and saw a male human standing in your front.",
-        "The male human asked: 'Hey, do you want some food?'"
-      ],
-      "gain_points_option": "eat food offered by the human",
-      "no_gain_points_options": [
-        "ignore the human and walk away"
-      ],
-      "gain_points_option_script": [
-        "You decided walk a bit closer.",
-        "Male human: Hi kitty! Don't be afraid, I just want to give you something to eat.",
-        "You stopped not far from the food, you are still a little wary of this human.",
-        "This human did not speak again, just smiled and moved a little further away from you.",
-        ". . . You gobbled up the food . . .",
-        "Male human: Poor little thing, you must be starving...",
-        "This human moved a little closer, wanting to pet you.",
-        "You turned around and ran into the bushes."
-      ],
-      "no_gain_points_options_script": [
-        "You think this is still too risky.",
-        "You turned around and was about to leave.",
-        "Male human: Hi Kitty! It is okay, I don’t mean to hurt you...",
-        "You ignored him and ran into the bushes.",
-        "You looked back and saw the human still standing at the same position with food in his hand. You left."
-      ]
-    },
-    {
-      "episode": 2,
-      "gain_points": 1,
-      "script": [
-        "You were wandering around, and you saw the same male human from a few days ago.",
-        "He smiled at you, said: 'What a coincidence! I happened to bring some cat snacks with me. Would you like some?'"
-      ],
-      "gain_points_option": "eat snacks offered by the human ",
-      "no_gain_points_options": [
-        "stare at the human"
-      ],
-      "gain_points_option_script": [
-        "You walked towards the human and ate the snack he was holding.",
-        "Male human: I remember you, the kitty with big appetite! Do you like this? I can bring some more to you...",
-        "This human moved a little closer, wanting to pet you.",
-        "You turned around and ran into the bushes."
-      ],
-      "no_gain_points_options_script": [
-        "You did not move and just stare at the human.",
-        "Male human: I guess you are still afraid of me...",
-        "This human looked a bit depressed.",
-        "You ignored him and ran into the bushes."
-      ]
-    },
-    {
-      "episode": 3,
-      "gain_points": 2,
-      "script": [
-        "You were searching food around the park and sported a familiar male human on the swing.",
-        "He was sitting quietly on the swing and looked frustrated.",
-        "You've seen this human a few times and it doesn't look like he wants to hurt you.",
-        "You decided to walk next to him and sit down on the ground.",
-        "'Oh hi! It’s you again.' The male human lifted his head and said, 'It was good to see you again.... Unfortunately, I didn't bring any food or snacks this time.'",
-        "You replied with a little meow.",
-        "Male human: 'We've met several times, but I haven't introduced myself. My name is Noah, what about you little kitty?'",
-        "You meowed your name to him, but not sure if he understood catglish.",
-        "Noah: 'That sounds like /mc_name in human language... I guess I will call you /mc_name from now on.'",
-        "He called your name and reached out his hand trying to pet your head.",
-        "You..."
-    ],
-      "gain_points_option": "allow Noah to pet your head",
-      "no_gain_points_options": [
-        "avoid Noah’s hand"
-      ],
-      "gain_points_option_script": [
-        "You allowed Noah to pet your head.",
-        "Noah looked pleasantly surprised.",
-        "Noah: 'Thank you... I thought you were still a bit nervous around me...'",
-        "Noah: 'It was very nice of you to allow me to do that. I had a rough day and it made me feel much better.'",
-        "You do not understand why touching other create’s head would bring happiness, but seems like Noah is in a better mood now.",
-        "You sit with Noah for about an hour, and you went back into the bushes."
-      ],
-      "no_gain_points_options_script": [
-        "You avoided Noah’s hand.",
-        "Noah looked a bit surprised.",
-        "Noah: 'I guess you are still a nervous kitty.'",
-        "Noah:'Sometimes I wish I were a kitty as well, then I won't need to worry about my life or career.'",
-        "Depression again appeared on Noah's face.",
-        "You did not understand this emotion, and you went back into the bushes."
-      ]
-    },
-    {
-      "episode": 4,
-      "gain_points": 2,
-      "script": [
-        "You passed by a building and heard a familiar voice.",
-        "Stern man: 'Don't increase the rent? That's impossible, all expenses are so high, I need to live too!'",
-        "Noah: 'Is it possible to not increase that much? I'm under a lot of financial pressure right now...'",
-        "Stern man: 'Then work a little harder!'",
-        "Noah lowered his head and stayed silent.",
-        "The stern man walked back into the building.",
-        "You..."
-      ],
-      "gain_points_option": "walk towards Noah and sit next to him",
-      "no_gain_points_options": [
-         "ignore Noah and walk away"
-      ],
-      "gain_points_option_script": [
-        "You walked towards Noah and sat next to him.",
-        "Noah: 'Hi /mc_name , I do need your company right now.'",
-        "Noah gently pet you.",
-        "You licked his fingers as response.",
-        "Noah looked much happier.",
-        "You stayed with Noah for a while.",
-        "Noah talked a lot about his life, pressure and hesitation, but you did not really understand those human words."
-      ],
-      "no_gain_points_options_script": [
-        "You ignored Noah and walked away."
-      ]
-    },
-    {
-      "episode": 5,
-      "gain_points": 4,
-      "script": [
-        "You are walking along the road when a familiar voice called your name.",
-        "You turned around and saw Noah waving to you.",
-        "Noah: 'Hi, /mc_name, I just felt I had to come back and say hello to you one more time.'",
-        "Noah: “I had been thinking for a long time but couldn't make decision.",
-        "Noah: “I may move out of this city and go back to my hometown...",
-        "You ..."
-      ],
-      "gain_points_option": "rub Noah’s leg with your head",
-      "no_gain_points_options": [
-         "stay at a distance and stare at Noah"
-      ],
-      "gain_points_option_script": [
-        "You rubbed Noah’s leg with your head.",
-        "Noah: '/mc_name, are you trying to tell me that you don’t want me to leave...?'",
-        "You replied with some little meows and more rubbing.",
-        "Noah: 'I am so glad that you are always here with me when I feel lonely and helpless...'",
-        "Noah: 'Do you feel lonely too?'",
-        "You looked at Noah, and put your paw on his hand.",
-        "Noah lifted you up and held you in his arms.",
-        "Noah: 'I guess I still have one more reason to stay here, my cat friend.'",
-        "------End------"
-      ],
-      "no_gain_points_options_script": [
-        "You stayed at a distance and stared at Noah.",
-        "You saw sadness slowly appearing in Noah's eyes.",
-        "Noah: 'Maybe I already made that decision, but I just did not want to admit it...'",
-        "He didn't sound as jubilant as he did when you first met her.",
-        "Noah silently waved to you and turned around.",
-        "You watched Noah’s walking away till he disappeared in your sight.",
-        "You have never seen Noah again since that day.",
-        "You became the solo adventurer in the city again. Free and lonely.",
-        "------End------"
+  "gain_points": 1,
+  "script": [
+    "You haven't found any food all day and you are now very hungry.",
+    "You walked around a corner and saw a male human standing in your front.",
+    "The male human asked: 'Hey, do you want some food?'"
+  ],
+  "gain_points_option": "eat food offered by the human",
+  "no_gain_points_options": [
+    "ignore the human and walk away"
+  ],
+  "gain_points_option_script": [
+    "You decided to walk a bit closer.",
+    "Male human: Hi kitty! Don't be afraid, I just want to give you something to eat.",
+    "You stopped not far from the food, you are still a little wary of this human.",
+    "This human did not speak again, just smiled and moved a little further away from you.",
+    ". . . You gobbled up the food . . .",
+    "Male human: Poor little thing, you must be starving...",
+    "This human moved a little closer, wanting to pet you.",
+    "You turned around and ran into the bushes."
+  ],
+  "no_gain_points_options_script": [
+    "You think this is still too risky.",
+    "You turned around and were about to leave.",
+    "Male human: Hi Kitty! It is okay, I don’t mean to hurt you...",
+    "You ignored him and ran into the bushes.",
+    "You looked back and saw the human still standing in the same position with food in his hand. You left."
+  ]
+},
+{
+  "episode": 2,
+  "gain_points": 1,
+  "script": [
+    "You were wandering around, and you saw the same male human from a few days ago.",
+    "He smiled at you, said: 'What a coincidence! I happened to bring some cat snacks with me. Would you like some?'"
+  ],
+  "gain_points_option": "eat snacks offered by the human ",
+  "no_gain_points_options": [
+    "stare at the human"
+  ],
+  "gain_points_option_script": [
+    "You walked towards the human and ate the snack he was holding.",
+    "Male human: I remember you, the kitty with a big appetite! Do you like this? I can bring some more to you...",
+    "This human moved a little closer, wanting to pet you.",
+    "You turned around and ran into the bushes."
+  ],
+  "no_gain_points_options_script": [
+    "You did not move and just stare at the human.",
+    "Male human: I guess you are still afraid of me...",
+    "This human looked a bit depressed.",
+    "You ignored him and ran into the bushes."
+  ]
+},
+{
+  "episode": 3,
+  "gain_points": 2,
+  "script": [
+    "You were searching for food around the park and sported a familiar male human on the swing.",
+    "He was sitting quietly on the swing and looked frustrated.",
+    "You've seen this human a few times and it doesn't look like he wants to hurt you.",
+    "You decided to walk next to him and sit down on the ground.",
+    "'Oh hi! It’s you again.' The male human lifted his head and said, 'It was good to see you again.... Unfortunately, I didn't bring any food or snacks this time.'",
+    "You replied with a little meow.",
+    "Male human: 'We've met several times, but I haven't introduced myself. My name is Noah, what about you little kitty?'",
+    "You meowed your name to him, but not sure if he understood catglish.",
+    "Noah: 'That sounds like /mc_name in human language... I guess I will call you /mc_name from now on.'",
+    "He called your name and reached out his hand trying to pet your head.",
+    "You..."
+],
+  "gain_points_option": "allow Noah to pet your head",
+  "no_gain_points_options": [
+    "avoid Noah’s hand"
+  ],
+  "gain_points_option_script": [
+    "You allowed Noah to pet your head.",
+    "Noah looked pleasantly surprised.",
+    "Noah: 'Thank you... I thought you were still a bit nervous around me...'",
+    "Noah: 'It was very nice of you to allow me to do that. I had a rough day and it made me feel much better.'",
+    "You do not understand why touching another creature’s head would bring happiness, but seems like Noah is in a better mood now.",
+    "You sit with Noah for about an hour, and you went back into the bushes."
+  ],
+  "no_gain_points_options_script": [
+    "You avoided Noah’s hand.",
+    "Noah looked a bit surprised.",
+    "Noah: 'I guess you are still a nervous kitty.'",
+    "Noah:'Sometimes I wish I were a kitty as well, then I won't need to worry about my life or career.'",
+    "Depression again appeared on Noah's face.",
+    "You did not understand this emotion, and you went back into the bushes."
+  ]
+},
+{
+  "episode": 4,
+  "gain_points": 2,
+  "script": [
+    "You passed by a building and heard a familiar voice.",
+    "Stern man: 'Don't increase the rent? That's impossible, all expenses are so high, I need to live too!'",
+    "Noah: 'Is it possible to not increase that much? I'm under a lot of financial pressure right now...'",
+    "Stern man: 'Then work a little harder!'",
+    "Noah lowered his head and stayed silent.",
+    "The stern man walked back into the building.",
+    "You..."
+  ],
+  "gain_points_option": "walk towards Noah and sit next to him",
+  "no_gain_points_options": [
+     "ignore Noah and walk away"
+  ],
+  "gain_points_option_script": [
+    "You walked towards Noah and sat next to him.",
+    "Noah: 'Hi /mc_name , I do need your company right now.'",
+    "Noah gently pet you.",
+    "You licked his fingers in response.",
+    "Noah looked much happier.",
+    "You stayed with Noah for a while.",
+    "Noah talked a lot about his life, pressure, and hesitation, but you did not really understand those human words."
+  ],
+  "no_gain_points_options_script": [
+    "You ignored Noah and walked away."
+  ]
+},
+{
+  "episode": 5,
+  "gain_points": 4,
+  "script": [
+    "You are walking along the road when a familiar voice called your name.",
+    "You turned around and saw Noah waving to you.",
+    "Noah: 'Hi, /mc_name, I just felt I had to come back and say hello to you one more time.'",
+    "Noah: “I had been thinking for a long time but couldn't make a decision.",
+    "Noah: “I may move out of this city and go back to my hometown...",
+    "You ..."
+  ],
+  "gain_points_option": "rub Noah’s leg with your head",
+  "no_gain_points_options": [
+     "stay at a distance and stare at Noah"
+  ],
+  "gain_points_option_script": [
+    "You rubbed Noah’s leg with your head.",
+    "Noah: '/mc_name, are you trying to tell me that you don’t want me to leave...?'",
+    "You replied with some little meows and more rubbing.",
+    "Noah: 'I am so glad that you are always here with me when I feel lonely and helpless...'",
+    "Noah: 'Do you feel lonely too?'",
+    "You looked at Noah, and put your paw on his hand.",
+    "Noah lifted you up and held you in his arms.",
+    "Noah: 'I guess I still have one more reason to stay here, my cat friend.'",
+    "------End------"
+  ],
+  "no_gain_points_options_script": [
+    "You stayed at a distance and stared at Noah.",
+    "You saw sadness slowly appearing in Noah's eyes.",
+    "Noah: 'Maybe I already made that decision, but I just did not want to admit it...'",
+    "He didn't sound as jubilant as he did when you first met her.",
+    "Noah silently waved to you and turned around.",
+    "You watched Noah’s walking away till he disappeared in your sight.",
+    "You have never seen Noah again since that day.",
+    "You became the solo adventurer in the city again. Free and lonely.",
+    "------End------"
       ]
     }
   ],
   "Penelope": [
     {
       "episode": 1,
-      "gain_points": 5,
-      "script": [
-        "You did not have any luck finding food today, and you are starving.",
-        "A female human walked past you.",
-        "You smell the scent of a cat and delicious food from her.",
-        "You decide to..."
-      ],
-      "gain_points_option": "follow this human back home",
-      "no_gain_points_options": [
-        "does not follow this human"
-      ],
-      "gain_points_option_script": [
-        "You decided to follow this human.",
-        "The faint cat scent makes you feel comfortable, you think maybe she is a good person.",
-        "The smell of delicious food on her clothes drew you towards her.",
-        "You quietly followed her until she stopped in front of a house.",
-        "The female human went into the house, and saw you when she was about to close the door.",
-        "Female Human: 'Oh! Who are you? I had no idea you were following me.'",
-        "You meowed to her as your stomach growled.",
-        "She laughed and lead you into her house."
-      ],
-      "no_gain_points_options_script": [
-        "You decided to not follow this human.",
-        "Even though you smell some cat scent and delicious food smell from her, following a stranger is still too risky.",
-        "You decided to try searching food by yourself again."
-      ]
-    },
-    {
-      "episode": 2,
-      "gain_points": 2,
-      "script": [
-        "Female human lead you into her house, and poured some cat food for you.",
-        "You recognized this food.",
-        "Sometimes there are kind humans who pour some cat food on the floor.",
-        "Whenever you find these cat food, you are always super happy.",
-        "You call this kind of day 'lucky day; because then you can take a nap without worrying about starving for the rest of the day.",
-        "You gobbled up the cat food.",
-        "A MaineCoon cat walked out of a room.",
-        "He was surprised to see you.",
-        "MaineCoon cat: 'Who are you?! Why are you eating my food?!'",
-        "You sensed a hint of hostility from him.",
-        "You..."
-      ],
-      "gain_points_option": "jump to him and start fighting him",
-      "no_gain_points_options": [
-        "stop eating and try to talk to him"
-      ],
-      "gain_points_option_script": [
-        "You stopped eating and tried to talk to the MaineCoon cat.",
-        ",/mc_name: 'Hi... my name is /mc_name. I was very hungry and this female human poured food for me.'",
-        "MaineCoon cat: 'Penelope always does something like this!'",
-        "MaineCoon cat: 'Fine.. You can eat, but you need to remember: I am the big brother of this house!'",
-        "You did not understand what big brother of the house means, but you guess 'Penelope' is the female human’s name.",
-        "You also did not understand why this MaineCoon cat is so aggressive.",
-        "/mc_name: 'Uh.. Sure.. Big brother, what’s your name?;",
-        "MaineCoon cat: 'Remember it well, my name is Mika. And you, /mc_name, is my minion from now on.'",
-        "You think this cat’s words are quite funny, but you did not care since your stomach is full.",
-        "Penelope: 'Looks like you are getting along! I honestly do not mind having one more cat living in the house.'",
-        "You happily rubbed Penelope’s legs with your body."
-      ],
-      "no_gain_points_options_script": [
-        "You jumped to him and started fighting him.",
-        "MaineCoon cat started screaming: 'Hey! What’s your problem?! You came to my house, ate my food, now you are beating me?!'",
-        "You yelled back: 'She gave me the food! It is not yours!'",
-        "Ripped off cat hair was flying in the air.",
-        "Female human: 'Oh my...'",
-        "Female human grabbed each of you with one hand and seperated you two.",
-        "Female human: 'I do want to keep you, but it seems you do not get along with Mika...'",
-        "Female human gave you a bit more food, and took you back to the place she found you."
-      ]
-    },
-    {
-      "episode": 3,
-      "gain_points": 1,
-      "script": [
-        "Penelope seems to be very busy.",
-        "You always see her leaving early and coming back late.",
-        "During the times Penelope stays at home, penelope is always napping.",
-        "Mika, on the other hand, is very bored every day.",
-        "He seems to be obsessed with this ‘big brother’ and ‘minion’ role-play, and always try to order you to do things for him.",
-        "But slowly you realize Mika is very nice, even though he never admits.",
-        "...",
-        "Today was a weekend day, and Penelope did not have to go to work.",
-        "Penelope was taking a nap as usual.",
-        "You sat on the bed, watching her sleeping.",
-        "Suddenly, you noticed something strange.",
-        "You looked at the direction of the window and saw a man peeking into the window.",
-        "You tried to wake Penelope up by meowing next to her ears.",
-        "Penelope is still sleeping deeply, you decide too..."
-    ],
-      "gain_points_option": "paw her face until she wakes up",
-      "no_gain_points_options": [
-        "keep meowing next to her ears"
-      ],
-      "gain_points_option_script": [
-        "You decided to keep pawing her face.",
-        "Penelope woke up.",
-        "Penelope: “What are you doing... I am trying to sleep...",
-        "You looked at the direction of that window, and Penelope followed your eyes looking at that direction as well.",
-        "Penelope: “Something wrong with the window? I don’t see anything there.",
-        "The strange man already left.",
-        "Penelope: 'I guess you just saw a bird? Please do not wake me up for such things... I am just so tired every day.'",
-        "You tried to explain, but unfortunately Penelope does not understand catglish."
-      ],
-      "no_gain_points_options_script": [
-        "You decided to keep meowing next to her ears.",
-        "Penelope still did not wake up.",
-        "You looked at the direction of that window, the strange man were still there. It seemed like he was checking if anyone else lives in this house.",
-        "After a while, the strange man left.",
-        "You were a little bit worried, your cat's sixth sense told you something bad may happen."
-      ]
-    },
-    {
-      "episode": 4,
-      "gain_points": 4,
-      "script": [
-        "A few days later, midnight.",
-        "Penelope was sleeping in her bedroom, and you were sitting in the living room, staring at the cars driven by.",
-        "Suddenly you heard the sound of a fight coming from Penelope’s room.",
-        "You ran back to the room.",
-        "You saw a man holding a knife, fighting with Penelope.",
-        "It was the same man who where peeking through the window!",
-        "Mika was hiding in his cat house, and he looked very scared.",
-        "Penelope was in a stalemate with the man, but she seemed to be losing her strength.",
-        "You decide to ..."
-      ],
-      "gain_points_option": "sneak attack on the man",
-      "no_gain_points_options": [
-         "find a place to hide and observe"
-      ],
-      "gain_points_option_script": [
-        "You decide to sneak attack on the man!",
-        "The man's attention was focused on penelope, he did not seem to notice you approaching.",
-        "You sneaked to a good position, jumped towards the man and scratched his eyes with your claws.",
-        "Strange man: 'AHHHHHHHHHH!!!!!! MY EYES!!!!!'",
-        "He screamed and dropped the knife.",
-        "Penelope ran next to her phone and called 911.",
-        "......",
-        "A group of policemen came and took the strange man away.",
-        "Penelope held you and Mika in her arm, but she was still shivering.",
-        "You licked her face, telling her don’t worry, you would always protect her.",
-        "------End------"
-      ],
-      "no_gain_points_options_script": [
-        "You decide to find a place to hind and observe.",
-        "You ran into the shadow under Penelope’s desk.",
-        "Penelope finally lost her strength.",
-        "The strange man pushed her onto the ground and stabbed her heart.",
-        "You saw blood flowing out of Penelope’s body, and her eyes lost focus.",
-        "The strange man stood up, started searching for valuable items in the house..",
-        "He approached the desk.",
-        "He saw you.",
-        "He raised his knife.",
-        "......",
-        "That was the last scene you saw in your life.",
-        "------End------"
+  "gain_points": 5,
+  "script": [
+    "You did not have any luck finding food today, and you are starving.",
+    "A female human walked past you.",
+    "You smell the scent of a cat and delicious food from her.",
+    "You decide to..."
+  ],
+  "gain_points_option": "follow this human back home",
+  "no_gain_points_options": [
+    "does not follow this human"
+  ],
+  "gain_points_option_script": [
+    "You decided to follow this human.",
+    "The faint cat scent makes you feel comfortable, you think maybe she is a good person.",
+    "The smell of delicious food on her clothes drew you towards her.",
+    "You quietly followed her until she stopped in front of a house.",
+    "The female human went into the house, and saw you when she was about to close the door.",
+    "Female Human: 'Oh! Who are you? I had no idea you were following me.'",
+    "You meowed to her as your stomach growled.",
+    "She laughed and lead you into her house."
+  ],
+  "no_gain_points_options_script": [
+    "You decided to not follow this human.",
+    "Even though you smell some cat scent and delicious food smell from her, following a stranger is still too risky.",
+    "You decided to try searching for food by yourself again."
+  ]
+},
+{
+  "episode": 2,
+  "gain_points": 2,
+  "script": [
+    "Female human lead you into her house, and poured some cat food for you.",
+    "You recognized this food.",
+    "Sometimes there are kind humans who pour some cat food on the floor.",
+    "Whenever you find this cat food, you are always super happy.",
+    "You call this kind of day 'lucky day; because then you can take a nap without worrying about starving for the rest of the day.",
+    "You gobbled up the cat food.",
+    "A MaineCoon cat walked out of a room.",
+    "He was surprised to see you.",
+    "MaineCoon cat: 'Who are you?! Why are you eating my food?!'",
+    "You sensed a hint of hostility from him.",
+    "You..."
+  ],
+  "gain_points_option": "jump to him and start fighting him",
+  "no_gain_points_options": [
+    "stop eating and try to talk to him"
+  ],
+  "gain_points_option_script": [
+    "You stopped eating and tried to talk to the MaineCoon cat.",
+    ",/mc_name: 'Hi... my name is /mc_name. I was very hungry and this female human poured food for me.'",
+    "MaineCoon cat: 'Penelope always does something like this!'",
+    "MaineCoon cat: 'Fine.. You can eat, but you need to remember: I am the big brother of this house!'",
+    "You did not understand what big brother of the house means, but you guess 'Penelope' is the female human’s name.",
+    "You also did not understand why this MaineCoon cat is so aggressive.",
+    "/mc_name: 'Uh.. Sure.. Big brother, what’s your name?;",
+    "MaineCoon cat: 'Remember it well, my name is Mika. And you, /mc_name, is my minion from now on.'",
+    "You think this cat’s words are quite funny, but you did not care since your stomach is full.",
+    "Penelope: 'Looks like you are getting along! I honestly do not mind having one more cat living in the house.'",
+    "You happily rubbed Penelope’s legs with your body."
+  ],
+  "no_gain_points_options_script": [
+    "You jumped to him and started fighting him.",
+    "MaineCoon cat started screaming: 'Hey! What’s your problem?! You came to my house, ate my food, and now you are beating me?!'",
+    "You yelled back: 'She gave me the food! It is not yours!'",
+    "Ripped-off cat hair was flying in the air.",
+    "Female human: 'Oh my...'",
+    "Female human grabbed each of you with one hand and separated you two.",
+    "Female human: 'I do want to keep you, but it seems you do not get along with Mika...'",
+    "Female human gave you a bit more food, and took you back to the place she found you."
+  ]
+},
+{
+  "episode": 3,
+  "gain_points": 1,
+  "script": [
+    "Penelope seems to be very busy.",
+    "You always see her leaving early and coming back late.",
+    "During the times Penelope stays at home, Penelope is always napping.",
+    "Mika, on the other hand, is very bored every day.",
+    "He seems to be obsessed with this ‘big brother’ and ‘minion’ role-play, and always tries to order you to do things for him.",
+    "But slowly you realize Mika is very nice, even though he never admits.",
+    "...",
+    "Today was a weekend day, and Penelope did not have to go to work.",
+    "Penelope was taking a nap as usual.",
+    "You sat on the bed, watching her sleeping.",
+    "Suddenly, you noticed something strange.",
+    "You looked in the direction of the window and saw a man peeking into the window.",
+    "You tried to wake Penelope up by meowing next to her ears.",
+    "Penelope is still sleeping deeply, you decide to..."
+],
+  "gain_points_option": "paw her face until she wakes up",
+  "no_gain_points_options": [
+    "keep meowing next to her ears"
+  ],
+  "gain_points_option_script": [
+    "You decided to keep pawing her face.",
+    "Penelope woke up.",
+    "Penelope: “What are you doing... I am trying to sleep...",
+    "You looked in the direction of that window, and Penelope followed your eyes looking in that direction as well.",
+    "Penelope: “Something wrong with the window? I don’t see anything there.",
+    "The strange man already left.",
+    "Penelope: 'I guess you just saw a bird? Please do not wake me up for such things... I am just so tired every day.'",
+    "You tried to explain, but unfortunately Penelope does not understand catglish."
+  ],
+  "no_gain_points_options_script": [
+    "You decided to keep meowing next to her ears.",
+    "Penelope still did not wake up.",
+    "You looked in the direction of that window, the strange man was still there. It seemed like he was checking if anyone else lives in this house.",
+    "After a while, the strange man left.",
+    "You were a little bit worried, your cat's sixth sense told you something bad may happen."
+  ]
+},
+{
+  "episode": 4,
+  "gain_points": 4,
+  "script": [
+    "A few days later, midnight.",
+    "Penelope was sleeping in her bedroom, and you were sitting in the living room, staring at the cars driven by.",
+    "Suddenly you heard the sound of a fight coming from Penelope’s room.",
+    "You ran back to the room.",
+    "You saw a man holding a knife, fighting with Penelope.",
+    "It was the same man who was peeking through the window!",
+    "Mika was hiding in his cat house, and he looked very scared.",
+    "Penelope was in a stalemate with the man, but she seemed to be losing her strength.",
+    "You decide to ..."
+  ],
+  "gain_points_option": "sneak attack on the man",
+  "no_gain_points_options": [
+     "find a place to hide and observe"
+  ],
+  "gain_points_option_script": [
+    "You decide to sneak attack the man!",
+    "The man's attention was focused on Penelope, he did not seem to notice you approaching.",
+    "You sneaked to a good position, jumped toward the man, and scratched his eyes with your claws.",
+    "Strange man: 'AHHHHHHHHHH!!!!!! MY EYES!!!!!'",
+    "He screamed and dropped the knife.",
+    "Penelope ran next to her phone and called 911.",
+    "......",
+    "A group of policemen came and took the strange man away.",
+    "Penelope held you and Mika in her arm, but she was still shivering.",
+    "You licked her face, telling her don’t worry, you would always protect her.",
+    "------End------"
+  ],
+  "no_gain_points_options_script": [
+    "You decide to find a place to hind and observe.",
+    "You ran into the shadow under Penelope’s desk.",
+    "Penelope finally lost her strength.",
+    "The strange man pushed her onto the ground and stabbed her heart.",
+    "You saw blood flowing out of Penelope’s body, and her eyes lost focus.",
+    "The strange man stood up, and started searching for valuable items in the house..",
+    "He approached the desk.",
+    "He saw you.",
+    "He raised his knife.",
+    "......",
+    "That was the last scene you saw in your life.",
+    "------End------"
       ]
     }
   ]
