@@ -123,6 +123,17 @@ def check_for_challenges(board, character):
         return True
 
 
+def check_route(character):
+    # check if character chooses home route or wild route
+    if character['Penelope'][1] >= 15:
+        print('You are in home route now')
+        # we can remove this print statement later
+        return True
+    else:
+        print("You are in wild route now")
+        return False
+
+
 def pick_random_character(character):
     # check if any character relationship score is >= 15
     # Otherwise, pick random event character
