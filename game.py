@@ -146,7 +146,7 @@ def pick_random_character(character):
 def execute_challenge_protocol(board, character):
     file = open("./character.json")
     data = json.load(file)
-    event_option = pick_random_character()
+    event_option = pick_random_character(character)
     event = ""
 
     for line in data[event_option]:
