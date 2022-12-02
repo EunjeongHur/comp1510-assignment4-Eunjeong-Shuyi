@@ -300,7 +300,9 @@ def game():
                     execute_glow_up_protocol()
             # achieved_goal = check_if_goal_attained(board, character)
         else:
-            achieved_goal = True
+            print("You can't go that direction!")
+            get_user_choice()
+    print("End of the game, thank you for playing")
 
 
 def main():
