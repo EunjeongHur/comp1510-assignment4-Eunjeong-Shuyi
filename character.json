@@ -715,9 +715,9 @@
         "You sensed a hint of hostility from him.",
         "You..."
       ],
-      "gain_points_option": "jump to him and start fighting him",
+      "gain_points_option": "stop eating and try to talk to him",
       "no_gain_points_options": [
-        "stop eating and try to talk to him"
+        "jump to him and start fighting him"
       ],
       "gain_points_option_script": [
         "You stopped eating and tried to talk to the MaineCoon cat.",
