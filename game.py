@@ -197,6 +197,10 @@ def execute_challenge_protocol(board, character):
         board[current_character_coordinate] = "Empty room"
 
 
+def display_ending_script():
+    pass
+
+
 def get_event(event, character, other_character_name):
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
