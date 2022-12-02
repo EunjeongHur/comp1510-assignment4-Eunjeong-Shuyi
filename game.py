@@ -78,7 +78,7 @@ def get_user_choice():
         if user_choice.lower() == "q" or user_choice.lower() == "quit":
             break
         elif user_choice in numbers:
-            return directions[int(user_choice)-1]
+            return directions[int(user_choice) - 1]
         else:
             continue
 
@@ -117,7 +117,7 @@ def move_character(character, direction):
 def check_for_challenges(board, character):
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     room = board[current_character_coordinate]
-    if room == "Empty Room":
+    if room == "Empty Room" or room == "Respawn Room":
         return False
     else:
         return True
@@ -154,7 +154,7 @@ def event_option(character):
 def check_if_score_reached(character):
     if character['Nero'][0] >= 4 and character['Nero'][1] >= 15:
         return 'Nero'
-    elif character['Lulu'][1] >= 4 and character['Lulu'][1] >= 15:
+    elif character['Lulu'][0] >= 4 and character['Lulu'][1] >= 15:
         return 'Lulu'
     elif character['Noah'][0] >= 4 and character['Noah'][1] >= 15:
         return 'Noah'
@@ -302,7 +302,6 @@ def game():
         else:
             print("You can't go that direction!")
             get_user_choice()
-    print("End of the game, thank you for playing")
 
 
 def main():
