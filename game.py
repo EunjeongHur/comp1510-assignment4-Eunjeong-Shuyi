@@ -166,19 +166,35 @@ def check_if_score_reached(character):
             return choice(result)
 
 
+def check_if_game_ended(character):
+    other_characters = ['Nero', 'Lulu', 'Noah']
+    removed_characters = []
+
+    for char in range(len(other_characters)):
+        if character[other_characters[char]][0] >= 4 and character[other_characters[char]][1] < 15:
+            removed_characters.append(other_characters[char])
+    for char in removed_characters:
+        other_characters.remove(char)
+
+    return other_characters
+
+
 def execute_challenge_protocol(board, character):
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
-    event = ""
+    if event_option == "ending":
+        display_ending_script()
+    else:
+        event = ""
 
-    for line in data[event_character]:
-        if line['episode'] == character[event_character][0]:
-            event = line
+        for line in data[event_character]:
+            if line['episode'] == character[event_character][0]:
+                event = line
 
-    get_event(event, character, event_character)
-    current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
-    board[current_character_coordinate] = "Empty room"
+        get_event(event, character, event_character)
+        current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
+        board[current_character_coordinate] = "Empty room"
 
 
 def get_event(event, character, other_character_name):
