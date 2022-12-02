@@ -143,17 +143,25 @@ def pick_random_character(character):
         return event_option(character)
 
 
+def event_option(character):
+    event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
+    if character['Penelope'][0] == 1:
+        return choice(event_options)
+    else:
+        return check_if_score_reached(character)
+
+
 def execute_challenge_protocol(board, character):
     file = open("./character.json")
     data = json.load(file)
-    event_option = pick_random_character(character)
+    event_character = pick_random_character(character)
     event = ""
 
-    for line in data[event_option]:
-        if line['episode'] == character[event_option][0]:
+    for line in data[event_character]:
+        if line['episode'] == character[event_character][0]:
             event = line
 
-    get_event(event, character, event_option)
+    get_event(event, character, event_character)
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     board[current_character_coordinate] = "Empty room"
 
