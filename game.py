@@ -151,6 +151,21 @@ def event_option(character):
         return check_if_score_reached(character)
 
 
+def check_if_score_reached(character):
+    if character['Nero'][0] >= 4 and character['Nero'][1] >= 15:
+        return 'Nero'
+    elif character['Lulu'][1] >= 4 and character['Lulu'][1] >= 15:
+        return 'Lulu'
+    elif character['Noah'][0] >= 4 and character['Noah'][1] >= 15:
+        return 'Noah'
+    else:
+        result = check_if_game_ended(character)
+        if len(result) == 0:
+            return "ending"
+        else:
+            return choice(result)
+
+
 def execute_challenge_protocol(board, character):
     file = open("./character.json")
     data = json.load(file)
