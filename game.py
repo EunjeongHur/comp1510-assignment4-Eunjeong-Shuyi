@@ -13,7 +13,7 @@ from time import sleep
 
 def make_board(rows, columns):
     rooms_coordinates = {}
-    rooms_names = ['Empty Room', 'Empty Room', 'Event Room']
+    rooms_names = ['Empty Room', 'Empty Room', 'Empty Room', 'Empty Room', 'Empty Room', 'Event Room']
 
     for row in range(rows):
         for col in range(columns):
@@ -72,7 +72,7 @@ def get_user_choice():
 
     while True:
         for value, direction in enumerate(directions, 1):
-            print(f'{value}.{direction}', end=" ")
+            print(f'{direction}:{value}', end=" ")
 
         user_choice = input("\nPlease enter a Number corresponding to the direction you wish to travel:\n")
         if user_choice.lower() == "q" or user_choice.lower() == "quit":
