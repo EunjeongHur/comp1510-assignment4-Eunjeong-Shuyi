@@ -135,23 +135,12 @@ def check_route(character):
 
 
 def pick_random_character(character):
-    # check if any character relationship score is >= 15
-    # Otherwise, pick random event character
-    if character['Nero'][1] >= 15:
-        print("Relationship score for Nero reaches 15!")
-        return 'Nero'
-    elif character['Lulu'][1] >= 15:
-        print("Relationship score for Lulu reaches 15!")
-        return 'Lulu'
-    elif character['Noah'][1] >= 15:
-        print("Relationship score for Noah reaches 15!")
-        return 'Noah'
-    elif character['Penelope'][1] >= 15:
-        print("Relationship score for Penelope reaches 15!")
+    is_home_route = check_route(character)
+    # print(character)
+    if is_home_route:
         return 'Penelope'
     else:
-        event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
-        return choice(event_options)
+        return event_option(character)
 
 
 def execute_challenge_protocol(board, character):
