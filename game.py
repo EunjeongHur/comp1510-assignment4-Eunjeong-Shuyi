@@ -123,13 +123,24 @@ def check_for_challenges(board, character):
         return True
 
 
-def pick_random_character():
-    # check if any character relationship score is over 16
+def pick_random_character(character):
+    # check if any character relationship score is >= 15
     # Otherwise, pick random event character
-    # We need to add other characters here
-    event_options = ['Nero']
-
-    return choice(event_options)
+    if character['Nero'][1] >= 15:
+        print("Relationship score for Nero reaches 15!")
+        return 'Nero'
+    elif character['Lulu'][1] >= 15:
+        print("Relationship score for Lulu reaches 15!")
+        return 'Lulu'
+    elif character['Noah'][1] >= 15:
+        print("Relationship score for Noah reaches 15!")
+        return 'Noah'
+    elif character['Penelope'][1] >= 15:
+        print("Relationship score for Penelope reaches 15!")
+        return 'Penelope'
+    else:
+        event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
+        return choice(event_options)
 
 
 def execute_challenge_protocol(board, character):
