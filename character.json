@@ -4,8 +4,8 @@
       "episode": 1,
       "gain_points": 2,
       "script": [
-        "You decided to look for foods and you found blackberries!",
-        "After you collected five berries, you encountered a young black cat and hig leg looks like broken and hasn't eaten food for a few days.",
+        "You decided to look for food and you found blackberries!",
+        "After you collected five berries, you encountered a young black cat and whose leg seems to be broken, and hasn't eaten food for a few days.",
         "What are you going to do?"
       ],
       "gain_points_option": "give him berries you collected",
@@ -70,13 +70,13 @@
         "/mc_name: I usually find the perfect spot where it's sunny and warm and lays out in the sun and take a nap",
         "Nero: It sounds really nice. . .",
         "/mc_name: How about you?",
-        "Nero: Well, I used to steal fishes and some other kinds of foods from market . . .",
+        "Nero: Well, I used to steal fish and some other kinds of foods from the market . . .",
         "Nero: And one time, I was sneaking inside the market and trying to steal some food as usual. . .",
         "Nero: But a market manager found me and I hurt my leg while trying to run away quickly from the market",
         "Nero: Haha",
-        "Nero: That's why I was starving so much when we met each other first time",
+        "Nero: That's why I was starving so much when we met each other the first time",
         ". . . Awkward Silence . . .",
-        "Nero: Haha, why did i say this?",
+        "Nero: Haha, why did I say this?",
         "Nero: Forget about it.",
         "Nero: Anyway, thank you again!"
       ],
@@ -169,7 +169,7 @@
         "Nero: I think I like you",
         "Nero: When I saw you fighting with other cats, I couldn't stop myself from fighting",
         "Nero: I'm sure we have a lot in common",
-        "Nero: We can look for foods together and travel somewhere",
+        "Nero: We can look for food together and travel somewhere",
         "Nero: It would be a wonderful life if I get along with you",
         "Nero: How do you think about this ..?"
       ],
@@ -181,7 +181,7 @@
         "After you think about this for a few minutes,",
         "You decided to get along with him forever",
         "/mc_name: ... HaHa, I don't know what to say",
-        "/mc_name: But, I think it would be really wonderful life if I get along with you",
+        "/mc_name: But, I think it would be a really wonderful life if I get along with you",
         "Nero: ... !!",
         "Nero: Are you sure..?",
         "Nero: I can't believe that you actually like me...",
@@ -193,13 +193,13 @@
         "/mc_name: But...but...",
         "You hesitated to refuse",
         "Nero: ...",
-        "Nero: Okay.. I know what you meant",
-        "Nero: It's okay.. Don't worry about me .. ",
+        "Nero: Okay... I know what you meant",
+        "Nero: It's okay... Don't worry about me .. ",
         ". . . Awkward silence . . .",
         "Nero: I really hope you're feeling okay and . . .",
         "/mc_name: . . .",
         "Nero: I'll never forget you",
-        "Nero turns around and walks down to somewhere",
+        "Nero turns around and walks down somewhere",
         "Since this day, you have never seen Nero again",
         "------End------"
       ]
@@ -212,8 +212,8 @@
       "script": [
         "You walked into the grove to find food and heard some growling sound",
         "You went to there and saw a female white cat sleeping in the sun",
-        "Next to the white cat, there are some foods that seem to have been leftover by the white cat.",
-        "Because you're starving so much, you started to think how to get those foods. . .",
+        "Next to the white cat, there are some food that seem to have been leftover by the white cat.",
+        "Because you're starving so much, you started to think how to get those food. . .",
         "What are you going to do?"
       ],
       "gain_points_option": "Make her to wake up and ask for some food",
@@ -232,11 +232,11 @@
         "A white cat: hmm. . .hm  . .!!!!",
         "A white cat: who are you?!",
         "A white cat: Who woke me up!! I was going to eat all the berries and fruits in my dream!!",
-        "A white cat: It was right before eating so many foods . . .",
+        "A white cat: It was right before eating so many food . . .",
         "A white cat: Did you just wake me up?",
         "You feel like you have to say 'no' but there's no other animals near us.",
         "/mc_name: Um... Yes.. Sorry for interrupting you",
-        "/mc_name: But, may I ask you for some foods here? I'm starving so much",
+        "/mc_name: But, may I ask you for some food here? I'm starving so much",
         "A white cat: Hmm...",
         "A white cat: No! Absolutely not! you ruined my happy dream and it will ruin my whole day as well!",
         "Looks like this white cat really got angry . . . (Meow)",
@@ -257,7 +257,7 @@
         "A white cat: Who are you? Why are you stealing my food?",
         "A white cat: And why you made me wake up from the sweet dream!!",
         "A white cat: I was going to eat all the berries and fruits in my dream!",
-        "A white cat: It was right before eating so many foods ...",
+        "A white cat: It was right before eating so much food ...",
         "/mc_name: Sorry... I was starving so much so I didn't have any patience..",
         "Looks like this white cat really got angry . . . (Meow)",
         "She looked at you and she scratched your face with her nails",
@@ -291,8 +291,8 @@
          "Lulu: Okay, so, one day. . .",
          "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quite place.",
          "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
-         "Lulu: I was dreaming about eating all the kinds of foods like fishes and fruits and those looked like very fresh and delicious",
-         "Lulu: So, I was really excited to try those foods in the dream.",
+         "Lulu: I was dreaming about eating all the kinds of food like fish and fruits and those looked like very fresh and delicious",
+         "Lulu: So, I was really excited to try those food in the dream.",
          "Lulu: However, a stray cat woke me up because of my leftover berries!!",
          " . . . Lulu keep talking about the stray cat story . . .",
          "/mc_name: Oh...really? That's so bad . . (Feels like she's talking about me . . .)",
@@ -322,8 +322,8 @@
          "Lulu: Okay, so, one day. . .",
          "Lulu: After eating berries, I was taking a nap in the sunny spot where the wind blows slightly and very quite place.",
          "Lulu: Even the weather was so perfect! Do you know what was the best thing?",
-         "Lulu: I was dreaming about eating all the kinds of foods like fishes and fruits and those looked like very fresh and delicious",
-         "Lulu: So, I was really excited to try those foods in the dream.",
+         "Lulu: I was dreaming about eating all the kinds of food like fishes and fruits and those looked like very fresh and delicious",
+         "Lulu: So, I was really excited to try those food in the dream.",
          "Lulu: However, a stray cat woke me up because of my leftover berries!!",
          " . . . Lulu keep talking about the stray cat story . . .",
          "You feel like she's talking about you",
@@ -542,7 +542,7 @@
     },
     {
       "episode": 2,
-      "gain_points": 2,
+      "gain_points": 1,
       "script": [
         "You were wandering around, and you saw the same male human from a few days ago.",
         "He smiled at you, said: 'What a coincidence! I happened to bring some cat snacks with me. Would you like some?'"
@@ -566,7 +566,7 @@
     },
     {
       "episode": 3,
-      "gain_points": 3,
+      "gain_points": 2,
       "script": [
         "You were searching food around the park and sported a familiar male human on the swing.",
         "He was sitting quietly on the swing and looked frustrated.",
@@ -603,7 +603,7 @@
     },
     {
       "episode": 4,
-      "gain_points": 4,
+      "gain_points": 2,
       "script": [
         "You passed by a building and heard a familiar voice.",
         "Stern man: 'Don't increase the rent? That's impossible, all expenses are so high, I need to live too!'",
@@ -672,7 +672,7 @@
   "Penelope": [
     {
       "episode": 1,
-      "gain_points": 1,
+      "gain_points": 5,
       "script": [
         "You did not have any luck finding food today, and you are starving.",
         "A female human walked past you.",
@@ -701,7 +701,7 @@
     },
     {
       "episode": 2,
-      "gain_points": 15,
+      "gain_points": 2,
       "script": [
         "Female human lead you into her house, and poured some cat food for you.",
         "You recognized this food.",
