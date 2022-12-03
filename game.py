@@ -96,15 +96,15 @@ def describe_current_location(board: dict, character: dict):
     print()
 
 
-def get_user_choice():
+def get_user_choice() -> bool or string:
     """
-    Get user's input for moving and reflect in directions or allow user quit the game.
+    Get user's input for moving and reflect as direction or allow user quit the game.
 
     :precondition: user must enter '1', '2', '3', '4' to move
     :precondition: user must enter 'q' or 'quit' (case-insensitive) to move
     :postcondition: user can move 'Up', 'Down', 'Left', 'Right' by entering '1', '2', '3', '4'
     :postcondition: end the game if user types 'q' or 'quit' (case-insensitive)
-    :return: directions that user choose to move as a string or False if when user types 'q' or 'quit'
+    :return: direction that user choose to move as a string or False if when user types 'q' or 'quit'
     """
     directions = ['Up', 'Down', 'Left', 'Right']
     numbers = ['1', '2', '3', '4']
@@ -125,16 +125,17 @@ def get_user_choice():
     return False
 
 
-def validate_move(character, direction):
+def validate_move(character:dict, direction:string) -> bool:
     """
-    Place Holder.
+    Determine if move is validate.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :param direction: a string
+    :precondition: character must be a dictionary
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :postcondition: determine if move is validate
+    :postcondition: invalidate move if character reaches boarders of the map
+    :return: True if move is validate, False if not
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
@@ -152,14 +153,13 @@ def validate_move(character, direction):
 
 def move_character(character, direction):
     """
-    Place Holder.
+    Move character to position on the map based on where character's current position and direction it moves.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param direction:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :postcondition: change character's X-coordinate and Y-coordinate based on direction
     """
     current_x_location = character['X-coordinate']
     current_y_location = character['Y-coordinate']
