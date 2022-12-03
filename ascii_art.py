@@ -99,3 +99,15 @@ def cozy_cat_art():
     print("    |ssssssssss     `--'~{__   ____   ,'ssssss|")
     print("     `-ssssssssssssssssss ~~~~~~~~~~~~ ssss.-'")
     print("          `---.sssssssssssssssssssss.---'")
+
+
+def bad_ending():
+    print("+-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
+    print("|B| |a| |d|   |E| |n| |d| |i| |n| |g|")
+    print("+-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
+
+
+def happy_ending():
+    print("+-+ +-+ +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
+    print("|H| |a| |p| |p| |y|   |E| |n| |d| |i| |n| |g|")
+    print("+-+ +-+ +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
