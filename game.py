@@ -294,6 +294,8 @@ def check_if_score_reached(character: dict) -> str:
     :postcondition: puts user into ending route if no more character options are available
     :return: next event choice as a string
     """
+    other_characters = ['Nero', 'Lulu', 'Noah']
+
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
     elif character['Lulu'][0] == 5 and character['Lulu'][1] >= 15:
@@ -301,14 +303,14 @@ def check_if_score_reached(character: dict) -> str:
     elif character['Noah'][0] == 5 and character['Noah'][1] >= 15:
         return 'Noah'
     else:
-        result = check_if_game_ended(character)
+        result = list(filter(check_if_game_ended(character), other_characters))
         if len(result) == 0:
             return "ending"
         else:
             return random.choice(result)
 
 
-def check_if_game_ended(character: dict) -> list:
+def check_if_game_ended(character: dict):
     """
     Check if the game has ended.
 
@@ -323,25 +325,19 @@ def check_if_game_ended(character: dict) -> list:
 
     >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
     'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
-    >>> check_if_game_ended(test_character)
+    >>> other_characters = ['Nero', 'Lulu', 'Noah']
+    >>> list(filter(check_if_game_ended(test_character), other_characters))
     ['Nero', 'Lulu', 'Noah']
     >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [4, 14], 'Lulu': [5, 12], \
     'Noah': [5, 11], 'Penelope': [1, 10], 'Name': 'Chris'}
-    >>> check_if_game_ended(test_character)
+    >>> list(filter(check_if_game_ended(test_character), other_characters))
     []
     """
-    other_characters = ['Nero', 'Lulu', 'Noah']
-    removed_characters = []
+    def remove_other_chars(other_character):
+        if character[other_character][0] < 4 and character[other_character][1] <= 15:
+            return other_character
 
-    for char in range(len(other_characters)):
-        if character[other_characters[char]][0] >= 4 and character[other_characters[char]][1] < 15:
-            removed_characters.append(other_characters[char])
-        else:
-            continue
-    for char in removed_characters:
-        other_characters.remove(char)
-
-    return other_characters
+    return remove_other_chars
 
 
 def execute_challenge_protocol(board: dict, character: dict):
@@ -459,9 +455,7 @@ def replace_mc_name(name: str, lines: list) -> list:
     :postcondition: replaces all '/mc_name' to name
     :return: a list containing replaced string
     """
-    replaced_lines = [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
-
-    return replaced_lines
+    return [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
 
 
 def display_script(event: dict, character: dict) -> bool:
