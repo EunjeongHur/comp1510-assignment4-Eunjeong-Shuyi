@@ -494,7 +494,7 @@ def display_script(event: dict, character: dict) -> bool:
 
     for line in script:
         print(f'{line}\n')
-        # sleep(1.5)
+        sleep(1.5)
 
     for number, option in enumerate(options, 1):
         print(f'{number}. {option}')
@@ -503,17 +503,17 @@ def display_script(event: dict, character: dict) -> bool:
     while user_answer not in numbers:
         user_answer = input("Choose a number: ")
     print(". . .")
-    # sleep(1.5)
+    sleep(1.5)
 
     if int(user_answer) == options.index(gain_points_option) + 1:
         for script in gain_points_option_script:
             print(f'{script}\n')
-            # sleep(2)
+            sleep(2)
         return True
     else:
         for script in no_gain_points_options_script:
             print(script)
-            # sleep(2)
+            sleep(2)
         return False
 
 
