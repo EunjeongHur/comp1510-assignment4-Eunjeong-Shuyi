@@ -331,15 +331,19 @@ def execute_challenge_protocol(board: dict, character: dict):
         board[current_character_coordinate] = "Empty Room"
 
 
-def display_ending_script(character):
+def display_ending_script(character: dict) -> None:
     """
-    Place Holder.
+    Display ascii art and ending scripts.
 
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary containing user's information
+    :postcondition: if character completes critical events for any of the character and relationship score is over 20,
+    display happy_ending ascii art text and cat of ascii art
+    :postcondition: if character completes critical events for any of the character and relationship score is under 20,
+    display bad_ending ascii art text and cat of ascii art
+    :postcondition: if character doesn't complete any critical events, display ending scripts and
+    bad_ending ascii art text and cat of ascii art
+    :postcondition: after displaying ascii arts, prints ending credits
     """
     if character['Nero'][0] == 5 or character['Lulu'][0] == 6:
         if character['Nero'][1] >= 20 or character['Lulu'][1] >= 20:
