@@ -4,7 +4,7 @@ from unittest.mock import patch
 from game import event_option
 
 
-class EventOption(TestCase):
+class TestEventOption(TestCase):
 
     @patch('random.choice', return_value='Nero')
     def test_event_option_nero(self, random_value):
