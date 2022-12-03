@@ -7,8 +7,8 @@ Member #2 Student Number: A01178380
 """
 
 from random import choice, shuffle
-import json
 from time import sleep
+import json
 import ascii_art
 
 
@@ -70,7 +70,7 @@ def display_opening(character: dict):
     """
     Display the opening script after a character is made.
 
-    :param character: A dictionary
+    :param character: a dictionary
     :precondition: character must be a dictionary
     :postcondition: display the opening script after a character is made
     """
