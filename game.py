@@ -19,6 +19,7 @@ def make_board(rows: int, columns: int) -> dict:
     :param columns: an integer that is in range [1, 10] inclusive
     :precondition: rows and columns must be integers that are in range [1, 10] inclusive
     :postcondition: generate the board that shows game map to users
+    :postcondition: generate a 10*10 board
     :return: the board that shows game map to users as a dictionary
     """
     rooms_coordinates = {}
@@ -42,6 +43,7 @@ def make_character() -> dict:
 
     :precondition: input for character must be a non-empty string
     :precondition: input for character gender be a "F" or "M"
+    :postcondition: Ask user to re-enter inputs if inputs are not valid
     :postcondition: Generate a character with all attributes and input username and input gender
     :return: Generate a character with all attributes and input username as a dictionary
     """
@@ -63,16 +65,14 @@ def make_character() -> dict:
         return character
 
 
-def describe_current_location(board, character):
+def describe_current_location(board: dict, character: dict):
     """
-    Generate an updated map after character moves.
+    Generate an updated map board after character moves.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param board: a dictionary
+    :param character: a dictionary
+    :precondition: board and character must be dictionaries
+    :postcondition: generate an updated map board after character moves
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     current_location = board[current_character_coordinate]
@@ -98,14 +98,13 @@ def describe_current_location(board, character):
 
 def get_user_choice():
     """
-    Place Holder.
+    Get user's input for moving and reflect in directions or allow user quit the game.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :precondition: user must enter '1', '2', '3', '4' to move
+    :precondition: user must enter 'q' or 'quit' (case-insensitive) to move
+    :postcondition: user can move 'Up', 'Down', 'Left', 'Right' by entering '1', '2', '3', '4'
+    :postcondition: end the game if user types 'q' or 'quit' (case-insensitive)
+    :return: directions that user choose to move as a string or False if when user types 'q' or 'quit'
     """
     directions = ['Up', 'Down', 'Left', 'Right']
     numbers = ['1', '2', '3', '4']
