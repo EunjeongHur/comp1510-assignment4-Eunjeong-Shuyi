@@ -453,14 +453,6 @@ def display_script(event, character):
         return False
 
 
-def character_has_leveled(character):
-    pass
-
-
-def execute_glow_up_protocol():
-    pass
-
-
 def check_if_goal_attained(character):
     """
     Place Holder.
@@ -502,23 +494,16 @@ def game():
     character = make_character()
     achieved_goal = False
     while not achieved_goal:
-        # Tell the user where they are
         describe_current_location(board, character)
         direction = get_user_choice()
-        # if direction is False:
-        #     achieved_goal = True
         valid_move = validate_move(character, direction)
         if valid_move:
             move_character(character, direction)
             there_is_a_challenge = check_for_challenges(board, character)
-            # print(there_is_a_challenge)
             if there_is_a_challenge:
                 achieved_goal = execute_challenge_protocol(board, character)
                 if check_if_goal_attained(character):
                     achieved_goal = True
-                # if character_has_leveled(character):
-                #     execute_glow_up_protocol()
-            # achieved_goal = check_if_goal_attained(board, character)
         else:
             print("You can't go that direction!")
             get_user_choice()
@@ -530,11 +515,6 @@ def main():
     Drives the program
     """
     game()
-    # character = make_character()
-    # board = make_board(10, 10)
-    # describe_current_location(board, character)
-    # direction = get_user_choice()
-    # print(direction)
 
 
 if __name__ == "__main__":
