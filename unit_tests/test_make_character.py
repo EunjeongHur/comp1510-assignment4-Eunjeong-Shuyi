@@ -15,3 +15,5 @@ class TestMakeCharacter(TestCase):
         expected = "Please enter a non-empty character name"
         self.assertEqual(expected, actual)
 
+# not working
+
