@@ -521,7 +521,7 @@ def check_if_goal_attained(character: dict) -> bool:
 
 def game():
     """
-    Plays the game.
+    Play the game.
 
     :postcondition: creates a 10 * 10 board by calling make_board()
     :postcondition: creates a character dictionary by calling make_character()
