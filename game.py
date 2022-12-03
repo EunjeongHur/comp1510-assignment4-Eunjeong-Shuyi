@@ -9,6 +9,7 @@ Member #2 Student Number: A01178380
 from time import sleep
 import random
 import json
+import itertools
 import ascii_art
 
 
@@ -479,11 +480,10 @@ def display_script(event: dict, character: dict) -> bool:
     gain_points_option_script = replace_mc_name(name, event["gain_points_option_script"])
     no_gain_points_options_script = replace_mc_name(name, event["no_gain_points_options_script"])
     gain_points_option = event["gain_points_option"]
-    no_gain_points_options = event["no_gain_points_options"]
 
     options.append(gain_points_option)
-    for option in no_gain_points_options:
-        options.append(option)
+    options = [options, event["no_gain_points_options"]]
+    options = list(itertools.chain.from_iterable(options))
     random.shuffle(options)
 
     for line in script:
@@ -506,7 +506,7 @@ def display_script(event: dict, character: dict) -> bool:
         return True
     else:
         for script in no_gain_points_options_script:
-            print(script)
+            print(f'{script}\n')
             sleep(2)
         return False
 
