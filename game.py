@@ -6,8 +6,8 @@ Member #2 Student Name: Shuyi Liu
 Member #2 Student Number: A01178380
 """
 
-from random import choice, shuffle
 from time import sleep
+import random
 import json
 import ascii_art
 
@@ -32,7 +32,7 @@ def make_board(rows: int, columns: int) -> dict:
             if coordinate == (9, 4):
                 rooms_coordinates[coordinate] = "Respawn Room"
             else:
-                random_room = choice(rooms_names)
+                random_room = random.choice(rooms_names)
                 rooms_coordinates[coordinate] = random_room
 
     return rooms_coordinates
@@ -314,7 +314,7 @@ def event_option(character: dict):
     """
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
-        return choice(event_options)
+        return random.choice(event_options)
     else:
         return check_if_score_reached(character)
 
@@ -343,7 +343,7 @@ def check_if_score_reached(character: dict) -> str:
         if len(result) == 0:
             return "ending"
         else:
-            return choice(result)
+            return random.choice(result)
 
 
 def check_if_game_ended(character: dict) -> list:
@@ -527,7 +527,7 @@ def display_script(event: dict, character: dict) -> bool:
     options.append(gain_points_option)
     for option in no_gain_points_options:
         options.append(option)
-    shuffle(options)
+    random.shuffle(options)
 
     for line in script:
         print(f'{line}\n')
