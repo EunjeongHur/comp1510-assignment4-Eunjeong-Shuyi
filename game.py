@@ -174,16 +174,9 @@ def validate_move(character: dict, direction: str) -> bool:
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
-    if current_character_coordinate[0] == 0 and direction == 'Up':
-        return False
-    elif current_character_coordinate[0] == 9 and direction == 'Down':
-        return False
-    elif current_character_coordinate[1] == 0 and direction == 'Left':
-        return False
-    elif current_character_coordinate[1] == 9 and direction == 'Right':
-        return False
-    else:
-        return True
+    return current_character_coordinate[0] != 0 and direction == 'Up' or current_character_coordinate[0] != 9 \
+        and direction == 'Down' or current_character_coordinate[1] != 0 and direction == 'Left' \
+        or current_character_coordinate[1] != 9 and direction == 'Right'
 
 
 def move_character(character, direction):
