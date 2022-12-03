@@ -9,7 +9,6 @@ Member #2 Student Number: A01178380
 from random import choice, shuffle
 import json
 from time import sleep
-import ascii_art
 
 
 def make_board(rows: int, columns: int) -> dict:
@@ -226,7 +225,6 @@ def pick_random_character(character: dict):
     :return: 'Penelope' as a string or event_option(character) as a function
     """
     is_home_route = check_route(character)
-    # print(character)
     if is_home_route:
         return 'Penelope'
     else:
@@ -243,7 +241,6 @@ def event_option(character: dict):
     :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
     :return: next event choice as a string or check_if_score_reached(character) as a function
     """
-    print(character)
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
         return choice(event_options)
@@ -273,6 +270,11 @@ def check_if_score_reached(character: dict) -> str:
     else:
         result = check_if_game_ended(character)
         if len(result) == 0:
+            if character['Nero'][1] < 15 and character['Lulu'][1] < 15 and character['Noah'][1] < 15 \
+                    and character['Penelope'][1] < 15:
+                print("You met Nero, Penelope, Lulu and Noah in your life, "
+                      "but they all end up disappearing from your life based on your decisions.")
+                print("You lived the rest of your life with nothing specific happening.")
             return "ending"
         else:
             return choice(result)
@@ -305,18 +307,17 @@ def check_if_game_ended(character: dict) -> list:
     return other_characters
 
 
-def execute_challenge_protocol(board, character):
+def execute_challenge_protocol(board: dict, character: dict):
     """
-    Place Holder.
+    Execute the challenge protocol according to event_option output
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param board: a dictionary
+    :param character: a dictionary
+    :precondition: board must be a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: Execute the challenge protocol according to event_option output
+    :return: True of event_character is "ending"
     """
-    print(event_option)
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
@@ -334,63 +335,43 @@ def execute_challenge_protocol(board, character):
         board[current_character_coordinate] = "Empty Room"
 
 
-def display_ending_script(character):
+def display_ending_script():
     """
     Place Holder.
 
-    :param character:
     :precondition:
     :precondition:
     :postcondition:
     :return:
     """
-    if character['Nero'][0] == 5 or character['Lulu'][0] == 6:
-        if character['Nero'][1] >= 20 or character['Lulu'][1] >= 20:
-            ascii_art.happy_ending()
-            ascii_art.two_cats_art()
-        else:
-            ascii_art.bad_ending()
-            ascii_art.lonely_cat_art()
-    elif character['Noah'][0] == 6:
-        if character['Noah'][1] >= 20:
-            ascii_art.happy_ending()
-            ascii_art.sleeping_cat_art()
-        else:
-            ascii_art.bad_ending()
-            ascii_art.lonely_cat_art()
-    elif character['Penelope'][0] == 5:
-        if character['Penelope'][1] >= 20:
-            ascii_art.happy_ending()
-            ascii_art.cozy_cat_art()
-        else:
-            ascii_art.bad_ending()
-            ascii_art.poor_kitty_art()
-    else:
-        print("You met Nero, Penelope, Lulu and Noah in your life, "
-              "but they all end up disappearing from your life based on your decisions.")
-        print("You lived the rest of your life with nothing specific happening.")
-        ascii_art.bad_ending()
-        ascii_art.poor_kitty_art()
-
+    # firstly, check how the mc ends the game.
+    #
+    # if MC reaches Happy ending for core event?
+    # print("happy ending")
+    # if MC got bad ending for core event?
+    # print("bad ending")
+    # if MC didn't get to core event?
+    # print("You couldn't reach over 15 relationship score for each of the characters")  # something like this
     print("This is the end of a cat's story.")
-    print("Thanks for playing our game.")
-    print("Made By: Eunjeong(Alice) Hur, Shuyi Liu")
 
 
-def get_event(event, character, other_character_name):
+def get_event(event: dict, character: dict, other_character_name: str):
     """
-    Place Holder.
+    Adjust relationship score with other_character_name based on user's choice of script options.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param event: a dictionary
+    :param character: a dictionary
+    :param other_character_name: a string
+    :precondition: other_character_name must be a string that is one of 'Nero', 'Lulu', 'Noah', 'Penelope'
+    :precondition: event must be a dictionary that is retrieved from character.json file
+    :precondition: character must be a dictionary
+    :postcondition: If user picked gain points option, increment relationship score with
+    other_character_name by gain_points score.
+    :postcondition: If user picked lose points option, decrement relationship score with
+    other_character_name by gain_points score.
     """
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
-
     gain_or_not = display_script(event, character)
 
     if gain_or_not:
@@ -404,10 +385,10 @@ def get_event(event, character, other_character_name):
 
 def replace_mc_name(name: str, lines: list) -> list:
     """
-    Place Holder.
+    Replace "/mc_name" from scripts into main character name user entered.
 
-    :param board:
-    :param character:
+    :param name:
+    :param lines:
     :precondition:
     :precondition:
     :postcondition:
@@ -418,11 +399,11 @@ def replace_mc_name(name: str, lines: list) -> list:
     return replaced_lines
 
 
-def display_script(event, character):
+def display_script(event: str or int, character):
     """
     Place Holder.
 
-    :param board:
+    :param event:
     :param character:
     :precondition:
     :precondition:
@@ -474,7 +455,6 @@ def check_if_goal_attained(character):
     """
     Place Holder.
 
-    :param board:
     :param character:
     :precondition:
     :precondition:
@@ -498,8 +478,6 @@ def game():
     """
     Place Holder.
 
-    :param board:
-    :param character:
     :precondition:
     :precondition:
     :postcondition:
@@ -524,7 +502,7 @@ def game():
         else:
             print("You can't go that direction!")
             get_user_choice()
-    display_ending_script(character)
+    display_ending_script()
 
 
 def main():
