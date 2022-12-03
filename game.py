@@ -344,8 +344,6 @@ def display_ending_script(character):
     :postcondition:
     :return:
     """
-    # firstly, check how the mc ends the game.
-    #
     if character['Nero'][0] == 5 or character['Lulu'][0] == 6:
         if character['Nero'][1] >= 20 or character['Lulu'][1] >= 20:
             ascii_art.happy_ending()
@@ -373,12 +371,7 @@ def display_ending_script(character):
         print("You lived the rest of your life with nothing specific happening.")
         ascii_art.bad_ending()
         ascii_art.poor_kitty_art()
-    # if MC reaches Happy ending for core event?
-    # print("happy ending")
-    # if MC got bad ending for core event?
-    # print("bad ending")
-    # if MC didn't get to core event?
-    # print("You couldn't reach over 15 relationship score for each of the characters")  # something like this
+
     print("This is the end of a cat's story.")
     print("Thanks for playing our game.")
     print("Made By: Eunjeong(Alice) Hur, Shuyi Liu")
