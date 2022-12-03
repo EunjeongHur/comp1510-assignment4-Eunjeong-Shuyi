@@ -148,9 +148,6 @@ def event_option(character):
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
         return choice(event_options)
-    elif character['Penelope'][0] >= 5 or character['Nero'][0] >= 5 or \
-            character['Lulu'][0] >= 5 or character['Noah'][0] >= 6:
-        return "ending"
     else:
         return check_if_score_reached(character)
 
@@ -158,7 +155,7 @@ def event_option(character):
 def check_if_score_reached(character):
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
-    elif character['Lulu'][0] == 4 and character['Lulu'][1] >= 15:
+    elif character['Lulu'][0] == 5 and character['Lulu'][1] >= 15:
         return 'Lulu'
     elif character['Noah'][0] == 5 and character['Noah'][1] >= 15:
         return 'Noah'
@@ -177,6 +174,10 @@ def check_if_game_ended(character):
     for char in range(len(other_characters)):
         if character[other_characters[char]][0] >= 4 and character[other_characters[char]][1] < 15:
             removed_characters.append(other_characters[char])
+        elif character[other_characters[char]][0] > 4 and character[other_characters[char]][1] >= 20:
+            removed_characters.append(other_characters[char])
+        else:
+            continue
     for char in removed_characters:
         other_characters.remove(char)
 
@@ -189,27 +190,29 @@ def execute_challenge_protocol(board, character):
     data = json.load(file)
     event_character = pick_random_character(character)
     if event_option == "ending":
-        display_ending_script()
+        return True
     else:
         event = ""
 
         for line in data[event_character]:
             if line['episode'] == character[event_character][0]:
                 event = line
-
+        print(f'---{event_option} Event---\n')
         get_event(event, character, event_character)
         current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
         board[current_character_coordinate] = "Empty room"
 
 
 def display_ending_script():
-    print("reaches ending")
-    file = open("./character.json")
-    data = json.load(file)
-    for line in data["Ending"]:
-        print(f'{line}\n')
-        # sleep(1.5)
-    achieved_goal = True
+    # firstly, check how the mc ends the game.
+    #
+    # if MC reaches Happy ending for core event?
+    # print("happy ending")
+    # if MC got bad ending for core event?
+    # print("bad ending")
+    # if MC didn't get to core event?
+    # print("You couldn't reach over 15 relationship score for each of the characters")  # something like this
+    print("This is the end of a cat's story.")
 
 
 def get_event(event, character, other_character_name):
@@ -283,8 +286,18 @@ def execute_glow_up_protocol():
     pass
 
 
-def check_if_goal_attained(board, character):
-    pass
+def check_if_goal_attained(character):
+    # check if mc reaches the end of events
+    if character['Nero'][0] == 5:
+        return True
+    elif character['Lulu'][0] == 6:
+        return True
+    elif character['Noah'][0] == 6:
+        return True
+    elif character['Penelope'][0] == 5:
+        return True
+    else:
+        return False
 
 
 def game():
@@ -304,15 +317,18 @@ def game():
             move_character(character, direction)
             describe_current_location(board, character)
             there_is_a_challenge = check_for_challenges(board, character)
-            print(there_is_a_challenge)
+            # print(there_is_a_challenge)
             if there_is_a_challenge:
-                execute_challenge_protocol(board, character)
-                if character_has_leveled(character):
-                    execute_glow_up_protocol()
+                achieved_goal = execute_challenge_protocol(board, character)
+                if check_if_goal_attained(character):
+                    achieved_goal = True
+                # if character_has_leveled(character):
+                #     execute_glow_up_protocol()
             # achieved_goal = check_if_goal_attained(board, character)
         else:
             print("You can't go that direction!")
             get_user_choice()
+    display_ending_script()
 
 
 def main():
