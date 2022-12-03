@@ -406,12 +406,12 @@ def replace_mc_name(name: str, lines: list) -> list:
     """
     Replace "/mc_name" from scripts into main character name user entered.
 
-    :param name:
-    :param lines:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param name: a string
+    :param lines: a list
+    :precondition: name must be main character's name that user entered
+    :precondition: lines must be a list containing string
+    :postcondition: replaces all '/mc_name' to name
+    :return: a list containing replaced string
     """
     replaced_lines = [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
 
