@@ -39,6 +39,7 @@ def make_board(rows: int, columns: int) -> dict:
 def make_character() -> dict:
     """
     Generate a character with all attributes and input username.
+
     :precondition: input for character must be a non-empty string
     :precondition: input for character gender be a "F" or "M"
     :postcondition: Generate a character with all attributes and input username and input gender
@@ -63,6 +64,16 @@ def make_character() -> dict:
 
 
 def describe_current_location(board, character):
+    """
+    Generate an updated map after character moves.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     current_location = board[current_character_coordinate]
 
@@ -86,6 +97,16 @@ def describe_current_location(board, character):
 
 
 def get_user_choice():
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     directions = ['Up', 'Down', 'Left', 'Right']
     numbers = ['1', '2', '3', '4']
     print("To quit a game, type 'q' or 'quit'\n")
@@ -106,6 +127,16 @@ def get_user_choice():
 
 
 def validate_move(character, direction):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
     if current_character_coordinate[0] == 0 and direction == 'Up':
@@ -121,6 +152,16 @@ def validate_move(character, direction):
 
 
 def move_character(character, direction):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     current_x_location = character['X-coordinate']
     current_y_location = character['Y-coordinate']
 
@@ -157,8 +198,13 @@ def check_for_challenges(board: dict, character: dict) -> bool:
 
 def check_route(character):
     """
+    Place Holder.
 
+    :param board:
     :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
     :return:
     """
     # check if character chooses home route or wild route
@@ -172,6 +218,16 @@ def check_route(character):
 
 
 def pick_random_character(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     is_home_route = check_route(character)
     # print(character)
     if is_home_route:
@@ -181,6 +237,16 @@ def pick_random_character(character):
 
 
 def event_option(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     print(character)
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
@@ -190,6 +256,16 @@ def event_option(character):
 
 
 def check_if_score_reached(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
     elif character['Lulu'][0] == 5 and character['Lulu'][1] >= 15:
@@ -205,6 +281,16 @@ def check_if_score_reached(character):
 
 
 def check_if_game_ended(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     other_characters = ['Nero', 'Lulu', 'Noah']
     removed_characters = []
 
@@ -222,6 +308,17 @@ def check_if_game_ended(character):
 
 
 def execute_challenge_protocol(board, character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
+    print(event_option)
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
@@ -240,6 +337,16 @@ def execute_challenge_protocol(board, character):
 
 
 def display_ending_script():
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     # firstly, check how the mc ends the game.
     #
     # if MC reaches Happy ending for core event?
@@ -252,6 +359,16 @@ def display_ending_script():
 
 
 def get_event(event, character, other_character_name):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
 
@@ -267,12 +384,32 @@ def get_event(event, character, other_character_name):
 
 
 def replace_mc_name(name: str, lines: list) -> list:
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     replaced_lines = [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
 
     return replaced_lines
 
 
 def display_script(event, character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     name = character['Name']
     options = []
     numbers = []
@@ -323,6 +460,16 @@ def execute_glow_up_protocol():
 
 
 def check_if_goal_attained(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     # check if mc reaches the end of events
     if character['Nero'][0] == 5:
         return True
@@ -337,6 +484,16 @@ def check_if_goal_attained(character):
 
 
 def game():
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     rows = 10
     columns = 10
     board = make_board(rows, columns)
@@ -367,6 +524,9 @@ def game():
 
 
 def main():
+    """
+    Drives the program
+    """
     game()
     # character = make_character()
     # board = make_board(10, 10)
