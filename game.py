@@ -62,8 +62,32 @@ def make_character() -> dict:
             else:
                 character['Gender'] = character_gender
                 break
-
+        display_opening(character)
         return character
+
+
+def display_opening(character: dict):
+    """
+    Display the opening script after a character is made.
+
+    :param character: A dictionary
+    :precondition: character must be a dictionary
+    :postcondition: display the opening script after a character is made
+    """
+    print("\nCharacter is successfully created!")
+    sleep(0.5)
+    print("\nYou woke up from your dream and start grooming yourself.")
+    sleep(1.5)
+    print(f"\nYour name is {character['Name']}, and you are a stray cat in Vancouver.\n")
+    sleep(1.5)
+    ascii_art.city_art()
+    sleep(2)
+    print("\nAfter grooming yourself, you stood up and was ready to start your new day of adventure.\n")
+    sleep(3)
+    ascii_art.a_cats_story()
+    sleep(2)
+    print("\nStart your adventure by entering '1','2','3','4'")
+    sleep(2)
 
 
 def describe_current_location(board: dict, character: dict):
@@ -325,7 +349,7 @@ def execute_challenge_protocol(board: dict, character: dict):
         for line in data[event_character]:
             if line['episode'] == character[event_character][0]:
                 event = line
-        print(f'---{event_character } Event---\n')
+        print(f'---{event_character} Event---\n')
         get_event(event, character, event_character)
         current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
         board[current_character_coordinate] = "Empty Room"
