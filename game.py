@@ -19,8 +19,8 @@ def make_board(rows: int, columns: int) -> dict:
     :param rows: an integer that is in range [1, 10] inclusive
     :param columns: an integer that is in range [1, 10] inclusive
     :precondition: rows and columns must be integers that are in range [1, 10] inclusive
-    :postcondition: generate the board that shows game map to users
-    :postcondition: generate a 10*10 board
+    :postcondition: generates the board that shows game map to users
+    :postcondition: generates a 10*10 board
     :return: the board that shows game map to users as a dictionary
     """
     rooms_coordinates = {}
@@ -44,9 +44,9 @@ def make_character() -> dict:
 
     :precondition: input for character must be a non-empty string
     :precondition: input for character gender be a "F" or "M"
-    :postcondition: ask user to re-enter inputs if inputs are not valid
-    :postcondition: generate a character with all attributes and input username and input gender
-    :return: generate a character with all attributes and input username as a dictionary
+    :postcondition: asks user to re-enter inputs if inputs are not valid
+    :postcondition: generates a character with all attributes and input username and input gender
+    :return: generates a character with all attributes and input username as a dictionary
     """
     character = {'X-coordinate': 9, 'Y-coordinate': 4,
                  'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
@@ -72,7 +72,7 @@ def display_opening(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: display the opening script after a character is made
+    :postcondition: displays the opening script after a character is made
     """
     print("\nCharacter is successfully created!")
     sleep(0.5)
@@ -97,7 +97,7 @@ def describe_current_location(board: dict, character: dict):
     :param board: a dictionary
     :param character: a dictionary
     :precondition: board and character must be dictionaries
-    :postcondition: generate an updated map board after character moves
+    :postcondition: generates an updated map board after character moves
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
@@ -127,7 +127,7 @@ def get_user_choice() -> bool or str:
     :precondition: user must enter '1', '2', '3', '4' to move
     :precondition: user must enter 'q' or 'quit' (case-insensitive) to move
     :postcondition: user can move 'Up', 'Down', 'Left', 'Right' by entering '1', '2', '3', '4'
-    :postcondition: end the game if user types 'q' or 'quit' (case-insensitive)
+    :postcondition: ends the game if user types 'q' or 'quit' (case-insensitive)
     :return: direction that user choose to move as a string or False if when user types 'q' or 'quit'
     """
     directions = ['Up', 'Down', 'Left', 'Right']
@@ -157,8 +157,8 @@ def validate_move(character: dict, direction: str) -> bool:
     :param direction: a string
     :precondition: character must be a dictionary
     :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
-    :postcondition: determine if move is validate
-    :postcondition: invalidate move if character reaches boarders of the map
+    :postcondition: determines if move is validate
+    :postcondition: invalidates move if character reaches boarders of the map
     :return: True if move is validate, False if not
 
     >>> test_character = {'X-coordinate': 3, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], 'Noah': [1, 10], \
@@ -187,7 +187,7 @@ def move_character(character, direction):
     :param character: a dictionary
     :precondition: character must be a dictionary
     :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
-    :postcondition: change character's X-coordinate and Y-coordinate based on direction
+    :postcondition: changes character's X-coordinate and Y-coordinate based on direction
     >>> my_character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], \
     'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
     >>> my_direction = 'Up'
@@ -237,7 +237,7 @@ def check_for_challenges(board: dict, character: dict) -> bool:
     :precondition: character must contain current user's information
     :post condition: 'Empty Room' and 'Respawn Room' are considered as not having events
     :post condition: if current location has event, return True. Otherwise, return False
-    :return: return True if current location has event, else return False
+    :return: True if current location has event. Else, False
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     room = board[current_character_coordinate]
@@ -254,7 +254,7 @@ def pick_random_character(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: select 'Penelope' character if in home route based on output of function check_route
+    :postcondition: selects 'Penelope' character if in home route based on output of function check_route
     :return: 'Penelope' as a string or event_option(character) as a function
     """
 
@@ -270,8 +270,8 @@ def event_option(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: select a random element in list event_options if Penelope's script has not been displayed yet
-    :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
+    :postcondition: selects a random element in list event_options if Penelope's script has not been displayed yet
+    :postcondition: calls function check_if_score_reached if Penelope's first script has already been displayed
     :return: next event choice as a string or check_if_score_reached(character) as a function
     """
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
@@ -287,11 +287,11 @@ def check_if_score_reached(character: dict) -> str:
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: put user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
-    :postcondition: put user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
-    :postcondition: put user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
-    :postcondition: display text if relationships from all chars are lower than 15
-    :postcondition: put user into ending route if no more character options are available
+    :postcondition: puts user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
+    :postcondition: puts user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
+    :postcondition: puts user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
+    :postcondition: displays text if relationships from all chars are lower than 15
+    :postcondition: puts user into ending route if no more character options are available
     :return: next event choice as a string
     """
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
@@ -314,8 +314,8 @@ def check_if_game_ended(character: dict) -> list:
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: check if the game has ended based on scripts displayed and relationship scores with characters
-    :postcondition: generate a list other_characters for function check_if_score_reached based on scripts
+    :postcondition: checks if the game has ended based on scripts displayed and relationship scores with characters
+    :postcondition: generates a list other_characters for function check_if_score_reached based on scripts
     displayed and relationship scores with characters
     :postcondition: if all non-critical scripts of a character were played and relationship point is lower than 15,
     disable the route so this route will not show up in random choices
@@ -352,7 +352,8 @@ def execute_challenge_protocol(board: dict, character: dict):
     :param character: a dictionary
     :precondition: board must be a dictionary
     :precondition: character must be a dictionary
-    :postcondition: Execute the challenge protocol according to event_option output
+    :postcondition: executes the challenge protocol according to event_option output
+    :postcondition: current event room will become Empty Room
     :return: True of event_character is "ending"
     """
     file = open("./character.json")
@@ -429,9 +430,9 @@ def get_event(event: dict, character: dict, other_character_name: str):
     :precondition: other_character_name must be a string that is one of 'Nero', 'Lulu', 'Noah', 'Penelope'
     :precondition: event must be a dictionary that is retrieved from character.json file
     :precondition: character must be a dictionary
-    :postcondition: If user picked gain points option, increment relationship score with
+    :postcondition: if user picked gain points option, increment relationship score with
     other_character_name by gain_points score.
-    :postcondition: If user picked lose points option, decrement relationship score with
+    :postcondition: if user picked lose points option, decrement relationship score with
     other_character_name by gain_points score.
     """
     episode = character[other_character_name][0]
@@ -523,7 +524,7 @@ def check_if_goal_attained(character: dict) -> bool:
     :param character: a dictionary
     :precondition: character must be a dictionary containing user information
     :postcondition: checks if user reaches the critical event for any of the event characters
-    :return: return True if user reaches the critical event for any of the event characters. Otherwise, return False
+    :return: returns True if user reaches the critical event for any of the event characters. Otherwise, return False
     >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
     'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
     >>> check_if_goal_attained(test_character)
@@ -570,7 +571,7 @@ def game():
 
 def main():
     """
-    Drive the program
+    Drive the program.
     """
     game()
 
