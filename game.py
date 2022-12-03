@@ -195,6 +195,31 @@ def move_character(character, direction):
     :precondition: character must be a dictionary
     :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
     :postcondition: change character's X-coordinate and Y-coordinate based on direction
+    >>> my_character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> my_direction = 'Up'
+    >>> move_character(my_character, my_direction)
+    >>> my_character['X-coordinate']
+    8
+    >>> my_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> my_direction = 'Down'
+    >>> move_character(my_character, my_direction)
+    >>> my_character['X-coordinate']
+    6
+    >>> my_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> my_direction = 'Left'
+    >>> move_character(my_character, my_direction)
+    >>> my_character['Y-coordinate']
+    3
+    >>> my_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> my_direction = 'Right'
+    >>> move_character(my_character, my_direction)
+    >>> my_character['Y-coordinate']
+    5
+
     """
     current_x_location = character['X-coordinate']
     current_y_location = character['Y-coordinate']
