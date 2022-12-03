@@ -76,7 +76,7 @@ def display_opening(character: dict):
     """
     print("\nCharacter is successfully created!")
     sleep(0.5)
-    print("\nYou woke up from your dream and start grooming yourself.")
+    print("\nYou woke up from your dream and started grooming yourself.")
     sleep(1.5)
     print(f"\nYour name is {character['Name']}, and you are a stray cat in Vancouver.\n")
     sleep(1.5)
