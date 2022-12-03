@@ -96,7 +96,7 @@ def describe_current_location(board: dict, character: dict):
     print()
 
 
-def get_user_choice() -> bool or string:
+def get_user_choice() -> bool or str:
     """
     Get user's input for moving and reflect as direction or allow user quit the game.
 
@@ -125,7 +125,7 @@ def get_user_choice() -> bool or string:
     return False
 
 
-def validate_move(character:dict, direction:string) -> bool:
+def validate_move(character: dict, direction: str) -> bool:
     """
     Determine if move is validate.
 
