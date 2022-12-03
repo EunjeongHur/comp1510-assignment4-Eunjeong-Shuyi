@@ -19,6 +19,7 @@ def make_board(rows: int, columns: int) -> dict:
     :param columns: an integer that is in range [1, 10] inclusive
     :precondition: rows and columns must be integers that are in range [1, 10] inclusive
     :postcondition: generate the board that shows game map to users
+    :postcondition: generate a 10*10 board
     :return: the board that shows game map to users as a dictionary
     """
     rooms_coordinates = {}
@@ -39,8 +40,10 @@ def make_board(rows: int, columns: int) -> dict:
 def make_character() -> dict:
     """
     Generate a character with all attributes and input username.
+
     :precondition: input for character must be a non-empty string
     :precondition: input for character gender be a "F" or "M"
+    :postcondition: Ask user to re-enter inputs if inputs are not valid
     :postcondition: Generate a character with all attributes and input username and input gender
     :return: Generate a character with all attributes and input username as a dictionary
     """
@@ -62,7 +65,15 @@ def make_character() -> dict:
         return character
 
 
-def describe_current_location(board, character):
+def describe_current_location(board: dict, character: dict):
+    """
+    Generate an updated map board after character moves.
+
+    :param board: a dictionary
+    :param character: a dictionary
+    :precondition: board and character must be dictionaries
+    :postcondition: generate an updated map board after character moves
+    """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     current_location = board[current_character_coordinate]
 
@@ -85,7 +96,16 @@ def describe_current_location(board, character):
     print()
 
 
-def get_user_choice():
+def get_user_choice() -> bool or str:
+    """
+    Get user's input for moving and reflect as direction or allow user quit the game.
+
+    :precondition: user must enter '1', '2', '3', '4' to move
+    :precondition: user must enter 'q' or 'quit' (case-insensitive) to move
+    :postcondition: user can move 'Up', 'Down', 'Left', 'Right' by entering '1', '2', '3', '4'
+    :postcondition: end the game if user types 'q' or 'quit' (case-insensitive)
+    :return: direction that user choose to move as a string or False if when user types 'q' or 'quit'
+    """
     directions = ['Up', 'Down', 'Left', 'Right']
     numbers = ['1', '2', '3', '4']
     print("To quit a game, type 'q' or 'quit'\n")
@@ -105,7 +125,18 @@ def get_user_choice():
     return False
 
 
-def validate_move(character, direction):
+def validate_move(character: dict, direction: str) -> bool:
+    """
+    Determine if move is validate.
+
+    :param character: a dictionary
+    :param direction: a string
+    :precondition: character must be a dictionary
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :postcondition: determine if move is validate
+    :postcondition: invalidate move if character reaches boarders of the map
+    :return: True if move is validate, False if not
+    """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
     if current_character_coordinate[0] == 0 and direction == 'Up':
@@ -121,6 +152,15 @@ def validate_move(character, direction):
 
 
 def move_character(character, direction):
+    """
+    Move character to position on the map based on where character's current position and direction it moves.
+
+    :param direction:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :postcondition: change character's X-coordinate and Y-coordinate based on direction
+    """
     current_x_location = character['X-coordinate']
     current_y_location = character['Y-coordinate']
 
@@ -155,11 +195,15 @@ def check_for_challenges(board: dict, character: dict) -> bool:
         return True
 
 
-def check_route(character):
+def check_route(character: dict) -> bool:
     """
+    Check if user is in Penelope route.
 
-    :param character:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: print home route message and return True if user is in Penelope route
+    :postcondition: print wild route message and return True if user is not in Penelope route
+    :return: True of user is in Penelope route, False if not
     """
     # check if character chooses home route or wild route
     if character['Penelope'][1] >= 15:
@@ -171,7 +215,15 @@ def check_route(character):
         return False
 
 
-def pick_random_character(character):
+def pick_random_character(character: dict):
+    """
+    Select 'Penelope' character if in home route.
+
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: select 'Penelope' character if in home route based on output of function check_route
+    :return: 'Penelope' as a string or event_option(character) as a function
+    """
     is_home_route = check_route(character)
     # print(character)
     if is_home_route:
@@ -180,7 +232,16 @@ def pick_random_character(character):
         return event_option(character)
 
 
-def event_option(character):
+def event_option(character: dict):
+    """
+    Generate next event choice.
+
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: select a random element in list event_options if Penelope's script has not been displayed yet
+    :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
+    :return: next event choice as a string or check_if_score_reached(character) as a function
+    """
     print(character)
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
@@ -189,7 +250,19 @@ def event_option(character):
         return check_if_score_reached(character)
 
 
-def check_if_score_reached(character):
+def check_if_score_reached(character: dict) -> str:
+    """
+    Check if critical scores are reached and put user into individual route according to scores.
+
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: put user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
+    :postcondition: put user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
+    :postcondition: put user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
+    :postcondition: display text if relationships from all chars are lower than 15
+    :postcondition: put user into ending route if no more character options are available
+    :return: next event choice as a string
+    """
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
     elif character['Lulu'][0] == 5 and character['Lulu'][1] >= 15:
@@ -199,19 +272,34 @@ def check_if_score_reached(character):
     else:
         result = check_if_game_ended(character)
         if len(result) == 0:
+            if character['Nero'][1] < 15 and character['Lulu'][1] < 15 and character['Noah'][1] < 15 \
+                    and character['Penelope'][1] < 15:
+                print("You met Nero, Penelope, Lulu and Noah in your life, "
+                      "but they all end up disappearing from your life based on your decisions.")
+                print("You lived the rest of your life with nothing specific happening.")
             return "ending"
         else:
             return choice(result)
 
 
-def check_if_game_ended(character):
+def check_if_game_ended(character: dict) -> list:
+    """
+    Check if the game has ended.
+
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: check if the game has ended based on scripts displayed and relationship scores with characters
+    :postcondition: generate a list other_characters for function check_if_score_reached based on scripts
+    displayed and relationship scores with characters
+    :postcondition: if all non-critical scripts of a character were played and relationship point is lower than 15,
+    disable the route so this route will not show up in random choices
+    :return: characters that are left saved in other_characters as a list
+    """
     other_characters = ['Nero', 'Lulu', 'Noah']
     removed_characters = []
 
     for char in range(len(other_characters)):
         if character[other_characters[char]][0] >= 4 and character[other_characters[char]][1] < 15:
-            removed_characters.append(other_characters[char])
-        elif character[other_characters[char]][0] > 4 and character[other_characters[char]][1] >= 20:
             removed_characters.append(other_characters[char])
         else:
             continue
@@ -222,6 +310,17 @@ def check_if_game_ended(character):
 
 
 def execute_challenge_protocol(board, character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
+    print(event_option)
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
@@ -240,6 +339,16 @@ def execute_challenge_protocol(board, character):
 
 
 def display_ending_script():
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     # firstly, check how the mc ends the game.
     #
     # if MC reaches Happy ending for core event?
@@ -252,6 +361,16 @@ def display_ending_script():
 
 
 def get_event(event, character, other_character_name):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     episode = character[other_character_name][0]
     character_points = character[other_character_name][1]
 
@@ -267,12 +386,32 @@ def get_event(event, character, other_character_name):
 
 
 def replace_mc_name(name: str, lines: list) -> list:
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     replaced_lines = [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
 
     return replaced_lines
 
 
 def display_script(event, character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     name = character['Name']
     options = []
     numbers = []
@@ -323,6 +462,16 @@ def execute_glow_up_protocol():
 
 
 def check_if_goal_attained(character):
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     # check if mc reaches the end of events
     if character['Nero'][0] == 5:
         return True
@@ -337,6 +486,16 @@ def check_if_goal_attained(character):
 
 
 def game():
+    """
+    Place Holder.
+
+    :param board:
+    :param character:
+    :precondition:
+    :precondition:
+    :postcondition:
+    :return:
+    """
     rows = 10
     columns = 10
     board = make_board(rows, columns)
@@ -367,6 +526,9 @@ def game():
 
 
 def main():
+    """
+    Drives the program
+    """
     game()
     # character = make_character()
     # board = make_board(10, 10)
