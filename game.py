@@ -264,6 +264,17 @@ def check_route(character: dict) -> bool:
     :postcondition: print home route message and return True if user is in Penelope route
     :postcondition: print wild route message and return True if user is not in Penelope route
     :return: True of user is in Penelope route, False if not
+
+    >>> test_character = {'X-coordinate': 3, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], 'Noah': [1, 10], \
+    'Penelope': [2, 10], 'Name': 'Alice'}
+    >>> check_route(test_character)
+    You are in wild route now
+    False
+    >>> test_character = {'X-coordinate': 3, 'Y-coordinate': 4, 'Nero': [3, 13], 'Lulu': [1, 10], 'Noah': [1, 10], \
+    'Penelope': [2, 18], 'Name': 'Alice'}
+    >>> check_route(test_character)
+    You are in home route now
+    True
     """
     # check if character chooses home route or wild route
     if character['Penelope'][1] >= 15:
