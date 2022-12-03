@@ -195,16 +195,15 @@ def check_for_challenges(board: dict, character: dict) -> bool:
         return True
 
 
-def check_route(character):
+def check_route(character: dict) -> bool:
     """
-    Place Holder.
+    Check if user is in Penelope route.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: print home route message and return True if user is in Penelope route
+    :postcondition: print wild route message and return True if user is not in Penelope route
+    :return: True of user is in Penelope route, False if not
     """
     # check if character chooses home route or wild route
     if character['Penelope'][1] >= 15:
@@ -216,16 +215,14 @@ def check_route(character):
         return False
 
 
-def pick_random_character(character):
+def pick_random_character(character: dict):
     """
-    Place Holder.
+    Select 'Penelope' character if in home route.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: select 'Penelope' character if in home route based on output of function check_route
+    :return: 'Penelope' as a string or event_option(character) as a function
     """
     is_home_route = check_route(character)
     # print(character)
@@ -235,16 +232,15 @@ def pick_random_character(character):
         return event_option(character)
 
 
-def event_option(character):
+def event_option(character: dict):
     """
-    Place Holder.
+    Generate next event choice.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: select a random element in list event_options if Penelope's script is not displayed
+    :postcondition: call function check_if_score_reached if Penelope's first script is displayed
+    :return: next event choice as a string or check_if_score_reached(character) as a function
     """
     print(character)
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
