@@ -117,7 +117,9 @@ def move_character(character, direction):
 def check_for_challenges(board, character):
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     room = board[current_character_coordinate]
+    print(room)
     if room == "Empty Room" or room == "Respawn Room":
+        print('no event here')
         return False
     else:
         return True
@@ -200,7 +202,7 @@ def execute_challenge_protocol(board, character):
         print(f'---{event_option} Event---\n')
         get_event(event, character, event_character)
         current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
-        board[current_character_coordinate] = "Empty room"
+        board[current_character_coordinate] = "Empty Room"
 
 
 def display_ending_script():
