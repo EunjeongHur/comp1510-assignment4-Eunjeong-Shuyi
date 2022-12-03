@@ -315,7 +315,6 @@ def game():
         valid_move = validate_move(character, direction)
         if valid_move:
             move_character(character, direction)
-            describe_current_location(board, character)
             there_is_a_challenge = check_for_challenges(board, character)
             # print(there_is_a_challenge)
             if there_is_a_challenge:
