@@ -418,16 +418,17 @@ def replace_mc_name(name: str, lines: list) -> list:
     return replaced_lines
 
 
-def display_script(event: str or int, character):
+def display_script(event: dict, character: dict) -> bool:
     """
-    Place Holder.
+    Display scripts that are retrieved from character.json file
 
-    :param event:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param event: a dictionary
+    :param character: a dictionary
+    :precondition: event must be a dictionary that is retrieved from character.json file
+    :precondition: character must be a dictionary containing user's information
+    :postcondition: displays scripts that are retrieved from character.json file
+    :postcondition: gets user input which is '1' or '2' while displaying scripts
+    :return: returns True if user selects gain points option. Otherwise, return False
     """
     name = character['Name']
     options = []
