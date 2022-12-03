@@ -28,7 +28,7 @@ def make_board(rows, columns):
 
 
 def make_character() -> dict:
-    character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Current HP': 10, 'Max HP': 10, 'Age': 5,
+    character = {'X-coordinate': 9, 'Y-coordinate': 4,
                  'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
                  'Name': input("Enter a character name: ")}
     while True:
@@ -144,19 +144,23 @@ def pick_random_character(character):
 
 
 def event_option(character):
+    print(character)
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
     if character['Penelope'][0] == 1:
         return choice(event_options)
+    elif character['Penelope'][0] >= 5 or character['Nero'][0] >= 5 or \
+            character['Lulu'][0] >= 5 or character['Noah'][0] >= 6:
+        return "ending"
     else:
         return check_if_score_reached(character)
 
 
 def check_if_score_reached(character):
-    if character['Nero'][0] >= 4 and character['Nero'][1] >= 15:
+    if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
-    elif character['Lulu'][0] >= 4 and character['Lulu'][1] >= 15:
+    elif character['Lulu'][0] == 4 and character['Lulu'][1] >= 15:
         return 'Lulu'
-    elif character['Noah'][0] >= 4 and character['Noah'][1] >= 15:
+    elif character['Noah'][0] == 5 and character['Noah'][1] >= 15:
         return 'Noah'
     else:
         result = check_if_game_ended(character)
@@ -180,6 +184,7 @@ def check_if_game_ended(character):
 
 
 def execute_challenge_protocol(board, character):
+    print(event_option)
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
@@ -198,7 +203,13 @@ def execute_challenge_protocol(board, character):
 
 
 def display_ending_script():
-    pass
+    print("reaches ending")
+    file = open("./character.json")
+    data = json.load(file)
+    for line in data["Ending"]:
+        print(f'{line}\n')
+        # sleep(1.5)
+    achieved_goal = True
 
 
 def get_event(event, character, other_character_name):
@@ -241,7 +252,7 @@ def display_script(event, character):
 
     for line in script:
         print(f'{line}\n')
-        sleep(1.5)
+        # sleep(1.5)
 
     for number, option in enumerate(options, 1):
         print(f'{number}. {option}')
@@ -250,17 +261,17 @@ def display_script(event, character):
     while user_answer not in numbers:
         user_answer = input("Choose a number: ")
     print(". . .")
-    sleep(1.5)
+    # sleep(1.5)
 
     if int(user_answer) == options.index(gain_points_option) + 1:
         for script in gain_points_option_script:
             print(f'{script}\n')
-            sleep(2)
+            # sleep(2)
         return True
     else:
         for script in no_gain_points_options_script:
             print(script)
-            sleep(2)
+            # sleep(2)
         return False
 
 
@@ -286,8 +297,8 @@ def game():
         # Tell the user where they are
         describe_current_location(board, character)
         direction = get_user_choice()
-        if direction is False:
-            achieved_goal = True
+        # if direction is False:
+        #     achieved_goal = True
         valid_move = validate_move(character, direction)
         if valid_move:
             move_character(character, direction)
