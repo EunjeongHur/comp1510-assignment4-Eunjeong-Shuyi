@@ -44,9 +44,9 @@ def make_character() -> dict:
 
     :precondition: input for character must be a non-empty string
     :precondition: input for character gender be a "F" or "M"
-    :postcondition: Ask user to re-enter inputs if inputs are not valid
-    :postcondition: Generate a character with all attributes and input username and input gender
-    :return: Generate a character with all attributes and input username as a dictionary
+    :postcondition: ask user to re-enter inputs if inputs are not valid
+    :postcondition: generate a character with all attributes and input username and input gender
+    :return: generate a character with all attributes and input username as a dictionary
     """
     character = {'X-coordinate': 9, 'Y-coordinate': 4,
                  'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
@@ -100,7 +100,6 @@ def describe_current_location(board: dict, character: dict):
     :postcondition: generate an updated map board after character moves
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
-    current_location = board[current_character_coordinate]
 
     for _ in range(20):
         print("-", end=" ")
@@ -157,7 +156,7 @@ def validate_move(character: dict, direction: str) -> bool:
     :param character: a dictionary
     :param direction: a string
     :precondition: character must be a dictionary
-    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
     :postcondition: determine if move is validate
     :postcondition: invalidate move if character reaches boarders of the map
     :return: True if move is validate, False if not
@@ -183,7 +182,7 @@ def move_character(character, direction):
     :param direction:
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'.
+    :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
     :postcondition: change character's X-coordinate and Y-coordinate based on direction
     """
     current_x_location = character['X-coordinate']
@@ -207,7 +206,7 @@ def check_for_challenges(board: dict, character: dict) -> bool:
     :param character: a dictionary
     :precondition: board must contain rooms coordinate for key and room description for value
     :precondition: character must contain current user's information
-    :post condition: Empty Room and Respawn Room are considered as not having events
+    :post condition: 'Empty Room' and 'Respawn Room' are considered as not having events
     :post condition: if current location has event, return True. Otherwise, return False
     :return: return True if current location has event, else return False
     """
@@ -522,12 +521,12 @@ def check_if_goal_attained(character: dict) -> bool:
 
 def game():
     """
-    Place Holder.
+    Plays the game.
 
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :postcondition: creates a 10 * 10 board by calling make_board()
+    :postcondition: creates a character dictionary by calling make_character()
+    :postcondition: plays a game while achieved_goal is False
+    :postcondition: once achieved_gaol becomes True, ends the game and call display_ending_script()
     """
     rows = 10
     columns = 10
@@ -548,7 +547,7 @@ def game():
         else:
             print("You can't go that direction!")
             get_user_choice()
-    display_ending_script()
+    display_ending_script(character)
 
 
 def main():
