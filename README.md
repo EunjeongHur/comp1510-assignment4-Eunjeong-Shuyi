@@ -19,6 +19,22 @@ A01178380
 ## Member #2 GitHub account ID:
 maz1995
 
+## Requirements
+| Required element      | Location (line-number) |
+|-----------------------|------------------------|
+| Tuple                 | 176                    |
+| List                  | 278                    |
+| List Comprehension    | 459                    |
+| Selection             | 221 ~ 228              |
+| Repetition            | 138 ~ 150              |
+| Membership Operator   | 61<br/> 145            |
+| range function        | 30                     |
+| itertools module      | 486                    |
+| enumerate function    | 139<br/> 493           |
+| filter / map function | 307                    |
+| random                | 36<br/> 487            |
+
+
 ## Any important comments you'd like to make about your work:
 Welcome to play our game "A Cat's Story"!
 
