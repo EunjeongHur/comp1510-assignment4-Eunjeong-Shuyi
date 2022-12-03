@@ -160,6 +160,17 @@ def validate_move(character: dict, direction: str) -> bool:
     :postcondition: determine if move is validate
     :postcondition: invalidate move if character reaches boarders of the map
     :return: True if move is validate, False if not
+
+    >>> test_character = {'X-coordinate': 3, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], 'Noah': [1, 10], \
+    'Penelope': [1, 10], 'Name': 'Shuyi'}
+    >>> test_direction = 'Down'
+    >>> validate_move(test_character, test_direction)
+    True
+    >>> test_character = {'X-coordinate': 9, 'Y-coordinate': 4, 'Nero': [5, 20], 'Lulu': [1, 10], 'Noah': [1, 10], \
+    'Penelope': [1, 10], 'Name': 'Shuyi'}
+    >>> test_direction = 'Down'
+    >>> validate_move(test_character, test_direction)
+    False
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
