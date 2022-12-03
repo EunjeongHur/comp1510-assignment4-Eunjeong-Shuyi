@@ -512,7 +512,7 @@ def game():
 
 def main():
     """
-    Drives the program
+    Drive the program
     """
     game()
 
