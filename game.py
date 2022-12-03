@@ -562,6 +562,14 @@ def check_if_goal_attained(character: dict) -> bool:
     :precondition: character must be a dictionary containing user information
     :postcondition: checks if user reaches the critical event for any of the event characters
     :return: return True if user reaches the critical event for any of the event characters. Otherwise, return False
+    >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> check_if_goal_attained(test_character)
+    False
+    >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [5, 14], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> check_if_goal_attained(test_character)
+    True
     """
     if character['Nero'][0] == 5:
         return True
