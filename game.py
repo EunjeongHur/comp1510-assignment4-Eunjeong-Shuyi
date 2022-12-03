@@ -76,7 +76,7 @@ def display_opening(character: dict):
     """
     print("\nCharacter is successfully created!")
     sleep(0.5)
-    print("\nYou woke up from your dream and start grooming yourself.")
+    print("\nYou woke up from your dream and started grooming yourself.")
     sleep(1.5)
     print(f"\nYour name is {character['Name']}, and you are a stray cat in Vancouver.\n")
     sleep(1.5)
@@ -100,7 +100,6 @@ def describe_current_location(board: dict, character: dict):
     :postcondition: generate an updated map board after character moves
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
-    current_location = board[current_character_coordinate]
 
     for _ in range(20):
         print("-", end=" ")
@@ -546,7 +545,7 @@ def game():
         else:
             print("You can't go that direction!")
             get_user_choice()
-    display_ending_script()
+    display_ending_script(character)
 
 
 def main():
