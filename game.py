@@ -11,9 +11,18 @@ import json
 from time import sleep
 
 
-def make_board(rows, columns):
+def make_board(rows: int, columns: int) -> dict:
+    """
+    Make board to show game map to users.
+
+    :param rows: an integer that is in range [1, 10] inclusive
+    :param columns: an integer that is in range [1, 10] inclusive
+    :precondition: rows and columns must be integers that are in range [1, 10] inclusive
+    :postcondition: generate the board that shows game map to users
+    :return: the board that shows game map to users as a dictionary
+    """
     rooms_coordinates = {}
-    rooms_names = ['Empty Room', 'Empty Room', 'Empty Room', 'Empty Room', 'Empty Room', 'Event Room']
+    rooms_names = ['Empty Room', 'Empty Room', 'Empty Room', 'Empty Room', 'Event Room']
 
     for row in range(rows):
         for col in range(columns):
@@ -28,18 +37,29 @@ def make_board(rows, columns):
 
 
 def make_character() -> dict:
+    """
+    Generate a character with all attributes and input username.
+    :precondition: input for character must be a non-empty string
+    :precondition: input for character gender be a "F" or "M"
+    :postcondition: Generate a character with all attributes and input username and input gender
+    :return: Generate a character with all attributes and input username as a dictionary
+    """
     character = {'X-coordinate': 9, 'Y-coordinate': 4,
                  'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
                  'Name': input("Enter a character name: ")}
-    while True:
-        character_gender = input("Choose the gender of your character (M / F): ").upper()
-        if character_gender not in ('M', 'F'):
-            print("Please enter 'M' for Male, or 'F' for Female.")
-        else:
-            character['Gender'] = character_gender
-            break
+    if character['Name'].strip() == "":
+        print("Please enter a non-empty character name")
+        make_character()
+    else:
+        while True:
+            character_gender = input("Choose the gender of your character (M / F): ").upper()
+            if character_gender not in ('M', 'F'):
+                print("Please enter 'M' for Male, or 'F' for Female.")
+            else:
+                character['Gender'] = character_gender
+                break
 
-    return character
+        return character
 
 
 def describe_current_location(board, character):
