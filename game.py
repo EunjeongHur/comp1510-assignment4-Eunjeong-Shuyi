@@ -305,7 +305,7 @@ def check_if_game_ended(character: dict) -> list:
 
 def execute_challenge_protocol(board: dict, character: dict):
     """
-    Execute the challenge protocol according to event_option output
+    Execute the challenge protocol according to event_option output.
 
     :param board: a dictionary
     :param character: a dictionary
@@ -420,7 +420,7 @@ def replace_mc_name(name: str, lines: list) -> list:
 
 def display_script(event: dict, character: dict) -> bool:
     """
-    Display scripts that are retrieved from character.json file
+    Display scripts that are retrieved from character.json file.
 
     :param event: a dictionary
     :param character: a dictionary
@@ -471,17 +471,15 @@ def display_script(event: dict, character: dict) -> bool:
         return False
 
 
-def check_if_goal_attained(character):
+def check_if_goal_attained(character: dict) -> bool:
     """
-    Place Holder.
+    Determine whether user attained the end of events.
 
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary containing user information
+    :postcondition: checks if user reaches the critical event for any of the event characters
+    :return: return True if user reaches the critical event for any of the event characters. Otherwise, return False
     """
-    # check if mc reaches the end of events
     if character['Nero'][0] == 5:
         return True
     elif character['Lulu'][0] == 6:
