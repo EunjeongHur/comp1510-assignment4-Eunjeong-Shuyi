@@ -9,6 +9,7 @@ Member #2 Student Number: A01178380
 from random import choice, shuffle
 import json
 from time import sleep
+import ascii_art
 
 
 def make_board(rows: int, columns: int) -> dict:
@@ -272,11 +273,6 @@ def check_if_score_reached(character: dict) -> str:
     else:
         result = check_if_game_ended(character)
         if len(result) == 0:
-            if character['Nero'][1] < 15 and character['Lulu'][1] < 15 and character['Noah'][1] < 15 \
-                    and character['Penelope'][1] < 15:
-                print("You met Nero, Penelope, Lulu and Noah in your life, "
-                      "but they all end up disappearing from your life based on your decisions.")
-                print("You lived the rest of your life with nothing specific happening.")
             return "ending"
         else:
             return choice(result)
@@ -338,11 +334,10 @@ def execute_challenge_protocol(board, character):
         board[current_character_coordinate] = "Empty Room"
 
 
-def display_ending_script():
+def display_ending_script(character):
     """
     Place Holder.
 
-    :param board:
     :param character:
     :precondition:
     :precondition:
@@ -351,6 +346,33 @@ def display_ending_script():
     """
     # firstly, check how the mc ends the game.
     #
+    if character['Nero'][0] == 5 or character['Lulu'][0] == 6:
+        if character['Nero'][1] >= 20 or character['Lulu'][1] >= 20:
+            ascii_art.happy_ending()
+            ascii_art.two_cats_art()
+        else:
+            ascii_art.bad_ending()
+            ascii_art.lonely_cat_art()
+    elif character['Noah'][0] == 6:
+        if character['Noah'][1] >= 20:
+            ascii_art.happy_ending()
+            ascii_art.sleeping_cat_art()
+        else:
+            ascii_art.bad_ending()
+            ascii_art.lonely_cat_art()
+    elif character['Penelope'][0] == 5:
+        if character['Penelope'][1] >= 20:
+            ascii_art.happy_ending()
+            ascii_art.cozy_cat_art()
+        else:
+            ascii_art.bad_ending()
+            ascii_art.poor_kitty_art()
+    else:
+        print("You met Nero, Penelope, Lulu and Noah in your life, "
+              "but they all end up disappearing from your life based on your decisions.")
+        print("You lived the rest of your life with nothing specific happening.")
+        ascii_art.bad_ending()
+        ascii_art.poor_kitty_art()
     # if MC reaches Happy ending for core event?
     # print("happy ending")
     # if MC got bad ending for core event?
@@ -358,6 +380,8 @@ def display_ending_script():
     # if MC didn't get to core event?
     # print("You couldn't reach over 15 relationship score for each of the characters")  # something like this
     print("This is the end of a cat's story.")
+    print("Thanks for playing our game.")
+    print("Made By: Eunjeong(Alice) Hur, Shuyi Liu")
 
 
 def get_event(event, character, other_character_name):
@@ -507,7 +531,7 @@ def game():
         else:
             print("You can't go that direction!")
             get_user_choice()
-    display_ending_script()
+    display_ending_script(character)
 
 
 def main():
