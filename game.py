@@ -238,8 +238,8 @@ def event_option(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: select a random element in list event_options if Penelope's script is not displayed
-    :postcondition: call function check_if_score_reached if Penelope's first script is displayed
+    :postcondition: select a random element in list event_options if Penelope's script has not been displayed yet
+    :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
     :return: next event choice as a string or check_if_score_reached(character) as a function
     """
     print(character)
@@ -250,16 +250,18 @@ def event_option(character: dict):
         return check_if_score_reached(character)
 
 
-def check_if_score_reached(character):
+def check_if_score_reached(character: dict) -> str:
     """
-    Place Holder.
+    Check if critical scores are reached and put user into individual route according to scores.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: put user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
+    :postcondition: put user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
+    :postcondition: put user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
+    :postcondition: display text if relationships from all chars are lower than 15
+    :postcondition: put user into ending route if no more character options are available
+    :return: next event choice as a string
     """
     if character['Nero'][0] == 4 and character['Nero'][1] >= 15:
         return 'Nero'
@@ -270,29 +272,34 @@ def check_if_score_reached(character):
     else:
         result = check_if_game_ended(character)
         if len(result) == 0:
+            if character['Nero'][1] < 15 and character['Lulu'][1] < 15 and character['Noah'][1] < 15 \
+                    and character['Penelope'][1] < 15:
+                print("You met Nero, Penelope, Lulu and Noah in your life, "
+                      "but they all end up disappearing from your life based on your decisions.")
+                print("You lived the rest of your life with nothing specific happening.")
             return "ending"
         else:
             return choice(result)
 
 
-def check_if_game_ended(character):
+def check_if_game_ended(character: dict) -> list:
     """
-    Place Holder.
+    Check if the game has ended.
 
-    :param board:
-    :param character:
-    :precondition:
-    :precondition:
-    :postcondition:
-    :return:
+    :param character: a dictionary
+    :precondition: character must be a dictionary
+    :postcondition: check if the game has ended based on scripts displayed and relationship scores with characters
+    :postcondition: generate a list other_characters for function check_if_score_reached based on scripts
+    displayed and relationship scores with characters
+    :postcondition: if all non-critical scripts of a character were played and relationship point is lower than 15,
+    disable the route so this route will not show up in random choices
+    :return: characters that are left saved in other_characters as a list
     """
     other_characters = ['Nero', 'Lulu', 'Noah']
     removed_characters = []
 
     for char in range(len(other_characters)):
         if character[other_characters[char]][0] >= 4 and character[other_characters[char]][1] < 15:
-            removed_characters.append(other_characters[char])
-        elif character[other_characters[char]][0] > 4 and character[other_characters[char]][1] >= 20:
             removed_characters.append(other_characters[char])
         else:
             continue
