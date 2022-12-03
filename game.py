@@ -358,6 +358,15 @@ def check_if_game_ended(character: dict) -> list:
     :postcondition: if all non-critical scripts of a character were played and relationship point is lower than 15,
     disable the route so this route will not show up in random choices
     :return: characters that are left saved in other_characters as a list
+
+    >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
+    'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> check_if_game_ended(test_character)
+    ['Nero', 'Lulu', 'Noah']
+    >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [4, 14], 'Lulu': [5, 12], \
+    'Noah': [5, 11], 'Penelope': [1, 10], 'Name': 'Chris'}
+    >>> check_if_game_ended(test_character)
+    []
     """
     other_characters = ['Nero', 'Lulu', 'Noah']
     removed_characters = []
