@@ -134,7 +134,18 @@ def move_character(character, direction):
         character['Y-coordinate'] = current_y_location + 1
 
 
-def check_for_challenges(board, character):
+def check_for_challenges(board: dict, character: dict) -> bool:
+    """
+    Determine if current location has an event.
+
+    :param board: a dictionary
+    :param character: a dictionary
+    :precondition: board must contain rooms coordinate for key and room description for value
+    :precondition: character must contain current user's information
+    :post condition: Empty Room and Respawn Room are considered as not having events
+    :post condition: if current location has event, return True. Otherwise, return False
+    :return: return True if current location has event, else return False
+    """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     room = board[current_character_coordinate]
     print(room)
