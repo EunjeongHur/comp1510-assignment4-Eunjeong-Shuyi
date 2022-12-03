@@ -148,7 +148,6 @@ def check_for_challenges(board: dict, character: dict) -> bool:
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
     room = board[current_character_coordinate]
-    print(room)
     if room == "Empty Room" or room == "Respawn Room":
         print('no event here')
         return False
@@ -157,6 +156,11 @@ def check_for_challenges(board: dict, character: dict) -> bool:
 
 
 def check_route(character):
+    """
+
+    :param character:
+    :return:
+    """
     # check if character chooses home route or wild route
     if character['Penelope'][1] >= 15:
         print('You are in home route now')
@@ -218,11 +222,10 @@ def check_if_game_ended(character):
 
 
 def execute_challenge_protocol(board, character):
-    print(event_option)
     file = open("./character.json")
     data = json.load(file)
     event_character = pick_random_character(character)
-    if event_option == "ending":
+    if event_character == "ending":
         return True
     else:
         event = ""
@@ -230,7 +233,7 @@ def execute_challenge_protocol(board, character):
         for line in data[event_character]:
             if line['episode'] == character[event_character][0]:
                 event = line
-        print(f'---{event_option} Event---\n')
+        print(f'---{event_character } Event---\n')
         get_event(event, character, event_character)
         current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
         board[current_character_coordinate] = "Empty Room"
