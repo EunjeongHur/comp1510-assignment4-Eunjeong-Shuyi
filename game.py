@@ -541,11 +541,8 @@ def check_if_goal_attained(character: dict) -> bool:
     >>> check_if_goal_attained(test_character)
     True
     """
-    if character['Nero'][0] == 5 or character['Lulu'][0] == 6 or character['Noah'][0] == 6 or \
-            character['Penelope'][0] == 5:
-        return True
-    else:
-        return False
+    return character['Nero'][0] == 5 or character['Lulu'][0] == 6 or character['Noah'][0] == 6 \
+        or character['Penelope'][0] == 5
 
 
 def game():
