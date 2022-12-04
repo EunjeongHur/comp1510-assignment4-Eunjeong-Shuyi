@@ -477,9 +477,10 @@ def display_script(event: dict, character: dict) -> bool:
     :param character: a dictionary
     :precondition: event must be a dictionary that is retrieved from character.json file
     :precondition: character must be a dictionary containing user's information
-    :postcondition: displays scripts that are retrieved from character.json file
-    :postcondition: gets user input which is '1' or '2' while displaying scripts
-    :return: returns True if user selects gain points option. Otherwise, return False
+    :precondition: user must enter '1', '2' ('3') to select event options
+    :postcondition: display scripts that are retrieved from character.json file
+    :postcondition: get user input which is '1' or '2' (or '3') while displaying scripts
+    :return: return True if user selects gain points option. Otherwise, return False
     """
     name = character['Name']
     options = []
@@ -527,8 +528,8 @@ def check_if_goal_attained(character: dict) -> bool:
 
     :param character: a dictionary
     :precondition: character must be a dictionary containing user information
-    :postcondition: checks if user reaches the critical event for any of the event characters
-    :return: returns True if user reaches the critical event for any of the event characters. Otherwise, return False
+    :postcondition: check if user reaches the critical event for any of the event characters
+    :return: return True if user reaches the critical event for any of the event characters. Otherwise, return False
     >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
     'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
     >>> check_if_goal_attained(test_character)
@@ -546,10 +547,10 @@ def game():
     """
     Play the game.
 
-    :postcondition: creates a 10 * 10 board by calling make_board()
-    :postcondition: creates a character dictionary by calling make_character()
-    :postcondition: plays a game while achieved_goal is False
-    :postcondition: once achieved_gaol becomes True, ends the game and call display_ending_script()
+    :postcondition: create a 10 * 10 board by calling make_board()
+    :postcondition: create a character dictionary by calling make_character()
+    :postcondition: play a game while achieved_goal is False
+    :postcondition: once achieved_gaol is True, ends the game and call display_ending_script()
     """
     rows = 10
     columns = 10
