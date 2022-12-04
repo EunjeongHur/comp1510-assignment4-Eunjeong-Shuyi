@@ -17,11 +17,12 @@ def make_board(rows: int, columns: int) -> dict:
     """
     Make board to show game map to users.
 
-    :param rows: an integer that is in range [1, 10] inclusive
-    :param columns: an integer that is in range [1, 10] inclusive
-    :precondition: rows and columns must be integers that are in range [1, 10] inclusive
-    :postcondition: generates the board that shows game map to users
-    :postcondition: generates a 10*10 board
+    :param rows: an integer
+    :param columns: an integer
+    :precondition: rows and columns must be integer 10
+    :postcondition: generates a 10*10 board that shows game map to users
+    :postcondition: generates Respawn Room at (9 ,4) coordinate in the map
+    :postcondition: generates Event Rooms and Empty Rooms randomly in the map
     :return: the board that shows game map to users as a dictionary
     """
     rooms_coordinates = {}
