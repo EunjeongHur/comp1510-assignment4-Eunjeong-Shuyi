@@ -73,7 +73,7 @@ def display_opening(character: dict):
     Display the opening script after a character is made.
 
     :param character: a dictionary
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :precondition: character is generated
     :postcondition: displays the opening script after a character is made
     """
@@ -98,8 +98,9 @@ def describe_current_location(board: dict, character: dict):
     Generate an updated map board that describes character's location.
 
     :param board: a dictionary
-    :param character: a dictionary
-    :precondition: board and character must be dictionaries
+    :param character: a dictionary containing user's information
+    :precondition: character must be a dictionary containing user's information
+    :precondition: board must be a dictionary containing rooms coordinate for key and room description for value
     :postcondition: generates an updated map board that describes character's location
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
@@ -158,7 +159,7 @@ def validate_move(character: dict, direction: str) -> bool:
 
     :param character: a dictionary
     :param direction: a string
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
     :postcondition: determine if move is validate
     :postcondition: invalidate move if character reaches boarders of the map
@@ -188,7 +189,7 @@ def move_character(character, direction):
 
     :param direction:
     :param character: a dictionary
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :precondition: direction must be a string that is one of 'Up', 'Down', 'Left', 'Right'
     :precondition: move is validate
     :postcondition: changes character's X-coordinate and Y-coordinate based on direction
@@ -237,8 +238,8 @@ def check_for_challenges(board: dict, character: dict) -> bool:
 
     :param board: a dictionary
     :param character: a dictionary
-    :precondition: board must contain rooms coordinate for key and room description for value
-    :precondition: character must contain current user's information
+    :precondition: board must be a dictionary containing rooms coordinate for key and room description for value
+    :precondition: character must be a dictionary containing current user's information
     :post condition: 'Empty Room' and 'Respawn Room' are considered as not having events
     :post condition: if current location has event, return True. Otherwise, return False
     :return: True if current location has event. Else, False
@@ -260,7 +261,7 @@ def pick_random_character(character: dict):
     collection if Penelope's relationship point is lower than 15.
 
     :param character: a dictionary
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :postcondition: select 'Penelope' character if user chose gain points option in Penelope's first episode
     :postcondition: select from character collection if Penelope's relationship point is lower than 15
     :return: 'Penelope' as a string or call function event_option(character)
@@ -277,7 +278,7 @@ def event_option(character: dict):
     Generate next event choice.
 
     :param character: a dictionary
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :postcondition: select a random element in list event_options if Penelope's script has not been displayed yet
     :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
     :return: next event choice as a string or check_if_score_reached(character) as a function
@@ -294,7 +295,7 @@ def check_if_score_reached(character: dict) -> str:
     Check if critical scores are reached and put user into individual route according to scores reached.
 
     :param character: a dictionary
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :postcondition: puts user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
     :postcondition: puts user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
     :postcondition: puts user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
@@ -323,8 +324,8 @@ def check_if_game_ended(character: dict):
     """
     Check if the game has ended.
 
-    :param character: a dictionary
-    :precondition: character must be a dictionary
+    :param character: a dictionary containing user's information
+    :precondition: character must be a dictionary containing user's information
     :postcondition: checks if the game has ended based on scripts displayed and relationship scores with characters
     :postcondition: generates a list other_characters for function check_if_score_reached based on scripts
     displayed and relationship scores with characters
@@ -355,8 +356,8 @@ def execute_challenge_protocol(board: dict, character: dict):
 
     :param board: a dictionary
     :param character: a dictionary
-    :precondition: board must be a dictionary
-    :precondition: character must be a dictionary
+    :precondition: board must be a dictionary containing rooms coordinate for key and room description for value
+    :precondition: character must be a dictionary containing user's information
     :postcondition: executes the challenge protocol according to event_option output
     :postcondition: current event room will become Empty Room
     :return: True if event_character is "ending"
@@ -434,7 +435,7 @@ def get_event(event: dict, character: dict, other_character_name: str):
     :param other_character_name: a string
     :precondition: other_character_name must be a string that is one of 'Nero', 'Lulu', 'Noah', 'Penelope'
     :precondition: event must be a dictionary that is retrieved from character.json file
-    :precondition: character must be a dictionary
+    :precondition: character must be a dictionary containing user's information
     :postcondition: if user picked gain points option, increment relationship score with
     other_character_name by gain_points score.
     :postcondition: if user picked lose points option, decrement relationship score with
