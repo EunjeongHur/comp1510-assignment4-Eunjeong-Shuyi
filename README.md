@@ -20,19 +20,19 @@ A01178380
 maz1995
 
 ## Requirements
-| Required element      | Location (line-number)                |
-|-----------------------|---------------------------------------|
-| Tuple                 | game.py line 176                      |
-| List                  | game.py line 278                      |
-| List Comprehension    | game.py line 459                      |
-| Selection             | game.py line 221 ~ 228                |
-| Repetition            | game.py line 138 ~ 150                |
-| Membership Operator   | game.py line 61<br/> game.py line 145 |
-| range function        | game.py line 30                       |
-| itertools module      | game.py line 486                      |
-| enumerate function    | game.py line 139<br/> game.py line 493|
-| filter / map function | game.py line 307                      |
-| random                | game.py line 36<br/> game.py line 487 |
+| Required element      | Location (line-number)                 |
+|-----------------------|----------------------------------------|
+| Tuple                 | game.py line 176                       |
+| List                  | game.py line 278                       |
+| List Comprehension    | game.py line 459                       |
+| Selection             | game.py line 221 ~ 228                 |
+| Repetition            | game.py line 138 ~ 150                 |
+| Membership Operator   | game.py line 61<br/> game.py line 145  |
+| range function        | game.py line 30                        |
+| itertools module      | game.py line 486                       |
+| enumerate function    | game.py line 139<br/> game.py line 493 |
+| filter / map function | game.py line 307                       |
+| random                | game.py line 36<br/> game.py line 487  |
 
 
 ## Any important comments you'd like to make about your work:
