@@ -330,7 +330,7 @@ def check_if_game_ended(character: dict):
     displayed and relationship scores with characters
     :postcondition: if all non-critical scripts of a character were played and relationship point is lower than 15,
     disable the route so this route will not show up in random choices
-    :return: characters that are left saved in other_characters as a list
+    :return: call function remove_other_chars
 
     >>> test_character = {'X-coordinate': 5, 'Y-coordinate': 4, 'Nero': [3, 14], 'Lulu': [1, 10], \
     'Noah': [1, 10], 'Penelope': [1, 10], 'Name': 'Chris'}
@@ -359,7 +359,7 @@ def execute_challenge_protocol(board: dict, character: dict):
     :precondition: character must be a dictionary
     :postcondition: executes the challenge protocol according to event_option output
     :postcondition: current event room will become Empty Room
-    :return: True of event_character is "ending"
+    :return: True if event_character is "ending"
     """
     file = open("./character.json")
     data = json.load(file)
