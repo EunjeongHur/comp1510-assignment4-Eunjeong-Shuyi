@@ -45,10 +45,10 @@ def make_character() -> dict:
     Generate a character with all attributes and input username.
 
     :precondition: input for character must be a non-empty string
-    :precondition: input for character gender be a "F" or "M"
-    :postcondition: asks user to re-enter inputs if inputs are not valid
-    :postcondition: generates a character with all attributes and input username and input gender
-    :return: generates a character with all attributes and input username as a dictionary
+    :precondition: input for character gender be "F" or "M"
+    :postcondition: ask user to re-enter inputs after error message if inputs are not valid
+    :postcondition: generate a character with all attributes and input username
+    :return: generate a character with all attributes and input username as a dictionary
     """
     character = {'X-coordinate': 9, 'Y-coordinate': 4,
                  'Nero': [1, 10], 'Lulu': [1, 10], 'Noah': [1, 10], 'Penelope': [1, 10],
