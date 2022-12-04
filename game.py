@@ -233,7 +233,7 @@ def move_character(character, direction):
 
 def check_for_challenges(board: dict, character: dict) -> bool:
     """
-    Determine if current location has an event.
+    Determine if character encounters an event.
 
     :param board: a dictionary
     :param character: a dictionary
