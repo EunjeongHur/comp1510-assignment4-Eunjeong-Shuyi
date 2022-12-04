@@ -358,8 +358,9 @@ def execute_challenge_protocol(board: dict, character: dict):
     :param character: a dictionary
     :precondition: board must be a dictionary containing rooms coordinate for key and room description for value
     :precondition: character must be a dictionary containing user's information
-    :postcondition: executes the challenge protocol according to event_option output
-    :postcondition: current event room will become Empty Room
+    :postcondition: execute the challenge protocol according to event_option output
+    :postcondition: if ending, enter ending route
+    :postcondition: if not ending, current event room will become Empty Room
     :return: True if event_character is "ending"
     """
     file = open("./character.json")
@@ -379,19 +380,19 @@ def execute_challenge_protocol(board: dict, character: dict):
         board[current_character_coordinate] = "Empty Room"
 
 
-def display_ending_script(character: dict) -> None:
+def display_ending_script(character: dict):
     """
-    Display ascii art and ending scripts.
+    Display ascii art and ending scripts regarding the different endings.
 
     :param character: a dictionary
     :precondition: character must be a dictionary containing user's information
-    :postcondition: if character completes critical events for any of the character and relationship score is over 20,
+    :postcondition: if user completes a critical event with the character's relationship score over 20,
     display happy_ending ascii art text and cat of ascii art
-    :postcondition: if character completes critical events for any of the character and relationship score is under 20,
+    :postcondition: if user completes a critical event with the character's relationship score under 20,
     display bad_ending ascii art text and cat of ascii art
-    :postcondition: if character doesn't complete any critical events, display ending scripts and
-    bad_ending ascii art text and cat of ascii art
-    :postcondition: after displaying ascii arts, prints ending credits
+    :postcondition: if user doesn't complete any critical events when characters run out,
+    display ending scripts, bad_ending ascii art text and cat of ascii art
+    :postcondition: after displaying scripts and ascii arts, prints ending credits
     """
     if character['Nero'][0] == 5 or character['Lulu'][0] == 6:
         if character['Nero'][1] >= 20 or character['Lulu'][1] >= 20:
@@ -436,9 +437,9 @@ def get_event(event: dict, character: dict, other_character_name: str):
     :precondition: other_character_name must be a string that is one of 'Nero', 'Lulu', 'Noah', 'Penelope'
     :precondition: event must be a dictionary that is retrieved from character.json file
     :precondition: character must be a dictionary containing user's information
-    :postcondition: if user picked gain points option, increment relationship score with
+    :postcondition: if user pick gain points option, increment relationship score with
     other_character_name by gain_points score.
-    :postcondition: if user picked lose points option, decrement relationship score with
+    :postcondition: if user pick lose points option, decrement relationship score with
     other_character_name by gain_points score.
     """
     episode = character[other_character_name][0]
@@ -462,7 +463,7 @@ def replace_mc_name(name: str, lines: list) -> list:
     :param lines: a list
     :precondition: name must be main character's name that user entered
     :precondition: lines must be a list containing string
-    :postcondition: replaces all '/mc_name' to name
+    :postcondition: replaces all '/mc_name' with name
     :return: a list containing replaced string
     """
     return [line.replace("/mc_name", f'\033[92m{name}\033[00m') for line in lines]
