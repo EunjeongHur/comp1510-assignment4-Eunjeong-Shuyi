@@ -128,7 +128,7 @@ def get_user_choice() -> bool or str:
     Get user's input for moving and reflect as direction or allow user quit the game.
 
     :precondition: user must enter '1', '2', '3', '4' to move
-    :precondition: user must enter 'q' or 'quit' (case-insensitive) to move
+    :precondition: user must enter 'q' or 'quit' (case-insensitive) to quit the game
     :postcondition: user can move 'Up', 'Down', 'Left', 'Right' by entering '1', '2', '3', '4'
     :postcondition: ends the game if user types 'q' or 'quit' (case-insensitive)
     :return: direction that user choose to move as a string or False if when user types 'q' or 'quit'
