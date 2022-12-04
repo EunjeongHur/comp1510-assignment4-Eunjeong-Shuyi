@@ -8,6 +8,7 @@ Member #2 Student Number: A01178380
 
 
 def sleeping_cat_art():
+    """Print cat ascii art."""
     # By 'Felix Lee'
     print("      |\\      _,,,---,,_")
     print("ZZZzz /,`.-'`'    -.  ;-;;,_")
@@ -16,6 +17,7 @@ def sleeping_cat_art():
 
 
 def two_cats_art():
+    """Print cat ascii art."""
     # By 'KAT'
     print("                      /^--^\\     /^--^\\  ")
     print("                      \\____/     \\____/  ")
@@ -30,6 +32,7 @@ def two_cats_art():
 
 
 def poor_kitty_art():
+    """Print cat ascii art."""
     # By 'Shanaka Dias'
     print("           ___")
     print("          (___)")
@@ -49,6 +52,7 @@ def poor_kitty_art():
 
 
 def lonely_cat_art():
+    """Print cat ascii art."""
     # By 'hjw'
     print("         *                  *")
     print("             __                *")
@@ -73,6 +77,7 @@ def lonely_cat_art():
 
 
 def finding_food_cat_art():
+    """Print cat ascii art."""
     # by 'hjw'
     print("                                     ,")
     print("              ,-.       _,---._ __  / \\ ")
@@ -89,6 +94,7 @@ def finding_food_cat_art():
 
 
 def cozy_cat_art():
+    """Print cat ascii art."""
     # By 'Susie Oviatt'
     print("               /\\____/\\    __")
     print("             .'  \"\"\"\"  `,-'  `--.__")
@@ -102,18 +108,21 @@ def cozy_cat_art():
 
 
 def bad_ending():
+    """Print text ascii art "Bad Ending"."""
     print("+-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
     print("|B| |a| |d|   |E| |n| |d| |i| |n| |g|")
     print("+-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
 
 
 def happy_ending():
+    """Print text ascii art "Happy Ending"."""
     print("+-+ +-+ +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
     print("|H| |a| |p| |p| |y|   |E| |n| |d| |i| |n| |g|")
     print("+-+ +-+ +-+ +-+ +-+   +-+ +-+ +-+ +-+ +-+ +-+")
 
 
 def city_art():
+    """Print city ascii art."""
     print(".             .        .     .     |--|--|--|--|--|--|  |===|==|   /    i")
     print("        .            ______________|__|__|__|__|__|_ |  |===|==|  *  . /=\\")
     print("__ *            .   /______________________________|-|  |===|==|       |=|  .")
@@ -132,6 +141,7 @@ def city_art():
 
 
 def a_cats_story():
+    """Print text ascii art "A CAT'S STORY"."""
     print("█████       ██████  █████  ████████ ██  ███████     ███████ ████████  ██████  ██████  ██    ██")
     print("██   ██     ██      ██   ██    ██   █    ██          ██         ██    ██    ██ ██   ██  ██  ██")
     print("███████     ██      ███████    ██        ███████     ███████    ██    ██    ██ ██████    ████")
