@@ -95,12 +95,12 @@ def display_opening(character: dict):
 
 def describe_current_location(board: dict, character: dict):
     """
-    Generate an updated map board after character moves.
+    Generate an updated map board that describes character's location.
 
     :param board: a dictionary
     :param character: a dictionary
     :precondition: board and character must be dictionaries
-    :postcondition: generates an updated map board after character moves
+    :postcondition: generates an updated map board that describes character's location
     """
     current_character_coordinate = (character['X-coordinate'], character['Y-coordinate'])
 
