@@ -74,6 +74,7 @@ def display_opening(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
+    :precondition: character is generated
     :postcondition: displays the opening script after a character is made
     """
     print("\nCharacter is successfully created!")
