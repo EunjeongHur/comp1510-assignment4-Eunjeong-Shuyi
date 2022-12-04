@@ -254,12 +254,16 @@ def check_for_challenges(board: dict, character: dict) -> bool:
 
 def pick_random_character(character: dict):
     """
-    Select 'Penelope' character if in home route.
+    Determine if user is in home cat route or wild cat route.
+
+    Select 'Penelope' character if user chose gain points option in Penelope's first episode. Select from character
+    collection if Penelope's relationship point is lower than 15.
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: selects 'Penelope' character if in home route based on output of function check_route
-    :return: 'Penelope' as a string or event_option(character) as a function
+    :postcondition: select 'Penelope' character if user chose gain points option in Penelope's first episode
+    :postcondition: select from character collection if Penelope's relationship point is lower than 15
+    :return: 'Penelope' as a string or call function event_option(character)
     """
 
     if character['Penelope'][1] >= 15:
@@ -274,8 +278,8 @@ def event_option(character: dict):
 
     :param character: a dictionary
     :precondition: character must be a dictionary
-    :postcondition: selects a random element in list event_options if Penelope's script has not been displayed yet
-    :postcondition: calls function check_if_score_reached if Penelope's first script has already been displayed
+    :postcondition: select a random element in list event_options if Penelope's script has not been displayed yet
+    :postcondition: call function check_if_score_reached if Penelope's first script has already been displayed
     :return: next event choice as a string or check_if_score_reached(character) as a function
     """
     event_options = ['Nero', 'Lulu', 'Noah', 'Penelope']
@@ -287,15 +291,16 @@ def event_option(character: dict):
 
 def check_if_score_reached(character: dict) -> str:
     """
-    Check if critical scores are reached and put user into individual route according to scores.
+    Check if critical scores are reached and put user into individual route according to scores reached.
 
     :param character: a dictionary
     :precondition: character must be a dictionary
     :postcondition: puts user into Nero route if 3 nero scripts were displayed and Nero relationship point >= 15
     :postcondition: puts user into Lulu route if 4 Lulu scripts were displayed and Lulu relationship point >= 15
     :postcondition: puts user into Noah route if 4 Noah scripts were displayed and Noah relationship point >= 15
-    :postcondition: displays text if relationships from all chars are lower than 15
-    :postcondition: puts user into ending route if no more character options are available
+    :postcondition: puts user into ending route if no more character options are available and
+    all relationship points < 15
+    :postcondition: generate a random character choice if none of above conditions are met
     :return: next event choice as a string
     """
     other_characters = ['Nero', 'Lulu', 'Noah']
